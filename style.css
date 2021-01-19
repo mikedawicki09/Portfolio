@@ -1,0 +1,203 @@
+/* WEBSITE RESUME CSS STYLING SHEET*/
+
+/*STYLING FOR PAGE SIZING*/
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Times New Roman', serif;
+}
+/*STYLING FOR NAVIGATION*/
+.navbar {
+    background-color:#557A95;
+    padding: 1% 0;
+    font-size: 1.2em;
+    color: white;
+}
+/* STYLING FOR HEADER AND BACKGROUND IMAGE*/
+#home {
+    background: url(Photos/background.jpg) no-repeat center center fixed;
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+}
+/*STYLING FOR POSITIONING IMAGE AND TEXT IN THE HEADER */
+.landing-text {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+/*STYLING FOR FIRST TEXT IN HEADER*/
+.landing-text h1 {
+    font-size: 500%;
+    font-weight: 900px;
+    color: WHITE;
+}
+/*STYLING FOR SECOND TEXT IN HEADER*/
+.landing-text h3 {
+    color: WHITE;
+    margin: 20px;
+}
+/*STYLING FOR BUTTON*/
+.button {
+    border: 4px solid #557A95;
+    border-radius: 40px;
+    padding: 10px 30px;
+    color: WHITE;
+    width: 120px;
+    text-decoration: none;
+    transition-duration: 0.4s;   
+    
+}
+/*STYLING ALLOWS FOR HOVERING OVER BUTTON*/
+.button:hover {
+  background-color: #FFF;
+  color: #000;
+}
+
+/*STYLING FOR PICTURE IN HEADER*/
+.picture { 
+    height: 350px;
+    width 230px;
+    display: table-cell;
+    vertical-align: middle;
+    margin: 10px auto 20px;
+    display: block;
+    border: 6px solid #557A95;
+}
+/*STYLING TO ADD PADDING BETWEEN HEADER AND ABOUT ME*/
+.padding {
+    padding: 50px 0;   
+}
+/*STYLING FOR ABOUT ME*/
+.container {
+    border: 3px solid #557A95;
+    padding: 50px;
+}
+
+/*STYLING FOR TEXT IN ABOUT ME*/
+.lead {
+    color: #828282;
+    padding:10px;
+    text-align: left;
+}
+/*STYLING FOR UNDERLINE*/
+.underline {
+    background-image: linear-gradient(#557A95,#557A95);
+    background-position: center bottom; 
+    background-size: 50px 1.5px; 
+    background-repeat: no-repeat;
+    padding-bottom: 4px;
+}
+/*STYLING FOR THE BACKGROUND OF THE PROJECT SECTION*/
+.projects {
+    background-color: #ededed;
+}
+.text-center {
+    margin: 0px 0px 20px;
+    }
+}
+/*STYLING FOR LOGOS*/
+.col {
+  position: relative;
+  width: 50%;
+}
+
+.logos {
+    opacity: 1;
+    display: block;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    height: 200px;
+    width: 300px;
+    border: 5px solid #557A95;
+    margin: 10px;
+}
+.text {
+  background-color: #557A95;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+/*STYLING FOR LIST ITEMS*/
+.horizontal-list li {
+    border: 2px solid #ededed;
+    background-color:#ededed;
+    margin: 45px;
+    height: 60px;
+    padding: 18px;
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+    list-style: none;
+}
+/*STYLING FOR BACKGROUND OF CONTACT SECTION*/
+.background {
+    background-color: #557A95;
+}
+/*STYLING FOR TOP BUTTON*/
+.topButton {
+    padding: 10px;
+    border: 2px solid #557A95;
+    border-radius: 100%;
+    color: #557A95;
+}
+/*STYLING FOR HOVERING OVER TOP BUTTON*/
+.topButton:hover {
+    color: gray;
+}
+/*STYLING FOR CONTACT ICONS*/
+.icon {
+    color: white;
+    margin: 30px;
+    
+}
+/*STYLING FOR HOVERING OVER CONTACT ICONS*/
+.icon:hover {
+    color: gray;
+}
+.title {
+    text-align: center;
+}
+.styling {
+    text-align: left;
+    color: #557A95;
+}
+.big {
+    border: 2px solid darkgray;
+    background-color: white;
+    margin: 20px;
+}
+.pad {
+    padding: 10px;
+}
+.link {
+    display: flex;
+    justify-content: center;
+    color: #557A95;
+}
+.contact {
+    font-weight: bold;
+    
+}
+.connect {
+    color: white;
+}
+.border  {
+    border: 3px solid white;
+    padding: 10px 375px 10px 375px;   
+}
+.center {
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+}
+#two {
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+    margin: 3px;   
+}
