@@ -5,14 +5,20 @@ html, body {
     height: 100%;
     width: 100%;
     overflow-x: hidden;
-    font-family: 'Times New Roman', serif;
+    font-family: 'Optima';
 }
+
 /*STYLING FOR NAVIGATION*/
 .navbar {
     background-color:#557A95;
     padding: 1% 0;
     font-size: 1.2em;
     color: white;
+}
+.view {
+    color: #557A95;
+    margin-left: 30%;
+    width: 40%;
 }
 /* STYLING FOR HEADER AND BACKGROUND IMAGE*/
 #home {
@@ -69,7 +75,7 @@ html, body {
 }
 /*STYLING TO ADD PADDING BETWEEN HEADER AND ABOUT ME*/
 .padding {
-    padding: 50px 0;   
+    padding: 80px 0;   
 }
 /*STYLING FOR ABOUT ME*/
 .container {
@@ -85,11 +91,9 @@ html, body {
 }
 /*STYLING FOR UNDERLINE*/
 .underline {
-    background-image: linear-gradient(#557A95,#557A95);
-    background-position: center bottom; 
-    background-size: 50px 1.5px; 
-    background-repeat: no-repeat;
-    padding-bottom: 4px;
+    border-bottom: 1px solid #557A95;
+    text-decoration: none;
+   
 }
 /*STYLING FOR THE BACKGROUND OF THE PROJECT SECTION*/
 .projects {
@@ -99,22 +103,30 @@ html, body {
     margin: 0px 0px 20px;
     }
 }
-/*STYLING FOR LOGOS*/
-.col {
-  position: relative;
-  width: 50%;
+
+
+.btn-outline-info {
+    color: #557A95;
+    background-color: white;
+    border-color: #557A95;
 }
 
-.logos {
-    opacity: 1;
-    display: block;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
-    height: 200px;
-    width: 300px;
-    border: 5px solid #557A95;
-    margin: 10px;
+.btn-outline-info:hover {
+    color: white;
+    background-color: #557A95;
+    border-color: #557A95;
+}
+
+.images {
+    width: 100%;
+    height: 100%; 
+      border:2px solid #fff;
+      -moz-box-shadow: 10px 10px 5px #ccc;
+      -webkit-box-shadow: 10px 10px 5px #ccc;
+      box-shadow: 10px 10px 5px #ccc;
+      -moz-border-radius:25px;
+      -webkit-border-radius:25px;
+      border-radius:25px;
 }
 .text {
   background-color: #557A95;
@@ -126,13 +138,14 @@ html, body {
 .horizontal-list li {
     border: 2px solid #ededed;
     background-color:#ededed;
-    margin: 45px;
+    margin: 25px;
     height: 60px;
     padding: 18px;
     width: 100px;
     text-align: center;
     display: inline-block;
     list-style: none;
+    border-radius: 10px;
 }
 /*STYLING FOR BACKGROUND OF CONTACT SECTION*/
 .background {
@@ -140,9 +153,11 @@ html, body {
 }
 /*STYLING FOR TOP BUTTON*/
 .topButton {
-    padding: 10px;
-    border: 2px solid #557A95;
-    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    border: 2px solid #557A9;
+    border-radius: 50%;
+    display: inline-block;
     color: #557A95;
 }
 /*STYLING FOR HOVERING OVER TOP BUTTON*/
@@ -152,7 +167,8 @@ html, body {
 /*STYLING FOR CONTACT ICONS*/
 .icon {
     color: white;
-    margin: 30px;
+    display: inline-block;
+    margin-right: 3%;
     
 }
 /*STYLING FOR HOVERING OVER CONTACT ICONS*/
@@ -161,10 +177,11 @@ html, body {
 }
 .title {
     text-align: center;
+    padding-top: 50px;
 }
 .styling {
-    text-align: left;
-    color: #557A95;
+    
+    color: white;
 }
 .big {
     border: 2px solid darkgray;
@@ -179,25 +196,46 @@ html, body {
     justify-content: center;
     color: #557A95;
 }
-.contact {
-    font-weight: bold;
-    
-}
+
+
 .connect {
     color: white;
 }
 .border  {
     border: 3px solid white;
-    padding: 10px 375px 10px 375px;   
+   
 }
 .center {
     display: table;
     margin-right: auto;
     margin-left: auto;
 }
-#two {
-    display: inline-block;
-    margin-right: auto;
-    margin-left: auto;
-    margin: 3px;   
+
+
+/*Media queries*/
+@media (max-width: 768px) {
+    .landing-text h1 {
+        font-size: 300%;
+    }
 }
+.drop {
+    display: inline-block;
+    background-color: #557A95;
+    float: right;  
+    color: white;
+    border: 1px solid white;
+   
+}
+.drop:hover {
+    background-color:white;
+     border: 1px solid white;
+    color: #557A95;
+}
+
+#contactMe td {
+    border:0px;
+    color: white;
+    padding: 0px;
+    
+}
+
