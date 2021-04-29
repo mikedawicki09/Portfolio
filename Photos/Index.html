@@ -1,0 +1,266 @@
+<!--html page for Mike Dawicki resume-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name ="viewport" content = "width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Michael Dawicki-Resume</title>
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!--Style CSS-->
+    <link rel="stylesheet"  href="style.css">
+</head>
+<body>
+    
+<!--Navigation-->
+<nav class = "navbar navbar-expand-md navbar-dark">
+<div class = "container-fluid">
+    <a class = "navbar-brand" >Mike Dawicki</a>
+    <button class = "navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class = "navbar-toggler-icon"></span>
+    </button>
+    <div class= "collapse navbar-collapse" id = "navbarResponsive">
+        <ul class ="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class = "nav-link" href = "#aboutMe">About Me</a>
+            </li>
+            <li class ="nav-item">
+                <a class = "nav-link" href = "#project">Projects</a>
+            </li>
+            <li class ="nav-item">
+                <a class = "nav-link" href = "#skill">Skills</a>
+            </li>
+            <li class = "nav-item">
+                <a class = "nav-link" href = "#contacted">Contact</a>
+            </li>       
+        </ul>
+    </div>
+</div>
+</nav>
+<!--Naviagtion End-->
+    
+<!--Head Image-->
+<div id = "home" class = "header">
+    <div class="landing-text">
+        <h1 class="display-3 color">Mike Dawicki</h1>
+        <h3 class="display-5 color">Computer Information Systems Major</h3>
+        <a href = "Files/Resume%20.docx" class = "button btn-lg">Download Resume</a>
+    </div>
+</div>
+<!--Head End-->
+    
+<!--About Me section-->
+<section id = "aboutMe">
+    <div class = "padding">   
+        <div class= "container shadow-lg">
+            <div class = "row">
+                <div class = "col-md-2">
+                    <h2>A<u class = "underline">bout M</u>e</h2>
+                </div>
+                <div class ="col-md-10">
+                    <p class = "lead">I am a senior at James Madison University, and plan to graduate with a BBA in Computer Information Systems in spring of 2021. During the course of my studies, I have had hands-on experience with web development and deployment, developing and maintaining both SQL and NoSQL databases, cloud computing via AWS and multiple object-oriented programming languages. My curriculum has stressed the importance of critical thinking and strategically solving real world business problems. After graduation, I plan to continue in the field of information technology while further developing my programming and networking skills.
+                    </p>     
+                </div>
+            </div> 
+        </div>    
+    </div>
+</section>
+<!--About Me End-->
+      
+<!--Projects section-->
+<section id = "project" class = "projects shadow-lg">
+    <div class = "padding">
+        <h2 class = "text-center">Pr<u class="underline">ojec</u>ts</h2>
+        <div class="container shadow my-5">
+            <div class="card" style="margin-bottom: 3%;">
+                <div class="card-header" style="background-color: #557A95;">
+                    <h2 class="text-white" style="display: inline-block; font-size: 22px;">CIS Senior Capstone Project</h2>
+                    <a href="" data-toggle="collapse"  data-target="#c1" class=" btn drop"> &#9660;</a>
+                </div>
+                <div class="card-body">
+                    <div id="c1" class = "row collapse fade py-4">
+                        <div class = "col-lg-5" style="margin-top:2%; height: 100%;">
+                            <img src = "/Photos/Green valley system.png"  class = "images" style="margin-bottom: 5%;" alt = "CIS Senior Capstone">
+                            <button onclick="location.href = '/Projects/Final%20Report.pdf';" class="btn btn-outline-info view">View Project</button>
+                        </div>
+                        <div class = "col-lg-7" style="height: 100%;">                          
+                            <p style="margin-top: 5%;">
+                                <a data-toggle="collapse" class="btn btn-light buttons" style="margin-right: 2%; width:30%" href="" data-target="#desc">The Project</a>
+                                <a data-toggle="collapse" href="" class="btn btn-light buttons" style="margin-right: 2%; width:30%" data-target="#system">Our System</a>
+                                <a data-toggle="collapse" href="" class="btn btn-light buttons" style=" width:30%" data-target="#erd">Our Database</a>
+                            </p>
+                            <div class="collapse fade" id="desc">
+                                <div class="card card-body">
+                                    <h3 class = "text-dark font-weight-bold mb-3">CIS Capstone Project</h3>
+                                    <p>The Computer Information System's Senior capstone was a semester long project in which we built an information system from the ground up for a client in the Harrisonburg community. This capstone included 16 teams that competed to build a system that both best fit the clients needs and added value to their business's every workday.
+                                    </p>                           
+                                </div>
+                            </div>
+                            <div class="collapse fade" id="system">
+                                <div class="card card-body">
+                                    <h3 class="text-dark font-weight-bold mb-3">Our System</h3>
+                                    <p>Our client's were an auction and moving service's company that needed a system that would replace their current, cultered and out-of-date filing system. We coded our system using Microsoft's ASP.NET, Bootstrap, SQL and C#. My team was chosen among the top two teams to present our system to a judge panel, CIS students, and CIS professors. 
+                                    </p>
+                                </div>
+                            </div>
+                             <div class="collapse fade" id="erd">
+                                <div class="card card-body">
+                                    <h3 class="text-dark font-weight-bold mb-3">Our Database</h3>
+                                    <p>We coded our relational database with microsoft sql server and developed our database to match our client's needs while also maintaining third normal form and removing any redudancies. From meetings with our client's, we realized that both types of services were very similar which allowed us to integrate generalization into our Entity Relationship Diagram.
+                                    </p>
+                                    <a href="/Files/GVA_ERD.pdf" target="_blank" class="btn btn-outline-info view">View Diagram</a>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="margin-bottom: 3%;">
+                <div class="card-header" style="background-color: #557A95;">
+                    <h2 class="text-white" style="display: inline-block; font-size: 22px;">SQL Database Project</h2>
+                    <a href="" data-toggle="collapse"  data-target="#c2" class=" btn drop"> &#9660;</a>
+                </div>
+                <div class="card-body">
+                    <div id="c2" class = "row collapse fade py-4">
+                        <div class = "col-lg-5" style="height: 100%;">
+                            <img src = "/Photos/sql%20.png" class = "images" style="margin-bottom: 5%;" alt = "SQL Database">
+                            <a href="Files/Final%20Report-2.pdf" target="_blank" class="btn btn-outline-info view">View Project</a>
+                        </div>
+                        <div class = "col-lg-7" style="height: 100%;">
+                            <p style="margin-top: 5%;">
+                                <a data-toggle="collapse" class="btn btn-light buttons" style="margin-right: 2%; width:30%" href="" data-target="#about">About</a>
+                            </p>
+                            <div class="collapse fade" id="about">
+                                <div class="card card-body">
+                                    <h3 class="text-dark font-weight-bold mb-3">Crash Airlines Project</h3>
+                                    <p>A relational database developed to replicate a company's data structure with real data by using Oracle. For this project, we created an conceptual ERD model to design our database while also developing SQL queries to create and manipulate the tables to provide our client with meaningful data to help them make better informed business decsions.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            </div>    
+            <div class="card">
+                <div class="card-header" style="background-color: #557A95;">
+                    <h2 class="text-white" style="display: inline-block; font-size: 22px;">Kleaner Kick's Business Plan</h2>
+                    <a href="" data-toggle="collapse"  data-target="#c3" class=" btn drop"> &#9660;</a>
+                </div>
+                <div class="card-body">
+                    <div id="c3" class = "row collapse fade py-4">
+                        <div  class= "col-lg-5" style="height: 100%;">
+                            <img src="Photos/BPLAN%20logo.png" class = "images" style="margin-bottom: 5%;" alt = "Business plan logo">
+                            <a href="Files/BPLAN.pdf" target="_blank" class="btn btn-outline-info view">View Project</a>
+                        </div>
+                    <div class = "col-lg-7" style="height: 100%;">
+                        <a data-toggle="collapse" class="btn btn-light buttons" style="margin-right: 2%; width:30%; margin-bottom: 2%;" href="" data-target="#readAbout">About</a>
+                        <div class="collapse fade" id="readAbout">
+                            <div class="card card-body">
+                                <h3 class="text-dark font-weight-bold mb-3">Semester Long Business Plan</h3>
+                                <p>A research intensive business plan that integrates all functions of a real business. This project involved creating a useful product and researching the logistics of our company.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>     
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!--Projects End-->
+    
+<!--Skills Section-->
+<section id = "skill">
+    <div class = "padding">
+        <h2 class = "text-center">S<u class="underline">kill</u>s</h2>
+        <div class = "container shadow-lg" >
+            <ul class = "horizontal-list list text-center" style="width: 80%; margin-left: 8%;">
+                <li class="shadow" >C#</li>
+                <li class="shadow">Java</li>
+                <li class="shadow">Python</li>
+                <li class="shadow">SQL</li>
+                <li class="shadow">HTML</li>
+                <li class="shadow">CSS</li>
+                <li class="shadow">Oracle</li>
+                <li class="shadow">Bootstrap</li>
+                <li class="shadow">AWS</li>
+                <li class="shadow">ASP.NET</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--Skills end-->
+
+<!--Footer Section-->
+<section id="contacted" class="sticky-bottom">
+    <div class = "container-fluid padding shadow-lg" style="background-color: #557A95">
+        <div class = "row text-center">
+            <div class = "col-md-4">
+                <span  class = "copyright styling">Copyright &copy; 2021 Mike Dawicki</span>
+            </div>
+            <div class = "col-md-4">
+                <a href = "#home" class="btn btn-outline-info drop" style="float: none;"> &#x25B2;</a>       
+            </div>
+            <div class = "col-md-4 styling">
+                <div class="table-responsive">
+                <table id="contactMe" class="table">
+                    <tr>
+                        <td>
+                            <h2 style=" max-width: 120%;">Contact me at</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="max-width: 77%;">Phone: (267) 566-7674</p>   
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="max-width: 95%;">Email: mikedawicki99@gmail.com</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style=" width: 120%;">
+                            <a href = "https://www.linkedin.com/in/michael-dawicki-62123915a/" target="_blank"><i class = "fab fa-linkedin fa-3x icon"></i></a>                                    
+                            <a href = "https://github.com/mikedawicki09" target = "_blank"><i class = "fab fa-github fa-3x icon"></i></a>
+                            <a href = "mailto: mikedawicki99@gmail.com" ><i class = "fas fa-envelope-square fa-3x icon"></i></a>
+                        </td>
+                    </tr>
+                </table>
+                </div>
+            </div>      
+        </div>  
+    </div>
+</section>
+<!--Footer End--> 
+    
+<!--jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!--Popper JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<!--Bootstrap JS-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!--Font Awesome-->
+<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
+<!--script for smooth scrolling-->
+<script>
+jQuery($ => {
+// The speed of the scroll in milliseconds
+const speed = 1000;
+$('a[href*="#"]')
+.filter((i, a) => a.getAttribute('href').startsWith('#') || a.href.startsWith(`${location.href}#`))
+.unbind('click.smoothScroll')
+.bind('click.smoothScroll', event => {
+const targetId = event.currentTarget.getAttribute('href').split('#')[1];
+const targetElement = document.getElementById(targetId);
+if (targetElement) {
+event.preventDefault();
+$('html, body').animate({ scrollTop: $(targetElement).offset().top }, speed);
+}
+});
+});
+</script>
+</body>
+</html>
