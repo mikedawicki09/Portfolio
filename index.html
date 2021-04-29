@@ -248,26 +248,12 @@
 <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
 <!--script for smooth scrolling-->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js">
-// handle links with @href started with '#' only
-$(document).on('click', 'a[href^="#"]', function(e) {
-    // target element id
-    var id = $(this).attr('href');
-
-    // target element
-    var $id = $(id);
-    if ($id.length === 0) {
-        return;
-    }
-
-    // prevent standard hash navigation (avoid blinking in IE)
-    e.preventDefault();
-
-    // top position relative to the document
-    var pos = $id.offset().top;
-
-    // animated top scrolling
-    $('body, html').animate({scrollTop: pos});
-});
+$(document).ready(function () {
+            $("a.scrollLink").click(function (event) {
+                event.preventDefault();
+                $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
+            });
+        });
 </script>
 </body>
 </html>
