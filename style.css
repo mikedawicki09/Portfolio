@@ -18,6 +18,7 @@ html, body {
 .view {
     color: #557A95;
     border-color: #557A95;
+    background-color: white;
     margin-left: 30%;
     width: 40%;
 }
@@ -245,10 +246,13 @@ html, body {
     float: right;
     font-size: 30px;
     color: gray;
+    outline:none;
+    cursor:pointer; 
     
 }
 .addSign:hover {
     text-decoration: none;
+    color:  #557A95;
 }
 .cardStyle {
     border-left: 2px solid #557A95; 
@@ -259,4 +263,9 @@ html, body {
     display: inline-block; 
     font-size: 22px; 
     margin-top: 2%;  
+}
+
+
+.addSign:focus {
+display:none;
 }
