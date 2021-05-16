@@ -233,7 +233,7 @@
                 <span  class = "copyright styling">Copyright &copy; 2021 Mike Dawicki</span>
             </div>
             <div class = "col-md-6 mb-md-0 mb-3">
-                <a href = "#home" class="btn btn-outline-info drop" onclick="test()" style="float: none;"> &#x25B2;</a>       
+                <a class="btn btn-outline-info drop" onclick="test()" style="float: none;"> &#x25B2;</a>       
             </div>
             <div class = "col-md-3 mb-md-0 mb-3 styling">
                 <div class="table-responsive">
@@ -280,21 +280,6 @@
 <!--Font Awesome-->
 <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
 <!--script for smooth scrolling-->
-<script src="https://code.jquery.com/jquery-3.5.1.min.js">
-$(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
-</script>
+
 </body>
 </html>
