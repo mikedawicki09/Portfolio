@@ -12,6 +12,8 @@
     <link rel="stylesheet"  href="style.css">
     <script type=text/javascript src="script.js"></script>
 </head>
+
+
 <body>
     
 <!--Navigation-->
@@ -31,6 +33,9 @@
             </li>
             <li class ="nav-item">
                 <a class = "nav-link" href = "#skill">Skills</a>
+            </li>
+            <li class ="nav-item">
+                <a class = "nav-link" href = "#campus">Campus Involvement</a>
             </li>
             <li class = "nav-item">
                 <a class = "nav-link" href = "#contacted">Contact</a>
@@ -74,23 +79,31 @@
 <section id = "project" class = "projects shadow-lg">
     <div class = "padding">
         <h2 class = "text-center">Pr<u class="underline">ojec</u>ts</h2>
-        <div class="container shadow my-5" style="background-color: #557A95; border: 2px solid white; ">
+        <div class="container shadow my-5 blueBack">
             <div class="card" style="border: 2px solid white; margin-bottom: 3px;">
                 <div class="card-body" style="background-color: #F5F5F5">
                     <h2 class="heading">CIS Senior Capstone Project</h2>
-                       <a data-toggle="collapse" href="" data-target="#c1" class="addSign"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                        </svg></a>
+                       <a data-toggle="collapse" href="#c1" aria-expanded="false" class="chevronSign">
+                            <i class="fa fa-chevron-down"></i>
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+
+                   
                     <div id="c1" class = "row collapse fade py-4">
-                        <div class = "col-lg-5" style="margin-top:2%; height: 100%;">
-                            <img src = "Photos/greenValley.png"  class = "images" style="margin-bottom: 5%;" alt = "CIS Senior Capstone">
-                            <a href="https://github.com/mikedawicki09/GreenValleyAuctionsSystems" target="_blank" class="btn btn-outline-info view">Source Code</a>
+                        <div class = "col-lg-5 imageCol">
+                                <img src = "Photos/greenValley.png"  class = "images shadow-lg" alt = "CIS Senior Capstone">
+                                <a href="https://github.com/mikedawicki09/GreenValleyAuctionsSystems" target="_blank" class="btn btn-outline-info view shadow">
+                                    Source Code
+                                </a>                   
                         </div>
                         <div class = "col-lg-7" style="height: 100%;">                          
-                            <div class="card" style="margin-top: 7%;">                       
+                            <div class="card" style="margin-top: 5%;">                       
                                 <div class="card-body cardStyle">
                                     <h3 class = "text-dark  mb-3 cardHead">The Project</h3>
-                                    <a data-toggle="collapse" href="" data-target="#desc" class="addSign">+</a>
+                                    <a data-toggle="collapse" href="#desc" aria-expanded="false" class="addSign">
+                                        <i class="fa fa-plus pull-right"></i>
+                                        <i class="fa fa-minus pull-right"></i>
+                                    </a>
                                     <div class="collapse fade" id="desc">                                  
                                         <p style="color: #828282;">The Computer Information System's Senior capstone was a semester long project in which we built an information system from the ground up for a client in the Harrisonburg community. This competition required my team and I to build a system that both best fit the client’s business needs and increased the efficiency of their business. 
                                         </p>                           
@@ -100,7 +113,10 @@
                             <div class="card">
                                 <div class="card-body cardStyle">
                                     <h3 class = "text-dark  mb-3 cardHead">Our System</h3>
-                                    <a data-toggle="collapse" href="" data-target="#system" class="addSign">+</a>
+                                    <a data-toggle="collapse" href="#system" aria-expanded="false" class="addSign">
+                                        <i class="fa fa-plus pull-right"></i>
+                                        <i class="fa fa-minus pull-right"></i>
+                                    </a>
                                     <div class="collapse fade" id="system">
                                         <p style="color: #828282;">Our clients were an auction and moving service's company that needed a system that would replace their cluttered and out-of-date filing system. We coded our system using Microsoft's ASP.NET, Bootstrap, SQL and C#. My team was chosen among the top two teams to present our system to a judge panel, CIS students, and CIS professors. To increase performance and make our system more robust, I dockerized our application via AWS Fargate and created a cluster to add redundancy, reducing the potential for single points of failure. 
 
@@ -111,7 +127,10 @@
                             <div class="card">
                                 <div class="card-body cardStyle">
                                     <h3 class = "text-dark  mb-3 cardHead">Our Database</h3>
-                                    <a data-toggle="collapse" href="" data-target="#erd"   class="addSign">+</a>
+                                    <a data-toggle="collapse" href="#erd" aria-expanded="false" class="addSign">
+                                        <i class="fa fa-plus pull-right"></i>
+                                        <i class="fa fa-minus pull-right"></i>
+                                    </a>
                                     <div class="collapse fade" id="erd">
                                         <p style="color: #828282;">We coded our relational database with Microsoft SQL Server and developed our database to match our client's needs while also maintaining third normal form and removing any redundancies. From meetings with our client's, we realized that both types of services were very similar which allowed us to integrate generalization into our Entity Relationship Diagram.
 
@@ -122,29 +141,32 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            
+                </div>    
             </div>
             <div class="card" style=" border: 2px solid white; margin-bottom: 3px;">
                 <div class="card-body" style="background-color: #f5f5f5">
                     <h2 class="heading">SQL Database Project</h2>
-                    <a data-toggle="collapse" href="" data-target="#c2" class="addSign"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                        </svg></a>
-              
+                    <a data-toggle="collapse" href="#c2" aria-expanded="false" class="chevronSign">
+                            <i class="fa fa-chevron-down"></i>
+                            <i class="fa fa-chevron-up"></i>
+                        </a>              
                     <div id="c2" class = "row collapse fade py-4">
-                        <div class = "col-lg-5" style="height: 100%;">
-                            <img src = "Photos/sql.png" class = "images" style="margin-bottom: 5%;" alt = "SQL Database">
-                            <a href="Files/Final%20Report-2.pdf" target="_blank" class="btn btn-outline-info view">View Project</a>
+                        <div class = "col-lg-5">
+     
+                                <img src = "Photos/oracleSQL.png" class = "images shadow-lg" alt = "SQL Database">
+                                <a href="Files/Final%20Report-2.pdf" target="_blank" class="btn btn-outline-info view shadow">View Project</a>
+                        
                         </div>
-                        <div class = "col-lg-7" style="height: 100%;">
-                            <div class="card" style="margin-top: 7%;">
+                        <div class = "col-lg-7">
+                            <div class="card" style="margin-top: 1%;">
                                 <div class="card-body cardStyle">
                                     <h3 class = "text-dark  mb-3 cardHead">The Project</h3>
-                                    <a data-toggle="collapse" href="" data-target="#about"  class="addSign">+</a>
+                                    <a data-toggle="collapse" href="#about" aria-expanded="false" class="addSign">
+                                        <i class="fa fa-plus pull-right"></i>
+                                        <i class="fa fa-minus pull-right"></i>
+                                    </a>
                                     <div class="collapse fade" id="about">
                                         <p style="color: #828282;">For this project, we developed a relational database to replicate a company's data structure with real data. We utilized Oracle’s SQL Developer Environment to create, manipulate, and query data from the database.
- 
                                         </p>
                                     </div> 
                                 </div>
@@ -152,7 +174,10 @@
                               <div class="card">
                             <div class="card-body cardStyle">
                                 <h3 class = "text-dark  mb-3 cardHead">Our Database</h3>
-                                <a data-toggle="collapse" href="" data-target="#ourDB"   class="addSign">+</a>
+                                <a data-toggle="collapse" href="#ourDB" aria-expanded="false" class="addSign">
+                                        <i class="fa fa-plus pull-right"></i>
+                                        <i class="fa fa-minus pull-right"></i>
+                                    </a>
                                 <div class="collapse fade" id="ourDB">
                                      <p style="color: #828282;">We created an conceptual ERD model to design our database while also developing SQL queries to create and manipulate the tables to provide our client with meaningful data to help them make better informed business decsions.
                                     </p>
@@ -164,21 +189,26 @@
                  </div>
             </div>    
             <div class="card" style=" border: 2px solid white; margin-bottom: 3px;">
-                <div class="card-body" style="background-color: #F2F2F2">
-                    <h2 class="heading">Amazon Web Services DynamoDB Project</h2>
-                    <a data-toggle="collapse" href="" data-target="#c3" class="addSign"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                        </svg></a>
+                <div class="card-body" style="background-color: #F5F5F5;">
+                    <h2 class="heading">AWS DynamoDB Project</h2>
+                    <a data-toggle="collapse" href="#c3" aria-expanded="false" class="chevronSign">
+                            <i class="fa fa-chevron-down"></i>
+                            <i class="fa fa-chevron-up"></i>
+                        </a>                  
                     <div id="c3" class = "row collapse fade py-4">
-                        <div  class= "col-lg-5" style="height: 100%;">
-                            <img src="Photos/awsDynamoDB.png" class = "images" style="margin-bottom: 5%;" alt = "Business plan logo">
-                            <a href="https://github.com/mikedawicki09/AmazonDynamoDB" target="_blank" class="btn btn-outline-info view">Source Code</a>
+                        <div  class= "col-lg-5">
+                            <img src="Photos/awsDynamoDB.png" class = "images shadow-lg" style=" height: 15em;" alt = "AWS DynamoDB">
+                            <a href="https://github.com/mikedawicki09/AmazonDynamoDB" target="_blank" class="btn btn-outline-info view shadow">Source Code</a>
+                         
                         </div>
                     <div class = "col-lg-7" style="height: 100%;">
-                        <div class="card" style="margin-top: 7%;">
+                        <div class="card" style="margin-top: 1%;">
                             <div class="card-body cardStyle">
                                 <h3 class = "text-dark  mb-3 cardHead">The Project</h3>
-                                <a data-toggle="collapse" href="" data-target="#readAbout" class="addSign">+</a>
+                                <a data-toggle="collapse" href="#readAbout" aria-expanded="false" class="addSign">
+                                        <i class="fa fa-plus pull-right"></i>
+                                        <i class="fa fa-minus pull-right"></i>
+                                    </a>
                                 <div class="collapse fade" id="readAbout">
                                     <p style="color: #828282;">This project focused on building a database with Amazon Web Services's non-relational database known as DynamoDB. The project involved manipulating the database using Python commands. From this project, I gained relevant experience using AWS services including Identity and Access Management (IAM) and DynamoDB.
                                     </p>
@@ -188,7 +218,10 @@
                          <div class="card">
                             <div class="card-body cardStyle">
                                 <h3 class = "text-dark  mb-3 cardHead">My Database</h3>
-                                <a data-toggle="collapse" href="" data-target="#myDB"  class="addSign">+</a>
+                                <a data-toggle="collapse" href="#myDB" aria-expanded="false" class="addSign">
+                                        <i class="fa fa-plus pull-right"></i>
+                                        <i class="fa fa-minus pull-right"></i>
+                                    </a>
                                 <div class="collapse fade" id="myDB">
                                      <p style="color: #828282;">For this project, I coded my entire database using Python IDLE. In this assignment, I wrote commands to create tables as well as wrote commands to insert, update and delete data as needed. I also wrote commands to query specific infromation from the database. 
                                 </div>
@@ -201,29 +234,150 @@
     </div>
 </div>
 </section>
-<!--Projects End-->
+<!--Projects End-->   
     
 <!--Skills Section-->
 <section id = "skill">
     <div class = "padding">
         <h2 class = "text-center">S<u class="underline">kill</u>s</h2>
         <div class = "container shadow-lg" >
-            <ul class = "horizontal-list list text-center" style="width: 80%; margin-left: 8%;">
-                <li class="shadow" >C#</li>
-                <li class="shadow">Java</li>
-                <li class="shadow">Python</li>
-                <li class="shadow">SQL</li>
-                <li class="shadow">HTML</li>
-                <li class="shadow">CSS</li>
-                <li class="shadow">Oracle</li>
-                <li class="shadow">Bootstrap</li>
-                <li class="shadow">AWS</li>
-                <li class="shadow">ASP.NET</li>
-            </ul>
+            <table style="width: 100%; margin-left: 5%;">
+                <tr class="row">
+                    <td class="col-4">
+                        <h3 style="display: inline-block;">Languages</h3>
+                        <a data-toggle="collapse" href="#languages" aria-expanded="false" class="skills">
+                            <i class="fa fa-chevron-down"></i>
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <div id="languages" class="collapse fade">
+                            <ul>
+                                <li>Java</li>
+                                <li>Python</li>
+                                <li>C#</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>SQL</li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td class="col-4">
+                        <h3 style="display: inline-block;">Tools</h3>
+                         <a data-toggle="collapse" href="#tools" aria-expanded="false" class="skills">
+                            <i class="fa fa-chevron-down"></i>
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <div id="tools" class="collapse fade">
+                            <ul>
+                                <li>Microsoft SQL Server</li>
+                                <li>Microsoft Visual Studio</li>
+                                <li>PowerBI</li>
+                                <li>NetBeans</li>
+                                <li>Oracle</li>
+                                <li>Amazon Web Services</li>
+                            </ul>     
+                        </div>
+                    </td>
+                    <td class="col-4">
+                        <h3 style="display: inline-block;">Frameworks</h3>
+                         <a data-toggle="collapse" href="#frameworks" aria-expanded="false" class="skills">
+                            <i class="fa fa-chevron-down"></i>
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <div id="frameworks" class="collapse fade">
+                            <ul>
+                                <li>Bootstrap</li>
+                                <li>ASP.NET</li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
 </section>
 <!--Skills end-->
+    
+<!--Campus Involvement-->
+<section id="campus" class="projects shadow-lg">
+    <div class="padding">
+        <h2 class = "text-center">Ca<u class="underline">mpus Involvem</u>ent</h2>
+        <div class="container shadow my-5 blueBack">
+        <table style="width: 100%;">
+            <tr class="row">
+                <td class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body difCardStyle">
+                            <h3 class = "text-dark  mb-3 cardHead">Student Government Association</h3>
+                                <a data-toggle="collapse" href="#sga" aria-expanded="false" class="addSign">
+                                        <i class="fa fa-plus pull-right"></i>
+                                        <i class="fa fa-minus pull-right"></i>
+                                    </a>
+                                <div class="collapse fade" id="sga">
+                                    <p style="color: #828282;">
+                                        A College of Business Senator advocating for the needs of students across campus. I was a member of the finance committee that distributes over $130,000 to student run organizations throughout James Madison University.
+                                    </p>
+                                </div>
+                        </div>
+                    </div>
+                </td>
+                <td class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body difCardStyle">
+                            <h3 class = "text-dark  mb-3 cardHead">Student Defenders</h3>
+                                <a data-toggle="collapse" href="#sd" aria-expanded="false" class="addSign">
+                                        <i class="fa fa-plus pull-right"></i>
+                                        <i class="fa fa-minus pull-right"></i>
+                                    </a>
+                                <div class="collapse fade" id="sd">
+                                    <p style="color: #828282;">
+                                        Student Defenders provides guidance and counseling to students enduring the university judicial process. Our organization was founded to support due process, free speech and student's rights. As the communications chair, I maintained all social media platforms to spread awareness about what are organization does and how we can help JMU students.
+                                    </p>
+                                </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr class="row">
+                <td class="col-lg-6" >
+                    <div class="card">
+                        <div class="card-body difCardStyle">
+                             <h3 class = "text-dark  mb-3 cardHead">Phi Alpha Delta</h3>
+                                <a data-toggle="collapse" href="#pad" aria-expanded="false" class="addSign">
+                                    <i class="fa fa-plus pull-right"></i>
+                                    <i class="fa fa-minus pull-right"></i>
+                                </a>
+                                <div class="collapse fade" id="pad">
+                                    <p style="color: #828282;">
+                                        Being involved in Phi Alpha Delta, a professional Pre-Law Fraternity, has further enhanced my professional skills while participating in a group-oriented environment. I was a Member of the Philanthropy Committee that develops and implements fundraising plans and strategies for ALS.
+
+                                    </p>
+                                </div>
+                        </div>
+                    </div>
+                </td>
+                <td class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body difCardStyle">
+                            <h3 class = "text-dark  mb-3 cardHead">Association of Information Systems</h3>
+                                <a data-toggle="collapse" href="#ais" aria-expanded="false" class="addSign">
+                                        <i class="fa fa-plus pull-right"></i>
+                                        <i class="fa fa-minus pull-right"></i>
+                                    </a>
+                                <div class="collapse fade" id="ais">
+                                    <p style="color: #828282;">
+                                        Association of Information Systems provides professional opportunities in which we met and discussed with recruiters currently in the information systems industry. AIS provided education programs for advancing technology and business skills, leadership development opportunities, networking and peer mentoring.
+
+                                    </p>
+                                </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </div>
+</section>    
+<!--Campus Involvement End-->
 
 <!--Footer Section-->
 <section id="contacted" class="sticky-bottom">
@@ -233,24 +387,24 @@
                 <span  class = "copyright styling">Copyright &copy; 2021 Mike Dawicki</span>
             </div>
             <div class = "col-md-6 mb-md-0 mb-3">
-                <a class="btn btn-outline-info drop" href="#home" style="float: none;"> &#x25B2;</a>       
+                <a  class="btn btn-outline-info drop shadow" onclick="test()" style="float: none;"> &#x25B2;</a>  
             </div>
             <div class = "col-md-3 mb-md-0 mb-3 styling">
                 <div class="table-responsive">
                 <table id="contactMe" class="table">
                     <tr>
                         <td>
-                            <h2 style=" max-width: 120%;">Contact me at</h2>
+                            <h2>Contact me at</h2>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p style="max-width: 77%;">Phone: (267) 566-7674</p>   
+                            <p>Phone: (267) 566-7674</p>   
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p style="max-width: 95%;">Email: mikedawicki99@gmail.com</p>
+                            <p>Email: mikedawicki99@gmail.com</p>
                         </td>
                     </tr>
                     <tr>
@@ -261,15 +415,13 @@
                         </td>
                     </tr>
                 </table>
+                    </div>
                 </div>
             </div>      
         </div>  
-    </div>
 </section>
 <!--Footer End--> 
     
-<!--jQuery-->
-<!--Footer End--> 
     
 <!--jQuery-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
