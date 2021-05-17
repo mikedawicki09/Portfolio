@@ -8,6 +8,7 @@ html, body {
     font-family: 'Optima';
 }
 
+
 /*STYLING FOR NAVIGATION*/
 .navbar {
     background-color:#557A95;
@@ -15,13 +16,7 @@ html, body {
     font-size: 1.2em;
     color: white;
 }
-.view {
-    color: #557A95;
-    border-color: #557A95;
-    background-color: white;
-    margin-left: 30%;
-    width: 40%;
-}
+
 /* STYLING FOR HEADER AND BACKGROUND IMAGE*/
 #home {
     background: url(Photos/background.jpg) no-repeat center center fixed;
@@ -85,6 +80,7 @@ html, body {
 .container {
     border: 3px solid #557A95;
     padding: 50px;
+    border-radius: 10px;
 }
 
 /*STYLING FOR TEXT IN ABOUT ME*/
@@ -106,7 +102,6 @@ html, body {
 .text-center {
     margin: 0px 0px 20px;
     }
-}
 
 
 .btn-outline-info {
@@ -121,17 +116,6 @@ html, body {
     border-color: #557A95;
 }
 
-.images {
-    width: 100%;
-    height: 100%; 
-      border:2px solid #fff;
-      -moz-box-shadow: 10px 10px 5px #ccc;
-      -webkit-box-shadow: 10px 10px 5px #ccc;
-      box-shadow: 10px 10px 5px #ccc;
-      -moz-border-radius:25px;
-      -webkit-border-radius:25px;
-      border-radius:25px;
-}
 .text {
   background-color: #557A95;
   color: white;
@@ -238,24 +222,25 @@ html, body {
 
 #contactMe td {
     border:0px;
+    text-align: left;
     color: white;
     padding: 0px;
     
 }
-
+/*styling for plus and minus sign*/
 .addSign {
     display: inline-block;
     float: right;
-    font-size: 30px;
+    font-size: 20px;
     color: gray;
     outline:none;
     cursor:pointer; 
-    
+    margin-top: 2%;
 }
 .addSign:hover {
-    text-decoration: none;
-    color:  #557A95;
+    color: #557A95;
 }
+
 .cardStyle {
     border-left: 2px solid #557A95; 
     padding-top: 1%; 
@@ -267,9 +252,78 @@ html, body {
     margin-top: 2%;  
 }
 
-
 .heading {
     display: inline-block; 
     font-size: 22px; 
     margin-top: 1%;
+}
+.blueBack {
+    background-color: #557A95; 
+    border: 2px solid white; 
+}
+.difCardStyle {
+    padding-top: 1%; 
+    padding-bottom: 1%;
+}
+
+/*Images in projects section*/
+.view {
+    color: #557A95;
+    border-color: #557A95;
+    background-color: white;
+    margin-left: 30%;
+    width: 40%;
+    margin-bottom: 6%;
+}
+.images {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 12em;
+    border-radius: 4px;
+    margin-top: 2%;
+    margin-bottom: 10%;
+}
+.imageCol {
+    margin-top:2%; 
+    height: 100%;
+}
+
+/*changes plus sign to minus sign*/
+a[aria-expanded=true] .fa-plus {
+   display: none;
+}
+a[aria-expanded=false] .fa-minus {
+   display: none;
+}
+/*changes chevron down to chevron up*/
+a[aria-expanded=true] .fa-chevron-down {
+    display: none;
+}
+a[aria-expanded=false] .fa-chevron-up {
+    display: none;
+}
+/*styling for chevron up/down sign*/
+.chevronSign {
+    display: inline-block;
+    float: right;
+    font-size: 30px;
+    color: gray;
+    outline:none;
+    cursor:pointer; 
+    margin-top: 1%;
+}
+.chevronSign:hover {
+    color: #557A95;
+}
+/*styling for languages*/
+.skills {
+    display: inline-block;
+    font-size: 15px;
+    color: gray;
+    outline:none;
+    cursor:pointer; 
+}
+.skills:hover {
+    color: #557A95;
 }
