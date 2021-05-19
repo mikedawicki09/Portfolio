@@ -2,6 +2,11 @@
 alert, confirm, console, prompt
 */
  /*jslint devel: true */
-function test() {
-    alert("Hello There, seems like it worked!");
+function navbarToggle() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
 }
