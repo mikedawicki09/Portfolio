@@ -8,15 +8,6 @@ html, body {
     font-family: 'Optima';
 }
 
-
-/*STYLING FOR NAVIGATION*/
-.navbar {
-    background-color:#557A95;
-    padding: 1% 0;
-    font-size: 1.2em;
-    color: white;
-}
-
 /* STYLING FOR HEADER AND BACKGROUND IMAGE*/
 #home {
     background: url(Photos/background.jpg) no-repeat center center fixed;
@@ -369,7 +360,7 @@ a[aria-expanded=false] .fa-chevron-up {
     color: white;
     cursor: pointer;
     height: 3em;
-    width:6em;
+    width:8em;
     font-size: 22px;
     padding-top: .6em;
     margin-right: 10%;
