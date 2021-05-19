@@ -9,12 +9,8 @@ html, body {
 }
 
 
-/*STYLING FOR NAVIGATION*/
-.navbar {
-    background-color:#557A95;
-    padding: 1% 0;
-    font-size: 1.2em;
-    color: white;
+.my-nav-list {
+    margin: 1%;
 }
 
 /* STYLING FOR HEADER AND BACKGROUND IMAGE*/
