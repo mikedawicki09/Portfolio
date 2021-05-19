@@ -347,7 +347,9 @@ a[aria-expanded=false] .fa-chevron-up {
     background-color: #557A95;
     height: 12%;
 }
-
+#navAbout {
+    width: 120%;
+}
 .my-nav {
     background-color: #557A95;
     padding: 1%;
