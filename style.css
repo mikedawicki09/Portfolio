@@ -8,6 +8,15 @@ html, body {
     font-family: 'Optima';
 }
 
+
+/*STYLING FOR NAVIGATION*/
+.navbar {
+    background-color:#557A95;
+    padding: 1% 0;
+    font-size: 1.2em;
+    color: white;
+}
+
 /* STYLING FOR HEADER AND BACKGROUND IMAGE*/
 #home {
     background: url(Photos/background.jpg) no-repeat center center fixed;
@@ -347,9 +356,7 @@ a[aria-expanded=false] .fa-chevron-up {
     background-color: #557A95;
     height: 12%;
 }
-#navAbout {
-    width: 120%;
-}
+
 .my-nav {
     background-color: #557A95;
     padding: 1%;
@@ -404,7 +411,6 @@ a[aria-expanded=false] .fa-chevron-up {
 .my-nav-list li:last-child:before {
     display: none;
 }
-
 #navAbout:after {
     margin-left: 0em;
 }
