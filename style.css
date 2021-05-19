@@ -318,12 +318,176 @@ a[aria-expanded=false] .fa-chevron-up {
 }
 /*styling for languages*/
 .skills {
-    display: inline-block;
+    margin-top: .6em;
     font-size: 15px;
     color: gray;
     outline:none;
-    cursor:pointer; 
+    cursor:pointer;
 }
 .skills:hover {
     color: #557A95;
 }
+/*styling for skill list items*/
+.skillList{
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    width: 45%;
+}
+
+
+/*style for toolsList items */
+.toolsList {
+    width: 68%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+} 
+/*style for frameworks list items*/
+.frameWorkList {
+    width: 51%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+/*my new nav bar*/
+.topnav {
+    margin: 0px;
+    background-color: #557A95;
+    height: 12%;
+}
+
+.my-nav {
+    background-color: #557A95;
+    padding: 1%;
+}
+.my-nav-list a:hover {
+    color: lightgray;
+    font-size: 23px;
+}
+.my-nav-list a {
+    color: white;
+    cursor: pointer;
+    height: 3em;
+    width:6em;
+    font-size: 22px;
+    padding-top: .6em;
+    margin-right: 10%;
+    text-decoration: none;
+}
+
+.my-nav-list a:after {
+    transition: 650ms;
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: lightgray;
+    margin-left: 1em;
+}
+.my-nav-list a:hover:after {
+    width: 90%;
+    font-weight: bold;
+    padding-top: 0px;
+}
+.my-nav-list li {
+    display: inline-block;
+    margin-right: 2%;
+    margin-top: 1%;
+}
+.my-nav-list li:before {
+ display:inline-block;
+    width:6px;
+    height:6px;
+    content:" ";
+    border:2px solid white;
+    border-radius:4px;
+    margin-right: 1.2em;
+    margin-bottom: .3em;
+}
+.my-nav-list li:first-child:before{
+  display:none;
+}
+.my-nav-list li:last-child:before {
+    display: none;
+}
+
+#navAbout:after {
+    margin-left: 0em;
+}
+#navAbout:hover:after {
+    width: 93%;
+}
+#navCampus:after {
+    margin-left: 1.4em;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.topnav {
+    overflow: hidden;
+}
+
+
+@media screen and (max-width: 800px) {
+  .topnav li:not(:last-child) {
+      display: none;
+    }
+    .my-nav-list {
+        float: right;
+    }
+  .topnav li .icon {
+    display: block;
+      margin-top: .9em;
+      border: 1px solid white;
+      width: 2em;
+      height: .5em;
+      border-radius: 8%;
+      padding-bottom: 1.5em;
+      padding-top: 0;
+      font-size: 22px;
+  }
+    .topnav li .icon:hover:after {
+        width: 0%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+  .topnav.responsive {
+      position: relative;
+      height: 25em;
+    }
+    
+    .topnav.responsive .my-nav-list {
+        width: 19em;
+        float: left;
+        padding: 1em;
+        margin-right: 2em;
+        display: block;
+        height: 12em;
+    }
+    .topnav.responsive .my-nav-list li:first-child:before {
+        display: inline-block;
+    }
+
+    .topnav.responsive .my-nav-list a {
+        margin-right: 10em;
+        
+    }
+  .topnav.responsive li .icon {
+    position: fixed;
+      margin-top: .9em;
+    right: -200px;
+    padding-left: .5em;
+      font-size: 22px;
+    top: 0;
+  }
+  .topnav.responsive li {
+    float: left;
+    display: block;
+    text-align: left;
+  }
+}
+
