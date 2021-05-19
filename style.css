@@ -354,13 +354,13 @@ a[aria-expanded=false] .fa-chevron-up {
 }
 .my-nav-list a:hover {
     color: lightgray;
-    font-size: 23px;
+    font-size: 22px;
 }
 .my-nav-list a {
     color: white;
     cursor: pointer;
     height: 3em;
-    width:8em;
+    width:6em;
     font-size: 22px;
     padding-top: .6em;
     margin-right: 10%;
