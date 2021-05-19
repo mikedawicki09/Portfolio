@@ -17,33 +17,36 @@
 <body>
     
 <!--Navigation-->
-<nav class = "navbar navbar-expand-md navbar-dark">
-<div class = "container-fluid">
-    <a class = "navbar-brand" >Mike Dawicki</a>
-    <button class = "navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-        <span class = "navbar-toggler-icon"></span>
-    </button>
-    <div class= "collapse navbar-collapse" id = "navbarResponsive">
-        <ul class ="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class = "nav-link" href = "#aboutMe">About Me</a>
+<nav class="topnav" id="myTopnav">
+    <div class="container-fluid my-nav">
+        <div>
+             <center>
+                 <ul class="my-nav-list">
+            <li>
+                <a id="navAbout" href = "#aboutMe">About Me</a>
             </li>
-            <li class ="nav-item">
-                <a class = "nav-link" href = "#project">Projects</a>
+            <li>
+                <a href = "#project">Projects</a>
             </li>
-            <li class ="nav-item">
-                <a class = "nav-link" href = "#skill">Skills</a>
+            <li>
+                <a href = "#skill">Skills</a>
             </li>
-            <li class ="nav-item">
-                <a class = "nav-link" href = "#campus">Campus Involvement</a>
+            <li>
+                <a id="navCampus" href = "#campus">Campus Involvement</a>
             </li>
-            <li class = "nav-item">
-                <a class = "nav-link" href = "#contacted">Contact</a>
-            </li>       
-        </ul>
+            <li>
+                <a href = "#contacted">Contact</a>
+            </li> 
+            <li>
+                <a href="javascript:void(0);" class="icon" onclick="navbarToggle()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </li>
+                 </ul>
+            </center>
+        </div>
     </div>
-</div>
-</nav>
+    </nav>
 <!--Naviagtion End-->
     
 <!--Head Image-->
