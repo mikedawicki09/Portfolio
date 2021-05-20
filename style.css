@@ -364,7 +364,8 @@ a[aria-expanded=false] .fa-chevron-up {
 .my-nav-list {
     -webkit-margin-bottom: 1em;
     -moz-margin-bottom: 1em;
-
+    -webkit-box-pack: center; /* justify-content */
+-webkit-box-align: center;
 }
 .my-nav-list a:hover {
     color: lightgray;
