@@ -519,3 +519,11 @@ a[aria-expanded=false] .fa-chevron-up {
 .contentWidth {
     width: 93.5%;
 }
+.listTable {
+    width: 100%;
+    margin-left: 5%;
+    -webkit-margin-bottom: 1em;
+    -moz-margin-bottom: 1em; 
+
+    
+}
