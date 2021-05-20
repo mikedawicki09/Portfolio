@@ -362,7 +362,9 @@ a[aria-expanded=false] .fa-chevron-up {
     padding: 1%;
 }
 .my-nav-list {
-    margin-bottom: 1em;
+    -webkit-margin-bottom: 1em;
+    -moz-margin-bottom: 1em;
+
 }
 .my-nav-list a:hover {
     color: lightgray;
