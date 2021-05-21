@@ -362,10 +362,7 @@ a[aria-expanded=false] .fa-chevron-up {
     padding: 1%;
 }
 .my-nav-list {
-    -webkit-margin-bottom: 1em;
-    -moz-margin-bottom: 1em;
-    -webkit-box-pack: center; /* justify-content */
--webkit-box-align: center;
+    text-align: center;
 }
 .my-nav-list a:hover {
     color: lightgray;
@@ -497,33 +494,39 @@ a[aria-expanded=false] .fa-chevron-up {
   }
 }
 
-.tabs {
-    display: none;
-    margin-top: 0%;
-}
-.tabLink {
-    border: none; 
-    outline: none;
-    cursor: pointer;
-    margin: 0px;
+.fullDiv {
+    margin-left: 4.5%;
+    border-radius: 5%;
+}   
+
+.fullDiv button {
     float: left;
-    width: 30%;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-    
- 
 }
-#languages {
+.tabButton {
+    border: 0px;
+    height: 4em;
+    width: 30%;
+    background-color: #ededed;
+}
+.tabButton:hover {
     background-color: lightgray;
 }
-.contentWidth {
-    width: 93.5%;
+.tabButton:focus {
+    outline:none;
+    background-color: white;
+    border-top: 2px solid #557A95;
+    transition-property: all;
 }
-.listTable {
-    width: 100%;
-    margin-left: 5%;
-    -webkit-margin-bottom: 1em;
-    -moz-margin-bottom: 1em; 
-
-    
+.tabButton:focus:first-child {
+    border-left: 2px solid lightgray;
+}
+.tabButton:focus:last-of-type{
+    border-right: 2px solid lightgray;
+}
+.tabContent {
+    display: none;
+    background-color: white;
+    border: 2px solid lightgray;
+    margin-top: 1%;
+    width: 90%;
 }
