@@ -19,7 +19,6 @@
 <!--Navigation-->
 <nav class="topnav" id="myTopnav">
     <div class="container-fluid my-nav">
-             <center>
                  <ul class="my-nav-list">
             <li>
                 <a id="navAbout" href = "#aboutMe">About Me</a>
@@ -42,8 +41,7 @@
                 </a>
             </li>
                  </ul>
-            </center>
-    </div>
+        </div>
     </nav>
 <!--Naviagtion End-->
     
@@ -89,7 +87,6 @@
                             <i class="fa fa-chevron-up"></i>
                         </a>
 
-                   
                     <div id="c1" class = "row collapse fade py-4">
                         <div class = "col-lg-5 imageCol">
                                 <img src = "Photos/greenValley.png"  class = "images shadow-lg" alt = "CIS Senior Capstone">
@@ -241,60 +238,42 @@
 <section id = "skill">
     <div class = "padding">
         <h2 class = "text-center">S<u class="underline">kill</u>s</h2>
-        <div class = "container shadow-lg" >
-            <table style="width: 100%; margin-left: 5%;">
-                <tr class="row">
-                    <td class="col-4">
-                        <h3 style="display: inline-block;">Languages</h3>
-                        <a data-toggle="collapse" href="#languages" aria-expanded="false" class="skills">
-                            <i class="fa fa-chevron-down"></i>
-                            <i class="fa fa-chevron-up"></i>
-                        </a>
-                        <div id="languages" class="collapse fade">
-                            <ul>
-                                <li>Java</li>
-                                <li>Python</li>
-                                <li>C#</li>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>SQL</li>
-                            </ul>
-                        </div>
-                    </td>
-                    <td class="col-4">
-                        <h3 style="display: inline-block;">Tools</h3>
-                         <a data-toggle="collapse" href="#tools" aria-expanded="false" class="skills">
-                            <i class="fa fa-chevron-down"></i>
-                            <i class="fa fa-chevron-up"></i>
-                        </a>
-                        <div id="tools" class="collapse fade">
-                            <ul>
-                                <li>Microsoft SQL Server</li>
-                                <li>Microsoft Visual Studio</li>
-                                <li>PowerBI</li>
-                                <li>NetBeans</li>
-                                <li>Oracle</li>
-                                <li>Amazon Web Services</li>
-                            </ul>     
-                        </div>
-                    </td>
-                    <td class="col-4">
-                        <h3 style="display: inline-block;">Frameworks</h3>
-                         <a data-toggle="collapse" href="#frameworks" aria-expanded="false" class="skills">
-                            <i class="fa fa-chevron-down"></i>
-                            <i class="fa fa-chevron-up"></i>
-                        </a>
-                        <div id="frameworks" class="collapse fade">
-                            <ul>
+        <div class = "container shadow-lg">
+            <div class="row">
+                <div class="col-lg-12 fullDiv">
+                    <button class="tabButton" onclick="openTab('languages',this)">Languages</button>
+                    <button class="tabButton" onclick="openTab('tools', this)">Software/Tools</button>
+                    <button class="tabButton" onclick="openTab('frameworks',this)">Frameworks</button>
+                    <div id="languages" class="tabContent">
+                                    <ul>
+                                        <li>Java</li>
+                                        <li>Python</li>
+                                        <li>C#</li>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>SQL</li>
+                                    </ul>
+                                </div>
+                                <div id="tools" class="tabContent">
+                                    <ul>
+                                        <li>Microsoft SQL Server</li>
+                                        <li>Microsoft Visual Studio</li>
+                                        <li>PowerBI</li>
+                                        <li>NetBeans</li>
+                                        <li>Oracle</li>
+                                        <li>Amazon Web Services</li>
+                                    </ul>
+                                </div> 
+                                <div  id="frameworks" class="tabContent">
+                                    <ul>
                                 <li>Bootstrap</li>
                                 <li>ASP.NET</li>
                             </ul>
+                                </div>
+                            </div>
                         </div>
-                    </td>
-                </tr>
-            </table>
+                    </div>
         </div>
-    </div>
 </section>
 <!--Skills end-->
     
@@ -388,7 +367,7 @@
                 <span  class = "copyright styling">Copyright &copy; 2021 Mike Dawicki</span>
             </div>
             <div class = "col-md-6 mb-md-0 mb-3">
-                <a  class="btn btn-outline-info drop shadow" onclick="test()" style="float: none;"> &#x25B2;</a>  
+                <a href="#home" class="btn btn-outline-info drop shadow" onclick="scrollToTop();return false" style="float: none; "> &#x25B2;</a>  
             </div>
             <div class = "col-md-3 mb-md-0 mb-3 styling">
                 <div class="table-responsive">
