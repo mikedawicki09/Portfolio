@@ -1,3 +1,5 @@
+
+
 /* WEBSITE RESUME CSS STYLING SHEET*/
 
 /*STYLING FOR PAGE SIZING*/
@@ -11,7 +13,7 @@ html, body {
 
 /*STYLING FOR NAVIGATION*/
 .navbar {
-    background-color:#557A95;
+    background-color: #557A95;
     padding: 1% 0;
     font-size: 1.2em;
     color: white;
@@ -37,7 +39,7 @@ html, body {
     font-size: 500%;
     font-weight: 900px;
     color: WHITE;
-}
+    }
 /*STYLING FOR SECOND TEXT IN HEADER*/
 .landing-text h3 {
     color: WHITE;
@@ -51,19 +53,17 @@ html, body {
     color: WHITE;
     width: 120px;
     text-decoration: none;
-    transition-duration: 0.4s;   
-    
+    transition-duration: 0.4s;
 }
 /*STYLING ALLOWS FOR HOVERING OVER BUTTON*/
 .button:hover {
     background-color: #FFF;
     color: #557A95;
     text-decoration: none;
-    
 }
 
 /*STYLING FOR PICTURE IN HEADER*/
-.picture { 
+.picture {
     height: 350px;
     width 230px;
     display: table-cell;
@@ -74,7 +74,7 @@ html, body {
 }
 /*STYLING TO ADD PADDING BETWEEN HEADER AND ABOUT ME*/
 .padding {
-    padding: 80px 0;   
+    padding: 80px 0;
 }
 /*STYLING FOR ABOUT ME*/
 .container {
@@ -86,22 +86,22 @@ html, body {
 /*STYLING FOR TEXT IN ABOUT ME*/
 .lead {
     color: #828282;
-    padding:10px;
+    padding: 10px;
     text-align: left;
 }
 /*STYLING FOR UNDERLINE*/
 .underline {
     border-bottom: 1px solid #557A95;
     text-decoration: none;
-   
 }
 /*STYLING FOR THE BACKGROUND OF THE PROJECT SECTION*/
 .projects {
     background-color: #ededed;
 }
+
 .text-center {
     margin: 0px 0px 20px;
-    }
+}
 
 
 .btn-outline-info {
@@ -117,15 +117,15 @@ html, body {
 }
 
 .text {
-  background-color: #557A95;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
+    background-color: #557A95;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
 }
 /*STYLING FOR LIST ITEMS*/
 .horizontal-list li {
     border: 2px solid #ededed;
-    background-color:#ededed;
+    background-color: #ededed;
     margin: 25px;
     height: 60px;
     padding: 18px;
@@ -143,42 +143,41 @@ html, body {
 .topButton {
     height: 50px;
     width: 50px;
-    border: 2px solid #557A9;
+    border: 2px solid #557A95;
     border-radius: 50%;
     display: inline-block;
     color: #557A95;
 }
-/*STYLING FOR HOVERING OVER TOP BUTTON*/
-.topButton:hover {
-    color: gray;
-}
+    /*STYLING FOR HOVERING OVER TOP BUTTON*/
+    .topButton:hover {
+        color: gray;
+    }
 /*STYLING FOR CONTACT ICONS*/
 .icon {
     color: white;
     display: inline-block;
     margin-right: 3%;
-    
 }
-/*STYLING FOR HOVERING OVER CONTACT ICONS*/
-.icon:hover {
-    color: gray;
-}
+    /*STYLING FOR HOVERING OVER CONTACT ICONS*/
+    .icon:hover {
+        color: gray;
+    }
+
 .title {
     text-align: center;
     padding-top: 50px;
 }
-.styling {
-    
-    color: white;
-}
+
 .big {
     border: 2px solid darkgray;
     background-color: white;
     margin: 20px;
 }
+
 .pad {
     padding: 10px;
 }
+
 .link {
     display: flex;
     justify-content: center;
@@ -189,10 +188,11 @@ html, body {
 .connect {
     color: white;
 }
-.border  {
+
+.border {
     border: 3px solid white;
-   
 }
+
 .center {
     display: table;
     margin-right: auto;
@@ -200,32 +200,32 @@ html, body {
 }
 
 
-/*Media queries*/
+/*Media queries for home image*/
 @media (max-width: 768px) {
     .landing-text h1 {
         font-size: 300%;
     }
 }
+
 .drop {
     display: inline-block;
     background-color: #557A95;
-    float: right;  
+    float: right;
     color: white;
     border: 1px solid white;
-   
 }
+
 .drop:hover {
-    background-color:white;
-     border: 1px solid white;
+    background-color: white;
+    border: 1px solid white;
     color: #557A95;
 }
 
 #contactMe td {
-    border:0px;
+    border: 0px;
     text-align: left;
     color: white;
     padding: 0px;
-    
 }
 /*styling for plus and minus sign*/
 .addSign {
@@ -233,36 +233,40 @@ html, body {
     float: right;
     font-size: 20px;
     color: gray;
-    outline:none;
-    cursor:pointer; 
+    outline: none;
+    cursor: pointer;
     margin-top: 2%;
 }
+
 .addSign:hover {
     color: #557A95;
 }
 
 .cardStyle {
-    border-left: 2px solid #557A95; 
-    padding-top: 1%; 
+    border-left: 2px solid #557A95;
+    padding-top: 1%;
     padding-bottom: 1%;
 }
+
 .cardHead {
-    display: inline-block; 
-    font-size: 22px; 
-    margin-top: 2%;  
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 2%;
 }
 
 .heading {
-    display: inline-block; 
-    font-size: 22px; 
+    display: inline-block;
+    font-size: 22px;
     margin-top: 1%;
 }
+
 .blueBack {
-    background-color: #557A95; 
-    border: 2px solid white; 
+    background-color: #557A95;
+    border: 2px solid white;
 }
+
 .difCardStyle {
-    padding-top: 1%; 
+    padding-top: 1%;
     padding-bottom: 1%;
 }
 
@@ -275,6 +279,7 @@ html, body {
     width: 40%;
     margin-bottom: 6%;
 }
+
 .images {
     display: table;
     position: relative;
@@ -284,22 +289,25 @@ html, body {
     margin-top: 2%;
     margin-bottom: 10%;
 }
+
 .imageCol {
-    margin-top:2%; 
+    margin-top: 2%;
     height: 100%;
 }
 
 /*changes plus sign to minus sign*/
 a[aria-expanded=true] .fa-plus {
-   display: none;
+    display: none;
 }
+
 a[aria-expanded=false] .fa-minus {
-   display: none;
+    display: none;
 }
 /*changes chevron down to chevron up*/
 a[aria-expanded=true] .fa-chevron-down {
     display: none;
 }
+
 a[aria-expanded=false] .fa-chevron-up {
     display: none;
 }
@@ -309,10 +317,11 @@ a[aria-expanded=false] .fa-chevron-up {
     float: right;
     font-size: 30px;
     color: gray;
-    outline:none;
-    cursor:pointer; 
+    outline: none;
+    cursor: pointer;
     margin-top: 1%;
 }
+
 .chevronSign:hover {
     color: #557A95;
 }
@@ -321,14 +330,15 @@ a[aria-expanded=false] .fa-chevron-up {
     margin-top: .6em;
     font-size: 15px;
     color: gray;
-    outline:none;
-    cursor:pointer;
+    outline: none;
+    cursor: pointer;
 }
+
 .skills:hover {
     color: #557A95;
 }
 /*styling for skill list items*/
-.skillList{
+.skillList {
     list-style-type: none;
     margin: 0;
     padding: 0px;
@@ -342,7 +352,7 @@ a[aria-expanded=false] .fa-chevron-up {
     list-style-type: none;
     margin: 0;
     padding: 0;
-} 
+}
 /*style for frameworks list items*/
 .frameWorkList {
     width: 51%;
@@ -361,18 +371,21 @@ a[aria-expanded=false] .fa-chevron-up {
     background-color: #557A95;
     padding: 1%;
 }
+
 .my-nav-list {
     text-align: center;
 }
+
 .my-nav-list a:hover {
     color: lightgray;
     font-size: 22px;
 }
+
 .my-nav-list a {
     color: white;
     cursor: pointer;
     height: 3em;
-    width:6em;
+    width: 6em;
     font-size: 22px;
     padding-top: .6em;
     margin-right: 10%;
@@ -388,81 +401,92 @@ a[aria-expanded=false] .fa-chevron-up {
     background: lightgray;
     margin-left: 1em;
 }
+
 .my-nav-list a:hover:after {
     width: 90%;
     font-weight: bold;
     padding-top: 0px;
 }
+
 .my-nav-list li {
     display: inline-block;
     margin-right: 2%;
     margin-top: 1%;
 }
+
 .my-nav-list li:before {
- display:inline-block;
-    width:6px;
-    height:6px;
-    content:" ";
-    border:2px solid white;
-    border-radius:4px;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    content: " ";
+    border: 2px solid white;
+    border-radius: 4px;
     margin-right: 1.2em;
     margin-bottom: .3em;
 }
-.my-nav-list li:first-child:before{
-  display:none;
+
+.my-nav-list li:first-child:before {
+    display: none;
 }
+
 .my-nav-list li:last-child:before {
     display: none;
 }
+
 #navAbout:after {
     margin-left: 0em;
 }
+
 #navAbout:hover:after {
     width: 93%;
 }
+
 #navCampus:after {
     margin-left: 1.4em;
 }
 
 .topnav .icon {
-  display: none;
+    display: none;
 }
 
 .topnav {
     overflow: hidden;
 }
 
-
+/*media queries for navigation*/
 @media screen and (max-width: 800px) {
-  .topnav li:not(:last-child) {
-      display: none;
+    .topnav li:not(:last-child) {
+        display: none;
     }
+
     .my-nav-list {
         float: right;
     }
-  .topnav li .icon {
-    display: block;
-      margin-top: .9em;
-      border: 1px solid white;
-      width: 2em;
-      height: .5em;
-      border-radius: 8%;
-      padding-bottom: 1.5em;
-      padding-top: 0;
-      margin-right:1em;
-      font-size: 22px;
-  }
+
+    .topnav li .icon {
+        display: block;
+        margin-top: .9em;
+        border: 1px solid white;
+        width: 2em;
+        height: .5em;
+        border-radius: 8%;
+        padding-bottom: 1.5em;
+        padding-top: 0;
+        margin-right: 1em;
+        font-size: 22px;
+    }
+
     .topnav li .icon:hover:after {
         width: 0%;
     }
 }
 
 @media screen and (max-width: 800px) {
-  .topnav.responsive {
-      position: relative;
-      height: 25em;
+    .topnav.responsive {
+        position: relative;
+        height: 25em;
     }
-    
+
     .topnav.responsive .my-nav-list {
         width: 19em;
         float: left;
@@ -471,58 +495,76 @@ a[aria-expanded=false] .fa-chevron-up {
         display: block;
         height: 12em;
     }
+
     .topnav.responsive .my-nav-list li:first-child:before {
         display: inline-block;
     }
 
     .topnav.responsive .my-nav-list a {
         margin-right: 10em;
-        
     }
-  .topnav.responsive li .icon {
-    position: fixed;
-      margin-top: .9em;
-    right: -200px;
-    padding-left: .5em;
-      font-size: 22px;
-    top: 0;
-  }
-  .topnav.responsive li {
-    float: left;
-    display: block;
-    text-align: left;
-  }
+
+    .topnav.responsive li .icon {
+        position: fixed;
+        margin-top: .9em;
+        right: -200px;
+        padding-left: .5em;
+        font-size: 22px;
+        top: 0;
+    }
+
+    .topnav.responsive li {
+        float: left;
+        display: block;
+        text-align: left;
+    }
 }
 
+/*styling for tabs in skill section*/
 .fullDiv {
     margin-left: 4.5%;
     border-radius: 5%;
-}   
+}
 
 .fullDiv button {
     float: left;
 }
+
 .tabButton {
     border: 0px;
     height: 4em;
     width: 30%;
-    background-color: #ededed;
+    background-color: #557A95;
+    border: 2px solid lightgray;
+    color: black;
+    border-collapse: collapse;
+    transition: 600ms;
+    font-size: 120%;
 }
+
 .tabButton:hover {
-    background-color: lightgray;
+    background-color: #9ab3c5 !important;
 }
+
 .tabButton:focus {
-    outline:none;
+    transition: 1200ms;
+    outline: none;
     background-color: white;
-    border-top: 2px solid #557A95;
-    transition-property: all;
+    color: black;
+    border-top: 3px solid #557A95;
+}
+.tabButton:focus:hover {
+    background-color: white !important;
 }
 .tabButton:focus:first-child {
-    border-left: 2px solid lightgray;
+    border-left: 2px solid #557A95;
 }
-.tabButton:focus:last-of-type{
-    border-right: 2px solid lightgray;
+
+
+.tabButton:focus:last-of-type {
+    border-right: 2px solid #557A95;
 }
+
 .tabContent {
     display: none;
     background-color: white;
@@ -530,3 +572,149 @@ a[aria-expanded=false] .fa-chevron-up {
     margin-top: 1%;
     width: 90%;
 }
+
+.skillsList{
+    width:100%;
+    margin-top:7%;
+    margin-right:2%;
+}
+
+.whiteAddSign {
+    outline: none;
+    cursor: pointer;
+    width:50%;
+    color:black;
+}
+.skillCard:hover {
+    background-color: #ededed;
+    color: black;
+}
+
+
+.whiteAddSign:hover {
+    text-decoration:none;
+}
+.skillCard span {
+    margin-top:3%;
+}
+.skillCard {
+    min-width: 50%;
+    transition: 300ms;
+}
+a[aria-expanded=false] .skillCardJava {
+    height:3.5em;
+}
+.theblue {
+    background-color: #557A95;
+}
+
+/*styling for the footer*/
+.styling table {
+   margin-left:25%;
+}
+.styling {
+    color: white;
+}
+.cancel {
+    float: right;
+    padding: 0em;
+    padding-bottom: .2em;
+    padding-left: .6em;
+    padding-right: .6em;
+    border: 1px solid #557A95;
+    border-radius: 10%;
+    color: #557A95;
+    font-size: 20px;
+    margin: 0%;
+    margin-bottom: 1%;
+    transition: 600ms;
+}
+.cancel:hover {
+    background-color: #557A95;
+    color:white;
+    text-decoration:none;
+    cursor:pointer;
+}
+.slowTran {
+    transition: 600ms;
+}
+
+
+.languageLogos {
+    height: 3.4em;
+    width: 2em;
+    margin-left: auto;
+    margin-right: auto;
+}
+a[aria-expanded=true] .languageLogos {
+    height: 3.4em;
+}
+
+#imgHTML {
+    height: 3.4em;
+    width: 4em;
+}
+#imgPython {
+height: 3.4em;
+}
+#imgCSS {
+    height: 3.4em;
+}
+/*media queries for footer*/
+@media screen and (max-width: 800px) {
+    .styling {
+        font-size: 14px;
+    }
+
+    .table h2 {
+        font-size: 19px;
+    }
+
+    .tabButton {
+        font-size: 100%;
+    }
+
+    a[aria-expanded=false] .skillCardJava {
+        height: 3.4em;
+    }
+     .languageLogos {
+        height: 3em;
+    }
+     #imgC {
+        height: 3.4em;
+    }
+    .tabContent p {
+        font-size: 12px;
+    }
+    .lead {
+        font-size:14px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .styling {
+        font-size: 11px;
+    }
+
+    a[aria-expanded=false] .skillCardJava {
+        height: 3.5em;
+    }
+    .languageLogos {
+        height: 3em;
+    }
+    #imgC {
+        height: 3.4em;
+    }
+    .tabContent p {
+        font-size: 10px;
+    }
+    .lead {
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+
+
