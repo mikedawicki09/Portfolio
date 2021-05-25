@@ -711,7 +711,11 @@ height: 3.4em;
         font-size: 15px;
     }
 }
-
+@media screen and (max-width:400px) {
+    .heading {
+        font-size: 14px;
+    }
+}
 
 
 
