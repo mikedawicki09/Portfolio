@@ -713,7 +713,7 @@ height: 3.4em;
 }
 @media screen and (max-width:400px) {
     .heading {
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 
