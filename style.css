@@ -710,12 +710,11 @@ height: 3.4em;
     .lead {
         font-size: 15px;
     }
-}
-@media screen and (max-width: 400px) {
     .heading {
         font-size: 50%;
     }
 }
+
 
 
 
