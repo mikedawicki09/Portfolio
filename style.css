@@ -732,7 +732,7 @@ height: 3.4em;
 }
 
 @media screen and (max-width: 500px) {
-    .tabbutton:hover {
+    .tabButton:hover {
         background-color: white !important;
     }
 }
