@@ -726,6 +726,9 @@ height: 3.4em;
      .addSign {
         font-size: 16px;
     }
+     .tabButton {
+        font-size: 100%;
+    }
 }
 
 
