@@ -284,7 +284,7 @@ html, body {
     display: table;
     position: relative;
     width: 100%;
-    height: 12em;
+    height: 50%;
     border-radius: 4px;
     margin-top: 2%;
     margin-bottom: 10%;
@@ -710,6 +710,7 @@ height: 3.4em;
     .lead {
         font-size: 15px;
     }
+    /*media queries for project section*/
     .heading {
         font-size: 16px;
     }
@@ -717,8 +718,6 @@ height: 3.4em;
         font-size: 16px;
     }
 }
-
-
 
 
 
