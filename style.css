@@ -711,7 +711,7 @@ height: 3.4em;
         font-size: 15px;
     }
 }
-@media screen and (max-width:400px) {
+@media screen and (max-width:350px) {
     .heading {
         font-size: 10px;
     }
