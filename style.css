@@ -720,6 +720,9 @@ height: 3.4em;
      .view {
         margin-left: 28%;
     }
+     .cardHead {
+        font-size: 16px;
+    }
 }
 
 
