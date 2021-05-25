@@ -711,7 +711,10 @@ height: 3.4em;
         font-size: 15px;
     }
     .heading {
-        font-size: 14px;
+        font-size: 16px;
+    }
+    .chevronSign {
+        font-size: 16px;
     }
 }
 
