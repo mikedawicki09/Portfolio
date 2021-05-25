@@ -522,8 +522,9 @@ a[aria-expanded=false] .fa-chevron-up {
 
 /*styling for tabs in skill section*/
 .fullDiv {
-    margin-left: 4.5%;
     border-radius: 5%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .fullDiv button {
@@ -533,7 +534,7 @@ a[aria-expanded=false] .fa-chevron-up {
 .tabButton {
     border: 0px;
     height: 4em;
-    width: 30%;
+    width: 33%;
     background-color: #557A95;
     border: 2px solid lightgray;
     color: black;
@@ -570,7 +571,7 @@ a[aria-expanded=false] .fa-chevron-up {
     background-color: white;
     border: 2px solid lightgray;
     margin-top: 1%;
-    width: 90%;
+    width: 99%;
 }
 
 .skillsList{
@@ -731,12 +732,12 @@ height: 3.4em;
     }
 }
 
-@media screen and (max-width: 500px) {
+
+
+@media screen and (max-width: 400px) {
     .tabButton:hover {
         background-color: white !important;
     }
 }
-
-
 
 
