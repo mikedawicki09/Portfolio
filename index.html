@@ -1,4 +1,3 @@
-
 <!--html page for Mike Dawicki resume-->
 <!DOCTYPE html>
 <html lang="en">
@@ -12,51 +11,50 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Style CSS-->
     <link rel="stylesheet" href="style.css">
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type=text/javascript src="script.js"></script>
 </head>
 
 
 <body>
     <!--Navigation-->
-    <nav class="topnav" id="myTopnav">
-        <div class="container-fluid my-nav">
+    <nav id="nav" class="myNavbar">
+        <div class="my-nav">
             <ul class="my-nav-list">
+                <div class="navicon cancel-btn" onclick="removeNav()">
+                    <i class="fas fa-times"></i>
+                </div>
                 <li>
-                    <a id="navAbout" href="#aboutMe">About Me</a>
+                    <a class="scroll" href="#aboutMe">About Me</a>
                 </li>
                 <li>
-                    <a href="#project">Projects</a>
+                    <a class="scroll" href="#project">Projects</a>
                 </li>
                 <li>
-                    <a href="#skill">Skills</a>
+                    <a class="scroll" href="#skill">Skills</a>
                 </li>
                 <li>
-                    <a id="navCampus" href="#campus">Campus Involvement</a>
+                    <a class="scroll" href="#campus">Campus Involvement</a>
                 </li>
                 <li>
-                    <a href="#contacted">Contact</a>
-                </li>
-                <li>
-                    <a href="javascript:void(0);" class="icon" onclick="navbarToggle()">
-                        <i class="fa fa-bars"></i>
-                    </a>
+                    <a class="scroll" href="#contacted">Contact</a>
                 </li>
             </ul>
+            <div class="navicon menu-btn" onclick="showNav()">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
     </nav>
     <!--Naviagtion End-->
-
-    <!--Head Image Section-->
-    <div id="home" class="header">
+    <div id="home" class="banner">
         <div class="landing-text">
             <h1 class="display-3 color">Mike Dawicki</h1>
             <h3 class="display-5 color">Computer Information Systems Major</h3>
-            <a href="Files/Resume.pdf" class="button btn-lg" download="Files/Resume.pdf">Download Resume</a>
-            <img src="/Photos/background.jpg" style="display:none;">
-        </div> 
+            <a href="Files/Resume.pdf" class="button" download="Files/Resume.pdf">Download Resume</a>
+        </div>
     </div>
     <!--Head End-->
-
     <!--About Me section-->
     <section id="aboutMe">
         <div class="padding">
@@ -75,7 +73,6 @@
         </div>
     </section>
     <!--About Me End-->
-
     <!--Projects section-->
     <section id="project" class="projects shadow-lg">
         <div class="padding">
@@ -236,7 +233,6 @@
         </div>
     </section>
     <!--Projects End-->
-
     <!--Skills Section-->
     <section id="skill">
         <div class="padding">
@@ -244,197 +240,213 @@
             <div class="container shadow-lg">
                 <div class="row">
                     <div class="col-lg-12 fullDiv">
-                        <button class="tabButton" onclick="openTab('languages',this)">Languages</button>
-                        <button class="tabButton" onclick="openTab('tools', this)">Software & Tools</button>
-                        <button class="tabButton" onclick="openTab('frameworks',this)">Frameworks</button>
-                        <div id="languages" class="tabContent">                          
-                            <table  class="skillsList">
-                                <tr>
-                                    <td></td>
-                                    <td>
-                                        <a class="cancel" onclick="cancelTab('languages',this)">x</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="width:50%;">
-                                        <a data-toggle="collapse" href="#java" aria-expanded="false" class="whiteAddSign">
-                                            <div class="card skillCard skillCardJava">
-                                                <img src="Photos/java.svg" class="languageLogos" alt="Java logo"/>
-                                                <div class="card-body collase fade" id="java">
-                                                    <p>Built business applications using Java. Used these applications to both understand and implement the basic fundamentals of Object-oriented programming including Encapsulation, Polymorphism, Inheritance, and Abstraction.</p>
+                        <button class="tabButton" onclick="openTab('languages',this, 'langSkill')">Languages</button>
+                        <button class="tabButton" onclick="openTab('tools', this, 'myToolCards')">Software & Tools</button>
+                        <button class="tabButton" onclick="openTab('frameworks',this, 'myFrameCards')">Frameworks</button>
+                        <div id="languages" class="tabContent">
+                            <div class="row" style="width: 100%;">
+                                <div class="col-lg-12">
+                                    <button class="skillButton" onclick="sliderScript(-1, 'langSkill')">&#10094;</button>
+                                    <button class="skillButton" onclick="sliderScript(1, 'langSkill')">&#10095;</button>
+                                    <a class="cancel" onclick="cancelTab('languages',this)">x</a>
+                                </div>
+                            </div>
+                            <div class="row" style="width:100%;">
+                                <div class="col-lg-12">
+                                    <div class="slider">
+                                        <ul class="myskills">
+                                            <li class="card langSkill">
+                                                <div class="card-img-top">
+                                                    <img src="Photos/java.svg" alt="Java logo" />
                                                 </div>
-                                            </div>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a data-toggle="collapse" href="#python" aria-expanded="false" class="whiteAddSign">
-                                            <div class="card skillCard">
-                                                <img src="Photos/python.svg" id="imgPython" class="languageLogos" alt="Python logo"/>
-                                                <div id="python" class="card-body collapse fade">
-                                                    <p>Utilized Python to enhance my understanding of control structures, array processing logic and sub procedures/functions. Built NoSQL databases with Python via Amazon Web Services Non-Relational database services known as DynamoDB.</p>
+                                                <div class="card-body">
+                                                    <div class="card-text">
+                                                        <p>Built business applications using Java. Used these applications to both understand and implement the basic fundamentals of Object-oriented programming including Encapsulation, Polymorphism, Inheritance, and Abstraction.</p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a data-toggle="collapse" href="#c" aria-expanded="false" class="whiteAddSign">
-                                            <div class="card skillCard">
-                                                <img src="Photos/c.svg" id="imgC" class="languageLogos" alt="C# logo"/>
-
-                                                <div class="card-body collapse fade" id="c">
-                                                    <p>Developed an information system from the ground up using C#. I gained experience building classes and methods that provided functionality to the system. I wrote code that allowed the system to connect to the SQL database which allowed for customer information to be accessed at any point in time, hash user’s passwords with the hashing algorithm PDKDF2, and to prevent cross site scripting. </p>
+                                            </li>
+                                            <li class="card langSkill">
+                                                <div class="card-img-top">
+                                                    <img src="Photos/python.svg" alt="Python logo" />
                                                 </div>
-                                            </div>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a data-toggle="collapse" href="#html" aria-expanded="false" class="whiteAddSign">
-                                            <div class="card skillCard">
-                                                <img id="imgHTML" src="Photos/html.svg" class="languageLogos" alt="HTML logo"/>
-                                                <div id="html" class="card-body collapse fade">
-                                                    <p>Built and deployed web pages with HTML. With 3 years of experience with building web pages with HTML and CSS, I have a thorough understanding on building a webpage with proper document structure. My website portfolio was developed with HTML, CSS, JavaScript, and Bootstrap.</p>
+                                                <div class="card-body">
+                                                    <div class="card-text">
+                                                        <p>
+                                                            Utilized Python to enhance my understanding of control structures, array processing logic and sub procedures and functions. Built NoSQL databases with Python via Amazon Web Services Non-Relational database services known as DynamoDB.
+                                                        </p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a data-toggle="collapse" href="#css" aria-expanded="false" class="whiteAddSign">
-                                            <div class="card skillCard">
-                                                <img src="Photos/css.svg" id="imgCSS"  class="languageLogos" alt="CSS logo"/>
-                                                <div id="css" class="card-body collapse fade">
-                                                    <p>Styled countless webpages with CSS while maintaining a responsive design. 
-                                                    </p>
-                                                    
+                                            </li>
+                                            <li class="card langSkill">
+                                                <div class="card-img-top">
+                                                    <img class="imageSkill" src="Photos/c.svg" alt="C# logo" />
                                                 </div>
-                                            </div>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a data-toggle="collapse" href="#sql" aria-expanded="false" class="whiteAddSign">
-                                            <div class="card skillCard">
-                                                <img src="Photos/sql.svg" id="imgSQL"  class="languageLogos" alt="SQL logo"/>
-                                                <div id="sql" class="card-body collapse fade">
-                                                    <p>Developed a fundamental understanding of relational database analysis and design using SQL. Created databases using both Oracle and Microsoft SQL Server.  </p>
+                                                <div class="card-body">
+                                                    <div class="card-text">
+                                                        <p>Developed an information system from the ground up using C#. My system connected to a SQL database which allowed for customer information to be accessed at any point in time, hash user’s passwords with the hashing algorithm PDKDF2, and prevented cross site scripting. </p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </a>
-                                    </td>
-                                </tr>
-                            </table>
+                                            </li>
+                                            <li class="card langSkill">
+                                                <div class="card-img-top">
+                                                    <img class="imageSkill" src="Photos/html.svg" alt="HTML logo" />
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="card-text">
+                                                        <p> With 3 years of experience of building web pages with HTML and CSS, I have a thorough understanding on how to build webpages with proper document structure. My website portfolio was developed with HTML, CSS, JavaScript, and Bootstrap as a CSS framework.</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="card langSkill">
+                                                <div class="card-img-top">
+                                                    <img class="imageSkill" src="Photos/css.svg" alt="CSS logo" />
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="card-text">
+                                                        <p>Styled countless webpages structured with HTML with CSS while maintaining a responsive design. I utilize media queries to allow the content on my web pages to adapt to differnt screen sizes and resolutions.</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="card langSkill">
+                                                <div class="card-img-top">
+                                                    <img class="imageSkill" src="Photos/sql.svg" alt="SQL logo" />
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="card-text">
+                                                        <p>Developed a fundamental understanding of relational database analysis and design using SQL. I have developed and maintained databases using both Oracle and Microsoft SQL Server.  </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div id="tools" class="tabContent">
-                            <table class="skillsList">
-                                <tr>
-                                    <td>
-                                    </td>
-                                    <td>
-                                        <a class="cancel" onclick="cancelTab('tools',this)">x</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="width:50%;">
-                                        <a data-toggle="collapse" href="#sqlServer" aria-expanded="false" class="whiteAddSign">
-                                            <div class="card skillCard skillCardJava">
-                                                <img src="Photos/sql.svg"  class="languageLogos" alt="SQL logo"/>
-                                                <div class="card-body collase fade" id="sqlServer">
-                                                    <p>Micrsoft SQL Server</p>
+                            <div class="row" style="width:100%;">
+                                <div class="col-lg-12">
+                                    <button class="skillButton" onclick="sliderScript(-1, 'toolSkill')">&#10094;</button>
+                                    <button class="skillButton" onclick="sliderScript(1, 'toolSkill')">&#10095;</button>
+                                    <a class="cancel" onclick="cancelTab('tools',this)">x</a>
+                                </div>
+                            </div>
+                            <div class="row" style="width:100%;">
+                                <div class="col-lg-12">
+                                    <div class="slider">
+                                        <ul class="myskills">
+                                            <li class="card toolSkill">
+                                                <div class="card-img-top">
+                                                    <img class="imageSkill" src="Photos/sql.svg" alt="SQL logo" />
                                                 </div>
-                                            </div>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a data-toggle="collapse" href="#visual" aria-expanded="false" class="whiteAddSign">
-                                            <div class="card skillCard">
-                                                <img src="Photos/vs.svg"  class="languageLogos" alt="Microsoft Visual Studio logo"/>
-                                                <div id="visual" class="card-body collapse fade">
-                                                    <p>Microsoft Visual Studio</p>
+                                                <div class="card-body">
+                                                    <div class="card-text">
+                                                        <p>Gained experience using Microsoft SQL Server to develop relational databases throughout the past 4 years. I have used this software to build, manage, and query the databases for my senior capstone project as well as exporting data to both PowerBI and Tableau.</p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a data-toggle="collapse" href="#power" aria-expanded="false" class="whiteAddSign">
-                                            <div class="card skillCard">
-                                                <img src="Photos/powerbi.svg"  class="languageLogos" alt="Power BI logo"/>
-                                                <div class="card-body collapse fade" id="power">
-                                                    <p>PowerBI</p>
+                                            </li>
+                                            <li class="card toolSkill">
+                                                <div class="card-img-top">
+                                                    <img class="imageSkill" src="Photos/vs.svg" alt="Microsoft Visual Studio logo" />
                                                 </div>
-                                            </div>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a data-toggle="collapse" href="#netbeans" aria-expanded="false" class="whiteAddSign">
-                                            <div class="card skillCard">
-                                                <img src="Photos/netbeans.svg"  class="languageLogos" alt="NetBeans logo"/>
-                                                <div id="netbeans" class="card-body collapse fade">
-                                                    <p>Netbeans</p>
+                                                <div class="card-body">
+                                                    <div class="card-text">
+                                                        <p>Gained relevant experience using Microsoft Visual Studio to build web applications for the past 2 years. I have used this software to build my senior capstone project's web application. I also used Visual Studio to develop my website portfolio in which I used HTML, CSS, and Javascript.</p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a data-toggle="collapse" href="#oracle" aria-expanded="false" class="whiteAddSign">
-                                            <div class="card skillCard">
-                                                <img src="Photos/oracle.svg"  class="languageLogos" alt="Oracle logo"/>
-                                                <div id="oracle" class="card-body collapse fade">
-                                                    <p>Oracle</p>
+                                            </li>
+                                            <li class="card toolSkill">
+                                                <div class="card-img-top">
+                                                    <img class="imageSkill" src="Photos/aws.svg" alt="Amazon Web Services logo" />
                                                 </div>
-                                            </div>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a data-toggle="collapse" href="#aws" aria-expanded="false" class="whiteAddSign">
-                                            <div class="card skillCard">
-                                                <img src="Photos/aws.svg"  class="languageLogos" alt="Amazon Web Services logo"/>
-                                                <div id="aws" class="card-body collapse fade">
-                                                    <p>AWS</p>
+                                                <div class="card-body">
+                                                    <div class="card-text">
+                                                        <p>Expanded my expertise in cloud computing from working with a variety of AWS services.  I have hands on experience deploying and managing EC2 instances, developing databases with DynamoDB and RDS, Elastic Beanstalk S3 bucket, and using docker containers with AWS Fargate.</p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </a>
-                                    </td>
-                                </tr>
-                            </table>
+                                            </li>
+                                            <li class="card toolSkill">
+                                                <div class="card-img-top">
+                                                    <img class="imageSkill" src="Photos/github.svg" alt="GitHub logo" />
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="card-text">
+                                                        <p>By using Github, I could easily collaborate and share code in real time by pulling code down from my GitHub repository as needed while also pushing code back up from my local repository. I also currently host my fully responsive portfolio website on GitHub Pages.</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="card toolSkill">
+                                                <div class="card-img-top">
+                                                    <img class="imageSkill" src="Photos/powerbi.svg" alt="Power BI logo" />
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="card-text">
+                                                        <p>
+                                                            Used PowerBI to create data visualizations from data extracted from Microsoft SQL Server. I have worked with ArcGIS Maps, Drill down Donut Charts and a multitude of other Data visualization charts.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="card toolSkill">
+                                                <div class="card-img-top">
+                                                    <img class="imageSkill" src="Photos/oracle.svg" alt="Oracle logo" />
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="card-text">
+                                                        <p>Gained experience using Oracle’s relational database management system in which I used SQL to build my databases. I had hands on experience creating, manipulating, and querying tables in my databases.</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div id="frameworks" class="tabContent">
-                            <table class="skillsList">
-                                <tr>
-                                    <td>
-                                    </td>
-                                    <td>
-                                        <a class="cancel" onclick="cancelTab('frameworks',this)">x</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="width:50%;">
-                                        <a data-toggle="collapse" href="#bootstrap" aria-expanded="false" class="whiteAddSign">
-                                            <div class="card skillCard skillCardJava">
-                                                <img src="Photos/bootstrap.svg"  class="languageLogos" alt="Bootstrap logo"/>
-                                                <div class="card-body collase fade" id="bootstrap">
-                                                    <p>Bootstrap</p>
+                            <div class="row" style="width:100%;">
+                                <div class="col-lg-12">
+                                    <button class="skillButton" onclick="sliderScript(-1, 'frameSkill')">&#10094;</button>
+                                    <button class="skillButton" onclick="sliderScript(1, 'frameSkill')">&#10095;</button>
+                                    <a class="cancel" onclick="cancelTab('frameworks',this)">x</a>
+                                </div>
+                            </div>
+                            <div class="row" style="width:100%;">
+                                <div class="col-lg-12">
+                                    <div class="slider">
+                                        <ul class="myskills">
+                                            <li class="card frameSkill">
+                                                <div class="card-img-top">
+                                                    <img src="Photos/bootstrap.svg" class="imageSkill" alt="Bootstrap logo" />
                                                 </div>
-                                            </div>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a data-toggle="collapse" href="#asp" aria-expanded="false" class="whiteAddSign">
-                                            <div class="card skillCard">
-                                                <img src="Photos/asp.svg"  class="languageLogos" alt="Microsoft ASP.NET logo"/>
-                                                <div id="asp" class="card-body collapse fade">
-                                                    <p>ASP.NET</p>
+                                                <div class="card-body">
+                                                    <div class="card-text">
+                                                        <p>I have utilized Bootstrap as a CSS framework to assist in building fully responsive web applications. I have used Bootstrap’s grid system in many of my web applications along with my portfolio website to layout and align my content.</p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </a>
-                                    </td>
-                                </tr>
-                            </table>
+                                            </li>
+                                            <li class="card frameSkill">
+                                                <div class="card-img-top">
+                                                    <img src="Photos/asp.svg" class="imageSkill" alt="Microsoft ASP.NET logo" />
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="card-text">
+                                                        <p>Built an application for a moving and auction services client by using Microsoft’s ASP.net. By using ASP.net, I was able to develop both a fully responsive and dynamic application that added value to our client’s needs.</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="card frameSkill">
+                                                <div class="card-img-top">
+                                                    <img src="Photos/jquery.svg" class="imageSkill" alt="JQuery logo" />
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="card-text">
+                                                        <p>I have built a lot of my applications using the JQuery library. I utilized methods from the JQuery library to add animations and make my pages more dynamic. I am also currently using JQuery in my portfolio website. </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -442,7 +454,6 @@
         </div>
     </section>
     <!--Skills end-->
-
     <!--Campus Involvement-->
     <section id="campus" class="projects shadow-lg">
         <div class="padding">
@@ -466,7 +477,7 @@
                                 </div>
                             </div>
                         </td>
-                           <td class="col-lg-6">
+                        <td class="col-lg-6">
                             <div class="card">
                                 <div class="card-body difCardStyle">
                                     <h3 class="text-dark  mb-3 cardHead">Association of Information Systems</h3>
@@ -502,7 +513,7 @@
                                 </div>
                             </div>
                         </td>
-                           <td class="col-lg-6">
+                        <td class="col-lg-6">
                             <div class="card">
                                 <div class="card-body difCardStyle">
                                     <h3 class="text-dark  mb-3 cardHead">Student Defenders</h3>
@@ -524,10 +535,9 @@
         </div>
     </section>
     <!--Campus Involvement End-->
-
     <!--Footer Section-->
     <section id="contacted" class="sticky-bottom">
-        <div class="container-fluid padding shadow-lg" style="background-color: #557A95">
+        <div class="container-fluid padding shadow-lg" style="background-color: #1f2833">
             <div class="card theblue border-0">
                 <div class="row text-center">
                     <div class="col-4 styling">
@@ -557,7 +567,7 @@
                         </table>
                     </div>
                     <div class="col-4">
-                        <a href="#home" class="btn btn-outline-info drop shadow slowTran" onclick="test()" style="float: none; "> &#x25B2;</a>
+                        <a href="#home" class="btn btn-outline-info drop shadow slowTran scroll" style="float: none; "> &#x25B2;</a>
                     </div>
                     <div class="col-4 copyright">
                         <span class="styling">Copyright &copy; 2021 Mike Dawicki</span>
@@ -567,9 +577,6 @@
         </div>
     </section>
     <!--Footer End-->
-
-    <!--jQuery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!--Popper JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <!--Bootstrap JS-->
@@ -580,3 +587,14 @@
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
