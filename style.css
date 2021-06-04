@@ -1,84 +1,180 @@
-
-
 /* WEBSITE RESUME CSS STYLING SHEET*/
 
 /*STYLING FOR PAGE SIZING*/
 html, body {
     height: 100%;
     width: 100%;
-    overflow-x: hidden;
-    font-family: 'Optima';
+    font-family: 'Poppins', sans-serif;
 }
 
 
 /*STYLING FOR NAVIGATION*/
-.navbar {
-    background-color: #557A95;
-    padding: 1% 0;
-    font-size: 1.2em;
-    color: white;
+.myNavbar {
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    padding: 25px 0;
+    transition: top 0.5s ease;
+    top: 0px;
+    background-color: rgba(0,0,0,.5);
 }
 
-/* STYLING FOR HEADER AND BACKGROUND IMAGE*/
-#home {
+.orange {
+    color: #FA991C;
+}
+
+.my-nav-list li a {
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 25px;
+    transition: all 0.5s ease;
+}
+
+    .my-nav-list li a:hover {
+        color: #FA991C;
+        border-bottom: 1px solid #FA991C;
+        border-top: 1px solid #FA991C;
+        padding: 17px 0;
+    }
+
+.my-nav {
+    max-width: 1250px;
+    margin: auto;
+}
+
+.myNavbar .my-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 1.7%;
+}
+
+.myNavbar .my-nav-list {
+    display: inline-flex;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.my-nav-list li {
+    list-style: none;
+}
+
+.banner {
+    height: 100vh;
     background: url(Photos/background.jpg) no-repeat center center fixed;
-    display: table;
-    height: 100%;
-    position: relative;
-    width: 100%;
+    -webkit-background-size: cover;
     background-size: cover;
 }
+
+.navicon {
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+    .navicon:hover {
+        color: #FA991C;
+        font-size: 28px;
+    }
+
+    .navicon.cancel-btn {
+        position: absolute;
+        right: 30px;
+        top: 20px;
+    }
+
+@media screen and (max-width: 800px) {
+    .myNavbar .my-nav-list {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        max-width: 400px;
+        background-color: #3B3A3B;
+        display: block;
+        padding: 40px 0;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+        .myNavbar .my-nav-list li {
+            margin-top: 45px;
+        }
+
+            .myNavbar .my-nav-list li a {
+                font-size: 23px;
+            }
+
+    .navicon {
+        display: block;
+    }
+
+    .menu-btn {
+        margin-left: 90%;
+    }
+
+    .navicon.hide {
+        display: none;
+    }
+
+    .myNavbar .my-nav-list.active {
+        left: 0%;
+    }
+}
+
 /*STYLING FOR POSITIONING IMAGE AND TEXT IN THE HEADER */
 .landing-text {
-    display: table-cell;
     text-align: center;
     vertical-align: middle;
+    position: absolute;
+    top: 38%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
-/*STYLING FOR FIRST TEXT IN HEADER*/
-.landing-text h1 {
-    font-size: 500%;
-    font-weight: 900px;
-    color: WHITE;
+    /*STYLING FOR FIRST TEXT IN HEADER*/
+    .landing-text h1 {
+        font-size: 500%;
+        font-weight: 900px;
+        color: #FA991C;
     }
-/*STYLING FOR SECOND TEXT IN HEADER*/
-.landing-text h3 {
-    color: WHITE;
-    margin: 20px;
-}
+    /*STYLING FOR SECOND TEXT IN HEADER*/
+    .landing-text h3 {
+        color: WHITE;
+        margin: 20px;
+    }
 /*STYLING FOR BUTTON*/
 .button {
-    border: 2px solid #557A95;
+    border: 2px solid #FA991C;
     border-radius: 10px;
     padding: 10px 30px;
     color: WHITE;
     width: 120px;
     text-decoration: none;
-    transition-duration: 0.4s;
+    transition-duration: 0.9s;
 }
-/*STYLING ALLOWS FOR HOVERING OVER BUTTON*/
-.button:hover {
-    background-color: #FFF;
-    color: #557A95;
-    text-decoration: none;
-}
+    /*STYLING ALLOWS FOR HOVERING OVER BUTTON*/
+    .button:hover {
+        background-color: #FFF;
+        color: #FA991C;
+        text-decoration: none;
+    }
 
-/*STYLING FOR PICTURE IN HEADER*/
-.picture {
-    height: 350px;
-    width 230px;
-    display: table-cell;
-    vertical-align: middle;
-    margin: 10px auto 20px;
-    display: block;
-    border: 6px solid #557A95;
-}
+
 /*STYLING TO ADD PADDING BETWEEN HEADER AND ABOUT ME*/
 .padding {
     padding: 80px 0;
 }
 /*STYLING FOR ABOUT ME*/
 .container {
-    border: 3px solid #557A95;
+    border: 3px solid #FA991C;
     padding: 50px;
     border-radius: 10px;
 }
@@ -91,7 +187,7 @@ html, body {
 }
 /*STYLING FOR UNDERLINE*/
 .underline {
-    border-bottom: 1px solid #557A95;
+    border-bottom: 1px solid #FA991C;
     text-decoration: none;
 }
 /*STYLING FOR THE BACKGROUND OF THE PROJECT SECTION*/
@@ -105,19 +201,19 @@ html, body {
 
 
 .btn-outline-info {
-    color: #557A95;
+    color: #FA991C;
     background-color: white;
-    border-color: #557A95;
+    border-color: #FA991C;
 }
 
-.btn-outline-info:hover {
-    color: white;
-    background-color: #557A95;
-    border-color: #557A95;
-}
+    .btn-outline-info:hover {
+        color: white;
+        background-color: #FA991C;
+        border-color: #FA991C;
+    }
 
 .text {
-    background-color: #557A95;
+    background-color: #FA991C;
     color: white;
     font-size: 16px;
     padding: 16px 32px;
@@ -137,16 +233,16 @@ html, body {
 }
 /*STYLING FOR BACKGROUND OF CONTACT SECTION*/
 .background {
-    background-color: #557A95;
+    background-color: #1f2833;
 }
 /*STYLING FOR TOP BUTTON*/
 .topButton {
     height: 50px;
     width: 50px;
-    border: 2px solid #557A95;
+    border: 2px solid #FA991C;
     border-radius: 50%;
     display: inline-block;
-    color: #557A95;
+    color: #FA991C;
 }
     /*STYLING FOR HOVERING OVER TOP BUTTON*/
     .topButton:hover {
@@ -181,7 +277,7 @@ html, body {
 .link {
     display: flex;
     justify-content: center;
-    color: #557A95;
+    color: #FA991C;
 }
 
 
@@ -200,26 +296,21 @@ html, body {
 }
 
 
-/*Media queries for home image*/
-@media (max-width: 768px) {
-    .landing-text h1 {
-        font-size: 300%;
-    }
-}
+
 
 .drop {
     display: inline-block;
-    background-color: #557A95;
+    background-color: #FA991C;
     float: right;
     color: white;
     border: 1px solid white;
 }
 
-.drop:hover {
-    background-color: white;
-    border: 1px solid white;
-    color: #557A95;
-}
+    .drop:hover {
+        background-color: white;
+        border: 1px solid white;
+        color: #FA991C;
+    }
 
 #contactMe td {
     border: 0px;
@@ -238,12 +329,12 @@ html, body {
     margin-top: 2%;
 }
 
-.addSign:hover {
-    color: #557A95;
-}
+    .addSign:hover {
+        color: #FA991C;
+    }
 
 .cardStyle {
-    border-left: 2px solid #557A95;
+    border-left: 2px solid #FA991C;
     padding-top: 1%;
     padding-bottom: 1%;
 }
@@ -261,7 +352,7 @@ html, body {
 }
 
 .blueBack {
-    background-color: #557A95;
+    background-color: #1f2833;
     border: 2px solid white;
 }
 
@@ -272,8 +363,8 @@ html, body {
 
 /*Images in projects section*/
 .view {
-    color: #557A95;
-    border-color: #557A95;
+    color: #FA991C;
+    border: 2px solid #FA991C;
     background-color: white;
     margin-left: 31%;
     width: 9em;
@@ -322,9 +413,9 @@ a[aria-expanded=false] .fa-chevron-up {
     margin-top: 1%;
 }
 
-.chevronSign:hover {
-    color: #557A95;
-}
+    .chevronSign:hover {
+        color: #FA991C;
+    }
 /*styling for languages*/
 .skills {
     margin-top: .6em;
@@ -334,9 +425,9 @@ a[aria-expanded=false] .fa-chevron-up {
     cursor: pointer;
 }
 
-.skills:hover {
-    color: #557A95;
-}
+    .skills:hover {
+        color: #FA991C;
+    }
 /*styling for skill list items*/
 .skillList {
     list-style-type: none;
@@ -360,165 +451,9 @@ a[aria-expanded=false] .fa-chevron-up {
     margin: 0;
     padding: 0;
 }
-/*my new nav bar*/
-.topnav {
-    margin: 0px;
-    background-color: #557A95;
-    height: 12%;
-}
 
-.my-nav {
-    background-color: #557A95;
-    padding: 1%;
-}
 
-.my-nav-list {
-    text-align: center;
-}
 
-.my-nav-list a:hover {
-    color: lightgray;
-    font-size: 22px;
-}
-
-.my-nav-list a {
-    color: white;
-    cursor: pointer;
-    height: 3em;
-    width: 6em;
-    font-size: 22px;
-    padding-top: .6em;
-    margin-right: 10%;
-    text-decoration: none;
-}
-
-.my-nav-list a:after {
-    transition: 650ms;
-    content: '';
-    width: 0px;
-    height: 1px;
-    display: block;
-    background: lightgray;
-    margin-left: 1em;
-}
-
-.my-nav-list a:hover:after {
-    width: 90%;
-    font-weight: bold;
-    padding-top: 0px;
-}
-
-.my-nav-list li {
-    display: inline-block;
-    margin-right: 2%;
-    margin-top: 1%;
-}
-
-.my-nav-list li:before {
-    display: inline-block;
-    width: 6px;
-    height: 6px;
-    content: " ";
-    border: 2px solid white;
-    border-radius: 4px;
-    margin-right: 1.2em;
-    margin-bottom: .3em;
-}
-
-.my-nav-list li:first-child:before {
-    display: none;
-}
-
-.my-nav-list li:last-child:before {
-    display: none;
-}
-
-#navAbout:after {
-    margin-left: 0em;
-}
-
-#navAbout:hover:after {
-    width: 93%;
-}
-
-#navCampus:after {
-    margin-left: 1.4em;
-}
-
-.topnav .icon {
-    display: none;
-}
-
-.topnav {
-    overflow: hidden;
-}
-
-/*media queries for navigation*/
-@media screen and (max-width: 800px) {
-    .topnav li:not(:last-child) {
-        display: none;
-    }
-
-    .my-nav-list {
-        float: right;
-    }
-
-    .topnav li .icon {
-        display: block;
-        margin-top: .9em;
-        border: 1px solid white;
-        width: 2em;
-        height: .5em;
-        border-radius: 8%;
-        padding-bottom: 1.5em;
-        padding-top: 0;
-        margin-right: 1em;
-        font-size: 22px;
-    }
-
-    .topnav li .icon:hover:after {
-        width: 0%;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .topnav.responsive {
-        position: relative;
-        height: 25em;
-    }
-
-    .topnav.responsive .my-nav-list {
-        width: 19em;
-        float: left;
-        padding: 1em;
-        margin-right: 2em;
-        display: block;
-        height: 12em;
-    }
-
-    .topnav.responsive .my-nav-list li:first-child:before {
-        display: inline-block;
-    }
-
-    .topnav.responsive .my-nav-list a {
-        margin-right: 10em;
-    }
-
-    .topnav.responsive li .icon {
-        position: fixed;
-        margin-top: .9em;
-        right: -200px;
-        padding-left: .5em;
-        font-size: 22px;
-        top: 0;
-    }
-
-    .topnav.responsive li {
-        float: left;
-        display: block;
-        text-align: left;
-    }
-}
 
 /*styling for tabs in skill section*/
 .fullDiv {
@@ -527,44 +462,47 @@ a[aria-expanded=false] .fa-chevron-up {
     margin-right: auto;
 }
 
-.fullDiv button {
-    float: left;
-}
+    .fullDiv button {
+        float: left;
+    }
 
 .tabButton {
     border: 0px;
     height: 4em;
     width: 33%;
-    background-color: #557A95;
+    background-color: #1f2833;
     border: 2px solid lightgray;
-    color: black;
+    color: white;
     border-collapse: collapse;
     transition: 600ms;
     font-size: 120%;
 }
 
-.tabButton:hover {
-    background-color: #9ab3c5 !important;
-}
+    .tabButton:hover {
+        background-color: #9ab3c5 !important;
+    }
 
-.tabButton:focus {
-    transition: 1200ms;
-    outline: none;
-    background-color: white;
-    color: black;
-    border-top: 3px solid #557A95;
-}
-.tabButton:focus:hover {
-    background-color: white !important;
-}
-.tabButton:focus:first-child {
-    border-left: 2px solid #557A95;
-}
+    .tabButton:focus {
+        transition: 1200ms;
+        outline: none;
+        background-color: white;
+        color: black;
+        border-top: 3px solid #1f2833;
+    }
+
+        .tabButton:focus:hover {
+            background-color: white !important;
+        }
+
+        .tabButton:focus:first-child {
+            border-top: 3px solid #1f2833;
+            border-left: 2px solid;
+        }
 
 
-.tabButton:focus:last-of-type {
-    border-right: 2px solid #557A95;
-}
+        .tabButton:focus:last-of-type {
+            border-right: 2px solid #1f2833;
+        }
 
 .tabContent {
     display: none;
@@ -574,93 +512,82 @@ a[aria-expanded=false] .fa-chevron-up {
     width: 99%;
 }
 
-.skillsList{
-    width:100%;
-    margin-top:7%;
-    margin-right:2%;
+.skillsList {
+    width: 100%;
+    margin-top: 7%;
+    margin-right: 2%;
 }
 
 .whiteAddSign {
     outline: none;
     cursor: pointer;
-    width:50%;
-    color:black;
-}
-.skillCard:hover {
-    background-color: #ededed;
+    width: 50%;
     color: black;
+}
+
+.skillPhotos {
+    width: 8em;
+    height: 14em;
+    margin-left: 25%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+
+.listSkill {
+    width: 100%;
+    margin-left: 11%;
 }
 
 
 .whiteAddSign:hover {
-    text-decoration:none;
+    text-decoration: none;
 }
-.skillCard span {
-    margin-top:3%;
-}
-.skillCard {
-    min-width: 50%;
-    transition: 300ms;
-}
-a[aria-expanded=false] .skillCardJava {
-    height:3.5em;
-}
+
 .theblue {
-    background-color: #557A95;
+    background-color: #1f2833;
 }
 
 /*styling for the footer*/
 .styling table {
-   margin-left:25%;
+    margin-left: 25%;
 }
+
 .styling {
     color: white;
 }
+
 .cancel {
     float: right;
     padding: 0em;
     padding-bottom: .2em;
     padding-left: .6em;
     padding-right: .6em;
-    border: 1px solid #557A95;
+    border: 2px solid #FA991C;
     border-radius: 10%;
-    color: #557A95;
+    color: #FA991C;
     font-size: 20px;
-    margin: 0%;
-    margin-bottom: 1%;
+    top: 25%;
+    position: relative;
     transition: 600ms;
 }
-.cancel:hover {
-    background-color: #557A95;
-    color:white;
-    text-decoration:none;
-    cursor:pointer;
-}
+
+    .cancel:hover {
+        background-color: #FA991C;
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
 .slowTran {
     transition: 600ms;
 }
 
-
-.languageLogos {
-    height: 3.4em;
-    width: 2em;
-    margin-left: auto;
-    margin-right: auto;
-}
-a[aria-expanded=true] .languageLogos {
-    height: 3.4em;
+.buttonStyle {
+    color: white;
 }
 
-#imgHTML {
-    height: 3.4em;
-    width: 4em;
-}
-#imgPython {
-height: 3.4em;
-}
-#imgCSS {
-    height: 3.4em;
-}
 /*media queries for footer*/
 @media screen and (max-width: 800px) {
     .styling {
@@ -675,39 +602,32 @@ height: 3.4em;
         font-size: 100%;
     }
 
-    a[aria-expanded=false] .skillCardJava {
-        height: 3.4em;
-    }
-     .languageLogos {
-        height: 3em;
-    }
-     #imgC {
-        height: 3.4em;
-    }
     .tabContent p {
         font-size: 12px;
     }
+
     .lead {
-        font-size:14px;
+        font-size: 14px;
     }
+
+    .skillButton {
+        border-radius: 40%;
+    }
+
+        .skillButton:nth-of-type(2) {
+            margin-left: 5%;
+        }
 }
+
 @media screen and (max-width: 600px) {
     .styling {
         font-size: 9px;
     }
 
-    a[aria-expanded=false] .skillCardJava {
-        height: 3.5em;
-    }
-    .languageLogos {
-        height: 3em;
-    }
-    #imgC {
-        height: 3.4em;
-    }
     .tabContent p {
         font-size: 10px;
     }
+
     .lead {
         font-size: 15px;
     }
@@ -715,23 +635,27 @@ height: 3.4em;
     .heading {
         font-size: 16px;
     }
+
     .chevronSign {
         font-size: 16px;
     }
-     .view {
+
+    .view {
         margin-left: 22%;
     }
-     .cardHead {
+
+    .cardHead {
         font-size: 16px;
     }
-     .addSign {
+
+    .addSign {
         font-size: 16px;
     }
-     .tabButton {
+
+    .tabButton {
         font-size: 78%;
     }
 }
-
 
 
 @media screen and (max-width: 500px) {
@@ -740,4 +664,116 @@ height: 3.4em;
     }
 }
 
+@media screen and (max-width: 990px) {
+    .myskills li {
+        height: 95%;
+    }
 
+    .card-text p {
+        font-size: 11px;
+        text-align: left;
+        position: relative;
+        width: 110%;
+    }
+}
+
+.slider {
+    width: 90%;
+    height: 100%;
+    margin: 2% auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.skillButton {
+    position: absolute;
+    top: 25%;
+    font-weight: bold;
+    left: 47%;
+    border-radius: 50%;
+    height: 100%;
+    width: 4%;
+    border: 2px solid #FA991C;
+    color: #FA991C;
+    background-color: white;
+    outline: none;
+    transition: 600ms;
+}
+
+    .skillButton:nth-of-type(2) {
+        left: 47%;
+        margin-left: 4%;
+    }
+
+.myskills {
+    width: 98%;
+    height: 70%;
+    background: white;
+    margin: 10px auto;
+    display: flex;
+    justify-content: left;
+    overflow-x: hidden;
+    list-style-type: none;
+}
+
+.skillButton:hover {
+    color: white;
+    background-color: #FA991C;
+}
+
+.skillButton:focus {
+    outline: none;
+}
+
+.myskills::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+.myskills li {
+    min-width: 38%;
+    position: relative;
+    left: 0;
+    text-align: center;
+    padding-top: 5%;
+    font-size: 15px;
+    margin: 1% 2%;
+    color: black;
+    background-color: lightgray;
+    transition: 1.1s;
+}
+
+    .myskills li:hover {
+        background-color: white;
+        box-shadow: 12px 12px 5px gray;
+    }
+
+.card-text {
+    text-align: center;
+    bottom: 50px;
+}
+
+.imageSkill {
+    height: 80%;
+    width: 80%;
+}
+
+.card-img-top {
+    height: 30%;
+}
+
+
+@media screen and (max-width: 775px) {
+
+    .myskills li {
+        min-width: 70% !important;
+    }
+
+    .skillButton {
+        width: 8% !important;
+    }
+
+        .skillButton:nth-of-type(2) {
+            left: 47%;
+            margin-left: 8%;
+        }
+}
