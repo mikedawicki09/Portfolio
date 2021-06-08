@@ -1,29 +1,54 @@
+function changeTab(page) {
+    var indicator = document.querySelector(".tab-indicator");
+    if (page == "tools") {
+        if (indicator.style.left = "1.6%") {
+            indicator.style.left = "30%";
+        }
+        if (indicator.style.left = "64%") {
+            indicator.style.left = "33%";
+        }
+    }
+    if (page == "languages") {
+        if (indicator.style.left = "23%") {
+            indicator.style.left = "1.6%";
+        }
+        if (indicator.style.left = "64%") {
+            indicator.style.left = "1.6%";
+        }
+    }
+    if (page == "frameworks") {
+        if (indicator.style.left = "23%") {
+            indicator.style.left = "64%";
+        }
+        if (indicator.style.left = "1.6%") {
+            indicator.style.left = "64%";
+        }
+    }
+}
+
 
 /*function to open the skill tabs*/
 function openTab(page, elmnt, skillType) {
+    changeTab(page);
     var i, tabContent;
     /*grabs all elements that have the class tabContent*/
     tabContent = document.getElementsByClassName("tabContent");
+    var tabButton = document.getElementsByClassName("tabButton");
+
+    for (i = 0; i < tabButton.length; i++) {
+        tabButton[i].style.color = "black";
+    }
     var slider = document.getElementById(skillType);
     /*loops through each of the selected elements and hides them*/
     for (i = 0; i < tabContent.length; i++) {
         tabContent[i].style.display = "none";
     }
-    var tabButton = document.getElementsByClassName("tabButton");
-    for (i = 0; i < tabButton.length; i++) {
-        tabButton[i].style.backgroundColor = "#1f2833";
-        tabButton[i].style.color = "white";
-        tabButton[i].style.borderTop = "0px";
-    }
+
 
     document.getElementById(page).style.display = "block";
-    elmnt.style.backgroundColor = "white";
-    elmnt.style.color = "black";
-    elmnt.style.border = "2px solid lightgray";
-    elmnt.style.borderBottom = "0px";
-    elmnt.style.borderTop = "3px solid #1f2833";
+    elmnt.style.color = "#FA991C";
 
-    count = 0;
+    count = 1;
 
 }
 
@@ -43,54 +68,46 @@ window.onscroll = function () {
 /*function to remove tab content*/
 function cancelTab(page, elmnt) {
     var cancelTab = document.getElementById(page).style.display = "none";
-    var tabButton = document.getElementsByClassName("tabButton");
-    for (i = 0; i < tabButton.length; i++) {
-        tabButton[i].style.backgroundColor = "#1f2833";
-        tabButton[i].style.color = "white";
-        tabButton[i].style.borderTop = "0px";
-    }
+
 }
 
 
 var count = 0;
 function sliderScript(num, skillType) {
     var listItem = document.getElementsByClassName(skillType);
+    var addedLeft = 0;
+    var skillCards = document.querySelector(".myskills li");
+    for (var k = 0; k < skillCards.length; k++) {
+        if (skillCards.style.width == "85%") {
+            addedLeft = -55;
+        }
+    }
     count += num;
     for (var i of listItem) {
-        if (count == 0) {
-            i.style.left = "0%";
-        }
-        if (count == 1) {
-            if (skillType == 'frameSkill') {
-                i.style.left = "-35%";
-                count = 1;
-            }
-            else {
-                i.style.left = "-75%";
-            }
-        }
-        if (count == 2) {
-            if (skillType == 'frameSkill') {
-                i.style.left = "-35%";
-                count = 1;
-            }
-            else {
-                i.style.left = "-170%";
-            }
-        }
-        if (count > 2) {
-            if (skillType == 'frameSkill') {
-                i.style.left = "-35%";
-                count = 0;
-            }
-            else {
-                i.style.left = "-170%";
-                count = 2;
-            }
+        switch (count) {
+            case 0:
+                if (count == 0) { i.style.left = "0%";}
+                break;
+            case 1:
+                (skillType == 'frameSkill') ? i.style.left = "-45%" : i.style.left = "-80%";
+                break;
+            case 2:
+                (skillType == 'frameSkill') ? i.style.left = "-80%"  : i.style.left = "-165%";
+                break;
+            case 3:
+                (skillType == 'frameSkill') ?  count = 2 : i.style.left = "-255%";
+                break;
+            case 4:
+                (skillType == 'frameSkill') ?  count = 2 : i.style.left = "-350%";
+                break;
+            case 5: (skillType == "frameSkill") ?  count = 2 : i.style.left = "-440%";
+                break;
         }
         if (count < 0) {
-            i.style.left = "0%";
             count = 0;
+        }
+        if (count > 5) {
+            count = 5;
         }
     }
 
