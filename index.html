@@ -23,7 +23,7 @@
         <div class="my-nav">
             <ul class="my-nav-list">
                 <div class="navicon cancel-btn" onclick="removeNav()">
-                    <i class="fas fa-times"></i>
+                    <i class="far fa-times-circle"></i>
                 </div>
                 <li>
                     <a class="scroll" href="#aboutMe">About Me</a>
@@ -238,17 +238,32 @@
         <div class="padding">
             <h2 class="text-center">S<u class="underline">kill</u>s</h2>
             <div class="container shadow-lg">
-                <div class="row">
-                    <div class="col-lg-12 fullDiv">
-                        <button class="tabButton" onclick="openTab('languages',this, 'langSkill')">Languages</button>
-                        <button class="tabButton" onclick="openTab('tools', this, 'myToolCards')">Software & Tools</button>
-                        <button class="tabButton" onclick="openTab('frameworks',this, 'myFrameCards')">Frameworks</button>
+                <div class="tabs">
+                    <div class="tab-header">
+                        <div>
+                            <button class="tabButton" onclick="openTab('languages',this, 'langSkill')">
+                                <img src="Photos/languages.svg" alt="langauges logo">Languages
+                            </button>
+                        </div>
+                        <div>
+                            <button class="tabButton" onclick="openTab('tools', this, 'myToolCards')">
+                                <img src="Photos/tools.svg" alt="Tools logo">Software
+                            </button>
+                        </div>
+                        <div>
+                            <button class="tabButton" onclick="openTab('frameworks',this, 'myFrameCards')">
+                                <img src="Photos/framework.svg" alt="frameworks">Frameworks
+                            </button>
+                        </div>
+                    </div>
+                    <div class="tab-indicator"></div>
+                    <div class="tab-body">
                         <div id="languages" class="tabContent">
                             <div class="row" style="width: 100%;">
                                 <div class="col-lg-12">
-                                    <button class="skillButton" onclick="sliderScript(-1, 'langSkill')">&#10094;</button>
-                                    <button class="skillButton" onclick="sliderScript(1, 'langSkill')">&#10095;</button>
-                                    <a class="cancel" onclick="cancelTab('languages',this)">x</a>
+                                    <button class="skillButton" onclick="sliderScript(-1, 'langSkill')"><i class="far fa-arrow-alt-circle-left"></i></button>
+                                    <button class="skillButton" onclick="sliderScript(1, 'langSkill')"><i class="far fa-arrow-alt-circle-right"></i></button>
+                                    <a class="cancel" onclick="cancelTab('languages',this)"><i class="far fa-times-circle"></i></a>
                                 </div>
                             </div>
                             <div class="row" style="width:100%;">
@@ -257,7 +272,7 @@
                                         <ul class="myskills">
                                             <li class="card langSkill">
                                                 <div class="card-img-top">
-                                                    <img src="Photos/java.svg" alt="Java logo" />
+                                                    <img class="skillPhotos" src="Photos/java.svg" alt="Java logo" />
                                                 </div>
                                                 <div class="card-body">
                                                     <div class="card-text">
@@ -325,9 +340,9 @@
                         <div id="tools" class="tabContent">
                             <div class="row" style="width:100%;">
                                 <div class="col-lg-12">
-                                    <button class="skillButton" onclick="sliderScript(-1, 'toolSkill')">&#10094;</button>
-                                    <button class="skillButton" onclick="sliderScript(1, 'toolSkill')">&#10095;</button>
-                                    <a class="cancel" onclick="cancelTab('tools',this)">x</a>
+                                    <button class="skillButton" onclick="sliderScript(-1, 'toolSkill')"><i class="far fa-arrow-alt-circle-left"></i></button>
+                                    <button class="skillButton" onclick="sliderScript(1, 'toolSkill')"><i class="far fa-arrow-alt-circle-right"></i></button>
+                                    <a class="cancel" onclick="cancelTab('tools',this)"><i class="far fa-times-circle"></i></a>
                                 </div>
                             </div>
                             <div class="row" style="width:100%;">
@@ -404,9 +419,9 @@
                         <div id="frameworks" class="tabContent">
                             <div class="row" style="width:100%;">
                                 <div class="col-lg-12">
-                                    <button class="skillButton" onclick="sliderScript(-1, 'frameSkill')">&#10094;</button>
-                                    <button class="skillButton" onclick="sliderScript(1, 'frameSkill')">&#10095;</button>
-                                    <a class="cancel" onclick="cancelTab('frameworks',this)">x</a>
+                                    <button class="skillButton" onclick="sliderScript(-1, 'frameSkill')"><i class="far fa-arrow-alt-circle-left"></i></button>
+                                    <button class="skillButton" onclick="sliderScript(1, 'frameSkill')"><i class="far fa-arrow-alt-circle-right"></i></button>
+                                    <a class="cancel" onclick="cancelTab('frameworks',this)"><i class="far fa-times-circle"></i></a>
                                 </div>
                             </div>
                             <div class="row" style="width:100%;">
@@ -567,7 +582,7 @@
                         </table>
                     </div>
                     <div class="col-4">
-                        <a href="#home" class="btn btn-outline-info drop shadow slowTran scroll" style="float: none; "> &#x25B2;</a>
+                        <a href="#home" class="drop shadow  scroll"><i class="far fa-arrow-alt-circle-up"></i></a>
                     </div>
                     <div class="col-4 copyright">
                         <span class="styling">Copyright &copy; 2021 Mike Dawicki</span>
