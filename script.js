@@ -48,7 +48,7 @@ function openTab(page, elmnt, skillType) {
     document.getElementById(page).style.display = "block";
     elmnt.style.color = "#FA991C";
 
-    count = 1;
+    count = 0;
 
 }
 
@@ -77,11 +77,6 @@ function sliderScript(num, skillType) {
     var listItem = document.getElementsByClassName(skillType);
     var addedLeft = 0;
     var skillCards = document.querySelector(".myskills li");
-    for (var k = 0; k < skillCards.length; k++) {
-        if (skillCards.style.width == "85%") {
-            addedLeft = -55;
-        }
-    }
     count += num;
     for (var i of listItem) {
         switch (count) {
@@ -89,10 +84,10 @@ function sliderScript(num, skillType) {
                 if (count == 0) { i.style.left = "0%";}
                 break;
             case 1:
-                (skillType == 'frameSkill') ? i.style.left = "-45%" : i.style.left = "-80%";
+                (skillType == 'frameSkill') ? i.style.left = "-75%" : i.style.left = "-80%";
                 break;
             case 2:
-                (skillType == 'frameSkill') ? i.style.left = "-80%"  : i.style.left = "-165%";
+                (skillType == 'frameSkill') ? i.style.left = "-160%"  : i.style.left = "-165%";
                 break;
             case 3:
                 (skillType == 'frameSkill') ?  count = 2 : i.style.left = "-255%";
