@@ -775,3 +775,82 @@ a[aria-expanded=false] .fa-chevron-up {
         margin-top: 17%;
     }
 }
+#floatButton {
+    display: none;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: .7%;
+    color: #FA991C;
+    background-color: none;
+    text-align: center;
+    font-size: 270%;
+    z-index: 1;
+}
+
+    #floatButton:hover {
+        color: #fcc176;
+        cursor: pointer;
+        font-size: 275%;
+    }
+
+.btnFloat {
+    padding-top: 1.2%;
+}
+.footerIcon {
+    padding-right: .4%;
+    margin-left: 1%;
+}
+
+.footerContent p {
+    display: inline-block;
+    width: 1000px;
+    line-height: 28px;
+    font-size: 18px;
+    float: left;
+    margin-left: 3.3%;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+    .socials li {
+        margin: 0 10px;
+    }
+
+    .socials a {
+        text-decoration: none;
+    }
+
+.footerContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+    .footerContent h3 {
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        line-height: 3rem;
+        margin-left: 3%;
+    }
+
+.footer-bottom span {
+    color: #1f2833;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-bottom {
+    padding: 2%;
+}
