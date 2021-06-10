@@ -81,21 +81,21 @@ function sliderScript(num, skillType) {
     for (var i of listItem) {
         switch (count) {
             case 0:
-                if (count == 0) { i.style.left = "0%";}
+                if (count == 0) { i.style.left = "0%"; }
                 break;
             case 1:
                 (skillType == 'frameSkill') ? i.style.left = "-75%" : i.style.left = "-80%";
                 break;
             case 2:
-                (skillType == 'frameSkill') ? i.style.left = "-160%"  : i.style.left = "-165%";
+                (skillType == 'frameSkill') ? i.style.left = "-160%" : i.style.left = "-165%";
                 break;
             case 3:
-                (skillType == 'frameSkill') ?  count = 2 : i.style.left = "-255%";
+                (skillType == 'frameSkill') ? count = 2 : i.style.left = "-255%";
                 break;
             case 4:
-                (skillType == 'frameSkill') ?  count = 2 : i.style.left = "-350%";
+                (skillType == 'frameSkill') ? count = 2 : i.style.left = "-350%";
                 break;
-            case 5: (skillType == "frameSkill") ?  count = 2 : i.style.left = "-440%";
+            case 5: (skillType == "frameSkill") ? count = 2 : i.style.left = "-440%";
                 break;
         }
         if (count < 0) {
@@ -132,8 +132,15 @@ function removeNav() {
     menuBtn.classList.remove("hide");
 }
 
+window.onscroll = function () { myFunction() };
 
-
-
-
+function myFunction() {
+    if (document.body.scrollTop > 550 || document.documentElement.scrollTop > 550) {
+        document.getElementById("floatButton").style.display = "block";
+        document.getElementById("nav").style.display = "none";
+    } else {
+        document.getElementById("floatButton").style.display = "none";
+        document.getElementById("nav").style.display = "block";
+    }
+}
 
