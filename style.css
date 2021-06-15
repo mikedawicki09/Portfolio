@@ -609,7 +609,9 @@ a[aria-expanded=false] .fa-chevron-up {
     padding: 20px 5%;
     border: none;
 }
-
+.tabButton:hover {
+    background-color: #e8e8e8;
+}
 .firstBtn {
     color: #FA991C;
 }
