@@ -90,7 +90,6 @@ html, body {
 
 @media screen and (max-width: 800px) {
     .myNavbar .my-nav-list {
-        display: none;
         position: fixed;
         top: 0;
         left: -100%;
@@ -295,14 +294,10 @@ html, body {
     margin-left: auto;
 }
 
-
-
-
 .drop {
     display: inline-block;
-    color:white;
-    font-size:270%;
-
+    color: white;
+    font-size: 270%;
 }
 
     .drop:hover {
@@ -414,13 +409,13 @@ a[aria-expanded=false] .fa-chevron-up {
         color: #FA991C;
     }
 
+
 .whiteAddSign {
     outline: none;
     cursor: pointer;
     width: 50%;
     color: black;
 }
-
 
 .whiteAddSign:hover {
     text-decoration: none;
@@ -440,58 +435,55 @@ a[aria-expanded=false] .fa-chevron-up {
 }
 
 
-
-
 .buttonStyle {
     color: white;
 }
 
 
-
-    @media screen and (max-width: 600px) {
-        .styling {
-            font-size: 9px;
-        }
-
-        .lead {
-            font-size: 15px;
-        }
-        /*media queries for project section*/
-        .heading {
-            font-size: 16px;
-        }
-
-        .chevronSign {
-            font-size: 16px;
-        }
-
-        .view {
-            margin-left: 22%;
-        }
-
-        .cardHead {
-            font-size: 16px;
-        }
-
-        .addSign {
-            font-size: 16px;
-        }
-      
+@media screen and (max-width: 600px) {
+    .styling {
+        font-size: 9px;
     }
-    /*media queries for footer*/
-    @media screen and (max-width: 800px) {
-        .styling {
-            font-size: 14px;
-        }
 
-        .table h2 {
-            font-size: 19px;
-        }
+    .lead {
+        font-size: 15px;
+    }
+    /*media queries for project section*/
+    .heading {
+        font-size: 16px;
+    }
 
-        .lead {
-            font-size: 14px;
-        }
-    
+    .chevronSign {
+        font-size: 16px;
+    }
+
+    .view {
+        margin-left: 22%;
+    }
+
+    .cardHead {
+        font-size: 16px;
+    }
+
+    .addSign {
+        font-size: 16px;
+    }
+}
+/*media queries for footer*/
+@media screen and (max-width: 800px) {
+    .styling {
+        font-size: 14px;
+    }
+
+    .table h2 {
+        font-size: 19px;
+    }
+
+    .lead {
+        font-size: 14px;
+    }
+
+}
 
 
 
@@ -609,15 +601,16 @@ a[aria-expanded=false] .fa-chevron-up {
     padding: 20px 5%;
     border: none;
 }
-.tabButton:hover {
-    background-color: #e8e8e8;
-}
+
 .firstBtn {
     color: #FA991C;
 }
 
 .tabButton:focus {
     outline: none;
+}
+.tabButton:hover {
+    background-color: #e8e8e8;
 }
 
 .tab-indicator {
