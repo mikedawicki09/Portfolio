@@ -235,235 +235,253 @@
     </section>
     <!--Projects End-->
     <!--Skills Section-->
-    <section id="skill">
+       <section id="skill">
         <div class="padding">
             <h2 class="text-center">S<u class="underline">kill</u>s</h2>
-            <div class="container shadow-lg">
-                <div class="tabs">
-                    <div class="tab-header">
-                        <div>
-                            <button class="tabButton" onclick="openTab('languages',this, 'langSkill')">
-                                <img src="Photos/languages.svg" alt="langauges logo">Languages
-                            </button>
-                        </div>
-                        <div>
-                            <button class="tabButton" onclick="openTab('tools', this, 'myToolCards')">
-                                <img src="Photos/tools.svg" alt="Tools logo">Software
-                            </button>
-                        </div>
-                        <div>
-                            <button class="tabButton" onclick="openTab('frameworks',this, 'myFrameCards')">
-                                <img src="Photos/framework.svg" alt="frameworks">Frameworks
-                            </button>
-                        </div>
+            <div class="tab-header-grid">
+                <div class="grid-column">
+                    <button class="tabButton firstBtn" onclick="openTab('languages',this, 'langSkill')">
+                        <img src="Photos/languages.svg" alt="langauges logo">Languages
+                    </button>
+                </div>
+                <div class="grid-column">
+                    <button class="tabButton" onclick="openTab('tools', this, 'myToolCards')">
+                        <img src="Photos/tools.svg" alt="Tools logo">Software
+                    </button>
+                </div>
+                <div class="grid-column">
+                    <button class="tabButton" onclick="openTab('frameworks',this, 'myFrameCards')">
+                        <img src="Photos/framework.svg" alt="frameworks">Frameworks
+                    </button>
+                </div>
+            </div>
+            <div class="tab-indicator"></div>
+            <div class="tab-body-grid">
+                <div id="languages" class="tabContent">
+                    <div class="skillContainer">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="slider">
+                                        <ul class="myskills">
+                                            <li class="langSkill">
+                                                <div class="box">
+                                                    <div class="grid">
+                                                        <img id="javaImg" src="Photos/java.svg" class="model">
+                                                        <div class="myExp">
+                                                            <h3>My Experience</h3>
+                                                            <p>Built business applications using Java. Used these applications to both understand and implement the basic fundamentals of Object-oriented programming including Encapsulation, Polymorphism, Inheritance, and Abstraction.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="langSkill">
+                                                <div class="box">
+                                                    <div class="grid">
+                                                        <img src="Photos/python.svg" class="model">
+                                                        <div class="myExp">
+                                                            <h3>My Experience</h3>
+                                                            <p>Utilized Python to enhance my understanding of control structures, array processing logic and sub procedures and functions. Built NoSQL databases with Python via Amazon Web Services Non-Relational database services known as DynamoDB.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="langSkill">
+                                                <div class="box">
+                                                    <div class="grid">
+                                                        <img src="Photos/c.svg" class="model">
+                                                        <div class="myExp">
+                                                            <h3>My Experience</h3>
+                                                            <p>Developed an information system from the ground up using C#. My system connected to a SQL database which allowed for customer information to be accessed at any point in time, hash user’s passwords with the hashing algorithm PDKDF2, and prevented cross site scripting.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="langSkill">
+                                                <div class="box">
+                                                    <div class="grid">
+                                                        <img src="Photos/html.svg" class="model">
+                                                        <div class="myExp">
+                                                            <h3>My Experience</h3>
+                                                            <p> With 3 years of experience of building web pages with HTML and CSS, I have a thorough understanding on how to build webpages with proper document structure. My website portfolio was developed with HTML, CSS, JavaScript, and Bootstrap as a CSS framework.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="langSkill">
+                                                <div class="box">
+                                                    <div class="grid">
+                                                        <img src="Photos/css.svg" class="model">
+                                                        <div class="myExp">
+                                                            <h3>My Experience</h3>
+                                                            <p> Styled countless webpages structured with HTML with CSS while maintaining a responsive design. I utilize media queries to allow the content on my web pages to adapt to differnt screen sizes and resolutions.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="langSkill">
+                                                <div class="box">
+                                                    <div class="grid">
+                                                        <img src="Photos/sql.svg" class="model">
+                                                        <div class="myExp">
+                                                            <h3>My Experience</h3>
+                                                            <p>Developed a fundamental understanding of relational database analysis and design using SQL. I have developed and maintained databases using both Oracle and Microsoft SQL Server.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="skillButtonsDiv">
+                                        <button class="skillButton" onclick="sliderScript(-1, 'langSkill')"><i class="far fa-arrow-alt-circle-up"></i></button><br />
+                                        <button class="skillButton" onclick="sliderScript(1, 'langSkill')"><i class="far fa-arrow-alt-circle-down"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
-                    <div class="tab-indicator"></div>
-                    <div class="tab-body">
-                        <div id="languages" class="tabContent">
-                            <div class="row" style="width: 100%;">
-                                <div class="col-lg-12">
-                                    <button class="skillButton" onclick="sliderScript(-1, 'langSkill')"><i class="far fa-arrow-alt-circle-left"></i></button>
-                                    <button class="skillButton" onclick="sliderScript(1, 'langSkill')"><i class="far fa-arrow-alt-circle-right"></i></button>
-                                    <a class="cancel" onclick="cancelTab('languages',this)"><i class="far fa-times-circle"></i></a>
-                                </div>
-                            </div>
-                            <div class="row" style="width:100%;">
-                                <div class="col-lg-12">
+                </div>
+                <div id="tools" class="tabContent">
+                    <div class="skillContainer">
+                        <table>
+                            <tr>
+                                <td>
                                     <div class="slider">
                                         <ul class="myskills">
-                                            <li class="card langSkill">
-                                                <div class="card-img-top">
-                                                    <img class="skillPhotos" src="Photos/java.svg" alt="Java logo" />
-                                                </div>
-                                                <div class="card-body">
-                                                    <div class="card-text">
-                                                        <p>Built business applications using Java. Used these applications to both understand and implement the basic fundamentals of Object-oriented programming including Encapsulation, Polymorphism, Inheritance, and Abstraction.</p>
+                                            <li class="toolSkill">
+                                                <div class="box">
+                                                    <div class="grid">
+                                                        <img class="model" src="Photos/sql.svg" alt="SQL logo" />
+                                                        <div class="myExp">
+                                                            <h3>My Experience</h3>
+                                                            <p>Gained experience using Microsoft SQL Server to develop relational databases throughout the past 4 years. I have used this software to build, manage, and query the databases for my senior capstone project as well as exporting data to both PowerBI and Tableau.</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="card langSkill">
-                                                <div class="card-img-top">
-                                                    <img src="Photos/python.svg" alt="Python logo" />
-                                                </div>
-                                                <div class="card-body">
-                                                    <div class="card-text">
-                                                        <p>
-                                                            Utilized Python to enhance my understanding of control structures, array processing logic and sub procedures and functions. Built NoSQL databases with Python via Amazon Web Services Non-Relational database services known as DynamoDB.
-                                                        </p>
+                                            <li class="toolSkill">
+                                                <div class="box">
+                                                    <div class="grid">
+                                                        <img class="model" src="Photos/vs.svg" alt="Microsoft Visual Studio logo" />
+                                                        <div class="myExp">
+                                                            <h3>My Experience</h3>
+                                                            <p>Gained relevant experience using Microsoft Visual Studio to build web applications for the past 2 years. I have used this software to build my senior capstone project's web application. I also used Visual Studio to develop my website portfolio in which I used HTML, CSS, and Javascript.</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="card langSkill">
-                                                <div class="card-img-top">
-                                                    <img class="imageSkill" src="Photos/c.svg" alt="C# logo" />
-                                                </div>
-                                                <div class="card-body">
-                                                    <div class="card-text">
-                                                        <p>Developed an information system from the ground up using C#. My system connected to a SQL database which allowed for customer information to be accessed at any point in time, hash user’s passwords with the hashing algorithm PDKDF2, and prevented cross site scripting. </p>
+                                            <li class="toolSkill">
+                                                <div class="box">
+                                                    <div class="grid">
+                                                        <img class="model" src="Photos/aws.svg" alt="Amazon Web Services logo" />
+                                                        <div class="myExp">
+                                                            <h3>My Experience</h3>
+                                                            <p>Expanded my expertise in cloud computing from working with a variety of AWS services.  I have hands on experience deploying and managing EC2 instances, developing databases with DynamoDB and RDS, Elastic Beanstalk S3 bucket, and using docker containers with AWS Fargate.</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="card langSkill">
-                                                <div class="card-img-top">
-                                                    <img class="imageSkill" src="Photos/html.svg" alt="HTML logo" />
-                                                </div>
-                                                <div class="card-body">
-                                                    <div class="card-text">
-                                                        <p> With 3 years of experience of building web pages with HTML and CSS, I have a thorough understanding on how to build webpages with proper document structure. My website portfolio was developed with HTML, CSS, JavaScript, and Bootstrap as a CSS framework.</p>
+                                            <li class="toolSkill">
+                                                <div class="box">
+                                                    <div class="grid">
+                                                        <img class="model" src="Photos/github.svg" alt="GitHub logo" />
+                                                        <div class="myExp">
+                                                            <h3>My Experience</h3>
+                                                            <p>By using Github, I could easily collaborate and share code in real time by pulling code down from my GitHub repository as needed while also pushing code back up from my local repository. I also currently host my fully responsive portfolio website on GitHub Pages.</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="card langSkill">
-                                                <div class="card-img-top">
-                                                    <img class="imageSkill" src="Photos/css.svg" alt="CSS logo" />
-                                                </div>
-                                                <div class="card-body">
-                                                    <div class="card-text">
-                                                        <p>Styled countless webpages structured with HTML with CSS while maintaining a responsive design. I utilize media queries to allow the content on my web pages to adapt to differnt screen sizes and resolutions.</p>
+                                            <li class="toolSkill">
+                                                <div class="box">
+                                                    <div class="grid">
+                                                        <img class="model" src="Photos/powerbi.svg" alt="Power BI logo" />
+                                                        <div class="myExp">
+                                                            <h3>My Experience</h3>
+                                                            <div class="card-text">
+                                                                <p> Used PowerBI to create data visualizations from data extracted from Microsoft SQL Server. I have worked with ArcGIS Maps, Drill down Donut Charts and a multitude of other Data visualization charts. </p>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="card langSkill">
-                                                <div class="card-img-top">
-                                                    <img class="imageSkill" src="Photos/sql.svg" alt="SQL logo" />
-                                                </div>
-                                                <div class="card-body">
-                                                    <div class="card-text">
-                                                        <p>Developed a fundamental understanding of relational database analysis and design using SQL. I have developed and maintained databases using both Oracle and Microsoft SQL Server.  </p>
+                                            <li class="toolSkill">
+                                                <div class="box">
+                                                    <div class="grid">
+                                                        <img class="model" src="Photos/oracle.svg" alt="Oracle logo" />
+                                                        <div class="myExp">
+                                                            <h3>My Experience</h3>
+                                                            <p>Gained experience using Oracle’s relational database management system in which I used SQL to build my databases. I had hands on experience creating, manipulating, and querying tables in my databases.</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </li>
                                         </ul>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="tools" class="tabContent">
-                            <div class="row" style="width:100%;">
-                                <div class="col-lg-12">
-                                    <button class="skillButton" onclick="sliderScript(-1, 'toolSkill')"><i class="far fa-arrow-alt-circle-left"></i></button>
-                                    <button class="skillButton" onclick="sliderScript(1, 'toolSkill')"><i class="far fa-arrow-alt-circle-right"></i></button>
-                                    <a class="cancel" onclick="cancelTab('tools',this)"><i class="far fa-times-circle"></i></a>
-                                </div>
-                            </div>
-                            <div class="row" style="width:100%;">
-                                <div class="col-lg-12">
+                                </td>
+                                <td>
+                                    <div class="skillButtonsDiv">
+                                        <button class="skillButton" onclick="sliderScript(-1, 'toolSkill')"><i class="far fa-arrow-alt-circle-up"></i></button><br />
+                                        <button class="skillButton" onclick="sliderScript(1, 'toolSkill')"><i class="far fa-arrow-alt-circle-down"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div id="frameworks" class="tabContent">
+                    <div class="skillContainer">
+                        <table>
+                            <tr>
+                                <td>
                                     <div class="slider">
                                         <ul class="myskills">
-                                            <li class="card toolSkill">
-                                                <div class="card-img-top">
-                                                    <img class="imageSkill" src="Photos/sql.svg" alt="SQL logo" />
-                                                </div>
-                                                <div class="card-body">
-                                                    <div class="card-text">
-                                                        <p>Gained experience using Microsoft SQL Server to develop relational databases throughout the past 4 years. I have used this software to build, manage, and query the databases for my senior capstone project as well as exporting data to both PowerBI and Tableau.</p>
+                                            <li class="frameSkill">
+                                                <div class="box">
+                                                    <div class="grid">
+                                                        <img src="Photos/bootstrap.svg" class="model" alt="Bootstrap logo" />
+                                                        <div class="myExp">
+                                                            <h3>My Experience</h3>
+                                                            <p>I have utilized Bootstrap as a CSS framework to assist in building fully responsive web applications. I have used Bootstrap’s grid system in many of my web applications along with my portfolio website to layout and align my content.</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="card toolSkill">
-                                                <div class="card-img-top">
-                                                    <img class="imageSkill" src="Photos/vs.svg" alt="Microsoft Visual Studio logo" />
-                                                </div>
-                                                <div class="card-body">
-                                                    <div class="card-text">
-                                                        <p>Gained relevant experience using Microsoft Visual Studio to build web applications for the past 2 years. I have used this software to build my senior capstone project's web application. I also used Visual Studio to develop my website portfolio in which I used HTML, CSS, and Javascript.</p>
+                                            <li class="frameSkill">
+                                                <div class="box">
+                                                    <div class="grid">
+                                                        <img src="Photos/asp.svg" class="model" alt="Microsoft ASP.NET logo" />
+                                                        <div class="myExp">
+                                                            <h3>My Experience</h3>
+                                                            <p>Built an application for a moving and auction services client by using Microsoft’s ASP.net. By using ASP.net, I was able to develop both a fully responsive and dynamic application that added value to our client’s needs.</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="card toolSkill">
-                                                <div class="card-img-top">
-                                                    <img class="imageSkill" src="Photos/aws.svg" alt="Amazon Web Services logo" />
-                                                </div>
-                                                <div class="card-body">
-                                                    <div class="card-text">
-                                                        <p>Expanded my expertise in cloud computing from working with a variety of AWS services.  I have hands on experience deploying and managing EC2 instances, developing databases with DynamoDB and RDS, Elastic Beanstalk S3 bucket, and using docker containers with AWS Fargate.</p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="card toolSkill">
-                                                <div class="card-img-top">
-                                                    <img class="imageSkill" src="Photos/github.svg" alt="GitHub logo" />
-                                                </div>
-                                                <div class="card-body">
-                                                    <div class="card-text">
-                                                        <p>By using Github, I could easily collaborate and share code in real time by pulling code down from my GitHub repository as needed while also pushing code back up from my local repository. I also currently host my fully responsive portfolio website on GitHub Pages.</p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="card toolSkill">
-                                                <div class="card-img-top">
-                                                    <img class="imageSkill" src="Photos/powerbi.svg" alt="Power BI logo" />
-                                                </div>
-                                                <div class="card-body">
-                                                    <div class="card-text">
-                                                        <p>
-                                                            Used PowerBI to create data visualizations from data extracted from Microsoft SQL Server. I have worked with ArcGIS Maps, Drill down Donut Charts and a multitude of other Data visualization charts.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="card toolSkill">
-                                                <div class="card-img-top">
-                                                    <img class="imageSkill" src="Photos/oracle.svg" alt="Oracle logo" />
-                                                </div>
-                                                <div class="card-body">
-                                                    <div class="card-text">
-                                                        <p>Gained experience using Oracle’s relational database management system in which I used SQL to build my databases. I had hands on experience creating, manipulating, and querying tables in my databases.</p>
+                                            <li class="frameSkill">
+                                                <div class="box">
+                                                    <div class="grid">
+                                                        <img src="Photos/jquery.svg" class="model" alt="JQuery logo" />
+                                                        <div class="myExp">
+                                                            <h3>My Experience</h3>
+                                                            <p>I have built a lot of my applications using the JQuery library. I utilized methods from the JQuery library to add animations and make my pages more dynamic. I am also currently using JQuery in my portfolio website. </p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </li>
                                         </ul>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="frameworks" class="tabContent">
-                            <div class="row" style="width:100%;">
-                                <div class="col-lg-12">
-                                    <button class="skillButton" onclick="sliderScript(-1, 'frameSkill')"><i class="far fa-arrow-alt-circle-left"></i></button>
-                                    <button class="skillButton" onclick="sliderScript(1, 'frameSkill')"><i class="far fa-arrow-alt-circle-right"></i></button>
-                                    <a class="cancel" onclick="cancelTab('frameworks',this)"><i class="far fa-times-circle"></i></a>
-                                </div>
-                            </div>
-                            <div class="row" style="width:100%;">
-                                <div class="col-lg-12">
-                                    <div class="slider">
-                                        <ul class="myskills">
-                                            <li class="card frameSkill">
-                                                <div class="card-img-top">
-                                                    <img src="Photos/bootstrap.svg" class="imageSkill" alt="Bootstrap logo" />
-                                                </div>
-                                                <div class="card-body">
-                                                    <div class="card-text">
-                                                        <p>I have utilized Bootstrap as a CSS framework to assist in building fully responsive web applications. I have used Bootstrap’s grid system in many of my web applications along with my portfolio website to layout and align my content.</p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="card frameSkill">
-                                                <div class="card-img-top">
-                                                    <img src="Photos/asp.svg" class="imageSkill" alt="Microsoft ASP.NET logo" />
-                                                </div>
-                                                <div class="card-body">
-                                                    <div class="card-text">
-                                                        <p>Built an application for a moving and auction services client by using Microsoft’s ASP.net. By using ASP.net, I was able to develop both a fully responsive and dynamic application that added value to our client’s needs.</p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="card frameSkill">
-                                                <div class="card-img-top">
-                                                    <img src="Photos/jquery.svg" class="imageSkill" alt="JQuery logo" />
-                                                </div>
-                                                <div class="card-body">
-                                                    <div class="card-text">
-                                                        <p>I have built a lot of my applications using the JQuery library. I utilized methods from the JQuery library to add animations and make my pages more dynamic. I am also currently using JQuery in my portfolio website. </p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                </td>
+                                <td>
+                                    <div class="skillButtonsDiv">
+                                        <button class="skillButton" onclick="sliderScript(-1, 'frameSkill')"><i class="far fa-arrow-alt-circle-up"></i></button><br />
+                                        <button class="skillButton" onclick="sliderScript(1, 'frameSkill')"><i class="far fa-arrow-alt-circle-down"></i></button>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>
