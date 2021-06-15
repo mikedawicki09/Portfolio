@@ -1,27 +1,28 @@
 function changeTab(page) {
     var indicator = document.querySelector(".tab-indicator");
+
     if (page == "tools") {
-        if (indicator.style.left = "1.6%") {
-            indicator.style.left = "30%";
+        if (indicator.style.left = "16.5%") {
+            indicator.style.left = "110%";
         }
         if (indicator.style.left = "64%") {
-            indicator.style.left = "33%";
+            indicator.style.left = "40%";
         }
     }
     if (page == "languages") {
         if (indicator.style.left = "23%") {
-            indicator.style.left = "1.6%";
+            indicator.style.left = "16.5%";
         }
         if (indicator.style.left = "64%") {
-            indicator.style.left = "1.6%";
+            indicator.style.left = "16.5%";
         }
     }
     if (page == "frameworks") {
         if (indicator.style.left = "23%") {
             indicator.style.left = "64%";
         }
-        if (indicator.style.left = "1.6%") {
-            indicator.style.left = "64%";
+        if (indicator.style.left = "16.5%") {
+            indicator.style.left = "63.5%";
         }
     }
 }
@@ -65,37 +66,31 @@ window.onscroll = function () {
     prevScrollpos = currentScrollPos;
 }
 
-/*function to remove tab content*/
-function cancelTab(page, elmnt) {
-    var cancelTab = document.getElementById(page).style.display = "none";
 
-}
 
 
 var count = 0;
 function sliderScript(num, skillType) {
     var listItem = document.getElementsByClassName(skillType);
-    var addedLeft = 0;
-    var skillCards = document.querySelector(".myskills li");
     count += num;
     for (var i of listItem) {
         switch (count) {
             case 0:
-                if (count == 0) { i.style.left = "0%"; }
+                if (count == 0) { i.style.top = "0%"; }
                 break;
             case 1:
-                (skillType == 'frameSkill') ? i.style.left = "-75%" : i.style.left = "-80%";
+                (skillType == 'frameSkill') ? i.style.top = "-95%" : i.style.top = "-95%";
                 break;
             case 2:
-                (skillType == 'frameSkill') ? i.style.left = "-160%" : i.style.left = "-165%";
+                (skillType == 'frameSkill') ? i.style.top = "-190%" : i.style.top= "-190%";
                 break;
             case 3:
-                (skillType == 'frameSkill') ? count = 2 : i.style.left = "-255%";
+                (skillType == 'frameSkill') ? count = 2 : i.style.top = "-285%";
                 break;
             case 4:
-                (skillType == 'frameSkill') ? count = 2 : i.style.left = "-350%";
+                (skillType == 'frameSkill') ? count = 2 : i.style.top = "-380%";
                 break;
-            case 5: (skillType == "frameSkill") ? count = 2 : i.style.left = "-440%";
+            case 5: (skillType == "frameSkill") ? count = 2 : i.style.top = "-477%";
                 break;
         }
         if (count < 0) {
@@ -117,7 +112,6 @@ $(document).ready(function () {
         }, 1200)
     })
 })
-
 
 function showNav() {
     const navbarList = document.querySelector(".my-nav-list");
@@ -143,4 +137,7 @@ function myFunction() {
         document.getElementById("nav").style.display = "block";
     }
 }
+
+
+
 
