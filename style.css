@@ -698,11 +698,12 @@ a[aria-expanded=false] .fa-chevron-up {
     grid-template-columns: 1fr 1fr;
 }
 
+
 .model {
     height: 100%;
     width: 70%;
     margin-left: 35px;
-    margin-top: 2.8em;
+    margin-top: 35px;
 }
 
 #javaImg {
