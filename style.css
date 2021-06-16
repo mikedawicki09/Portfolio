@@ -380,19 +380,16 @@ html, body {
 
 /*changes plus sign to minus sign*/
 a[aria-expanded=true] .fa-plus {
-    display: none;
+    transform: rotate(45deg);
 }
 
-a[aria-expanded=false] .fa-minus {
-    display: none;
-}
 /*changes chevron down to chevron up*/
 a[aria-expanded=true] .fa-chevron-down {
-    display: none;
+    transform: rotate(180deg);
 }
 
-a[aria-expanded=false] .fa-chevron-up {
-    display: none;
+.fa-plus {
+    transition: all 0.4s linear;
 }
 /*styling for chevron up/down sign*/
 .chevronSign {
@@ -404,7 +401,9 @@ a[aria-expanded=false] .fa-chevron-up {
     cursor: pointer;
     margin-top: 1%;
 }
-
+.fa-chevron-down {
+    transition: all 0.4s linear;
+}
     .chevronSign:hover {
         color: #FA991C;
     }
@@ -417,9 +416,9 @@ a[aria-expanded=false] .fa-chevron-up {
     color: black;
 }
 
-.whiteAddSign:hover {
-    text-decoration: none;
-}
+    .whiteAddSign:hover {
+        text-decoration: none;
+    }
 
 .theblue {
     background-color: #1f2833;
@@ -482,7 +481,6 @@ a[aria-expanded=false] .fa-chevron-up {
     .lead {
         font-size: 14px;
     }
-
 }
 
 
@@ -510,6 +508,7 @@ a[aria-expanded=false] .fa-chevron-up {
 .btnFloat {
     padding-top: 1.2%;
 }
+
 .footerIcon {
     padding-right: .4%;
     margin-left: 1%;
@@ -609,6 +608,7 @@ a[aria-expanded=false] .fa-chevron-up {
 .tabButton:focus {
     outline: none;
 }
+
 .tabButton:hover {
     background-color: #e8e8e8;
 }
@@ -619,8 +619,10 @@ a[aria-expanded=false] .fa-chevron-up {
     border-radius: 10px;
     width: 18%;
     left: 16.5%;
+    top:4px;
     position: relative;
     transition: all 0.7s ease;
+    z-index:14;
 }
 
 .tab-body-grid {
@@ -686,7 +688,7 @@ a[aria-expanded=false] .fa-chevron-up {
 
     .myExp p {
         margin: 10px;
-        font-size:15px;
+        font-size: 15px;
     }
 
     .myExp h3 {
@@ -734,26 +736,37 @@ a[aria-expanded=false] .fa-chevron-up {
     .skillButton:focus {
         outline: none;
     }
-
+    .indicator-track {
+        width:65%;
+        background-color:lightgray;
+        display:flex;
+        margin-left:auto;
+        position:relative;
+        right:18px;
+        margin-right:auto;
+        height:5px;
+    }
 @media screen and (max-width: 800px) {
-    .tab-header-grid {
-        margin-left: 40px;
-    }
-    .tab-indicator {
-        left:10%;
-    }
+
+
     .myskills .box {
         width: 350px;
     }
+
     .box p {
         font-size: 12px;
     }
+
     .slider .myskills {
         width: 415px;
     }
-    .tab-body-grid {
-        margin-left: 93px;
-        min-width:480px;
+    .padding .tab-body-grid {
+        width:80%;
+        left:.5em;
+    }
+    .padding .indicator-track {
+        width:79%;
+        right:0px;
     }
 }
 
@@ -761,59 +774,118 @@ a[aria-expanded=false] .fa-chevron-up {
     .tab-header-grid {
         margin-left: 0px;
     }
+
     .tab-body-grid {
-        margin-left: 55px;
-        min-width:480px;
+        margin-left: 30px;
+        min-width: 480px;
     }
-    
+    .padding .indicator-track {
+        width: 88%;
+        left:.6em;
+    }
+    .padding .tab-indicator {
+        left:8%;
+    }
+   
 }
+
 @media screen and (max-width: 500px) {
     .slider .myskills .box {
         width: 325px;
     }
+
     .myskills .box p {
         font-size: 12px;
     }
+
     .slider .myskills {
         width: 385px;
     }
+
 }
-    
+
 @media screen and (max-width: 1100px) {
     .box {
         width: 500px;
     }
-    .box p {
-        font-size: 15px;
-    }
+
+        .box p {
+            font-size: 15px;
+        }
+
     .myskills {
         width: 565px;
     }
+    .tabButton {
+        width: 120%;
+    }
+    .tab-header-grid {
+        margin-right:12em;
+    }
+    .indicator-track {
+        width:67%;
+        right:10px;
+    }
+    .tab-indicator {
+        width:20%;
+        left: 16%;
+    }
+    .tab-body-grid {
+        width: 67%;
+    }
 }
+
 @media screen and (max-width: 1000px) {
     .box {
         width: 450px;
     }
-     .box p {
-        font-size: 14px;
-    }
+
+        .box p {
+            font-size: 14px;
+        }
+
     .myskills {
         width: 515px;
     }
+   .tab-header-grid {
+        margin-right: 11em;
+    }
+    .indicator-track {
+        width: 66%;
+        right:16px;
+    }
+    .tab-indicator {
+        width: 20%;
+        left: 15%;
+    }
+}
+
     @media screen and (max-width: 900px) {
         .box {
-        width: 400px;
-    }
-     .box p {
-        font-size: 13px;
-    }
-    .myskills {
-        width: 465px;
-    }
-        .myExp h3 {
-        font-size: 20px;
-    }
-        .tabButton {
-            width: 100%;
+            width: 400px;
         }
-}
+
+            .box p {
+                font-size: 13px;
+            }
+
+        .myskills {
+            width: 465px;
+        }
+
+        .myExp h3 {
+            font-size: 20px;
+        }
+        .tab-header-grid {
+            margin-right: 9em;
+        }
+        .tab-body-grid {
+            width:71%;
+            left:-.5em;
+        }
+        .indicator-track {
+            width:70%;
+            right:7px;
+        }
+    
+    }
