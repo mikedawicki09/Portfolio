@@ -686,6 +686,7 @@ a[aria-expanded=false] .fa-chevron-up {
 
     .myExp p {
         margin: 10px;
+        font-size:15px;
     }
 
     .myExp h3 {
