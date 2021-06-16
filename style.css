@@ -738,10 +738,81 @@ a[aria-expanded=false] .fa-chevron-up {
     .tab-header-grid {
         margin-left: 40px;
     }
+    .tab-indicator {
+        left:10%;
+    }
+    .myskills .box {
+        width: 350px;
+    }
+    .box p {
+        font-size: 12px;
+    }
+    .slider .myskills {
+        width: 415px;
+    }
+    .tab-body-grid {
+        margin-left: 93px;
+        min-width:480px;
+    }
 }
 
 @media screen and (max-width: 600px) {
     .tab-header-grid {
         margin-left: 0px;
     }
+    .tab-body-grid {
+        margin-left: 55px;
+        min-width:480px;
+    }
+    
+}
+@media screen and (max-width: 500px) {
+    .slider .myskills .box {
+        width: 325px;
+    }
+    .myskills .box p {
+        font-size: 12px;
+    }
+    .slider .myskills {
+        width: 385px;
+    }
+}
+    
+@media screen and (max-width: 1100px) {
+    .box {
+        width: 500px;
+    }
+    .box p {
+        font-size: 15px;
+    }
+    .myskills {
+        width: 565px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .box {
+        width: 450px;
+    }
+     .box p {
+        font-size: 14px;
+    }
+    .myskills {
+        width: 515px;
+    }
+    @media screen and (max-width: 900px) {
+        .box {
+        width: 400px;
+    }
+     .box p {
+        font-size: 13px;
+    }
+    .myskills {
+        width: 465px;
+    }
+        .myExp h3 {
+        font-size: 20px;
+    }
+        .tabButton {
+            width: 100%;
+        }
 }
