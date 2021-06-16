@@ -64,7 +64,10 @@ html, body {
 }
 
 .banner {
-    height: 100vh;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    display: table;
     background: url(Photos/background.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     background-size: cover;
