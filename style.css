@@ -408,7 +408,7 @@ html, body {
 
 /*changes plus sign to minus sign*/
 a[aria-expanded=true] .fa-plus {
-    transform: rotate(45deg);
+    transform: rotate(135deg);
 }
 
 /*changes chevron down to chevron up*/
