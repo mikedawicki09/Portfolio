@@ -829,6 +829,12 @@ a[aria-expanded=true] .fa-chevron-down {
     .slider .myskills {
         width: 385px;
     }
+     .landing-text h1 {
+         font-size: 400%;
+    }
+    .landing-text h3 {
+        font-size:20px;
+    }
 
 }
 
