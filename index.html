@@ -24,7 +24,7 @@
         <div class="my-nav">
             <ul class="my-nav-list">
                 <div class="navicon cancel-btn" onclick="removeNav()">
-                    <i class="far fa-times-circle"></i>
+                     <i class="far fa-times-circle"></i>
                 </div>
                 <li>
                     <a class="scroll" href="#aboutMe">About Me</a>
@@ -225,9 +225,10 @@
     </section>
     <!--Projects End-->
     <!--Skills Section-->
-    <section id="skill">
+   <section id="skill">
         <div class="padding">
-            <h2 class="text-center">S<u class="underline">kill</u>s</h2>
+        <h2 class="text-center">S<u class="underline">kill</u>s</h2>
+            <div class="container shadow-lg">
             <div class="tab-header-grid">
                 <div class="grid-column">
                     <button class="tabButton firstBtn" onclick="openTab('languages',this, 'langSkill')">
@@ -244,8 +245,7 @@
                         <img src="Photos/framework.svg" alt="frameworks">Frameworks
                     </button>
                 </div>
-            </div>
-            <div class="tab-indicator"></div>
+            </div><div class="tab-indicator"></div>
             <div class="indicator-track"></div>
             <div class="tab-body-grid">
                 <div id="languages" class="tabContent">
@@ -390,7 +390,7 @@
                                                     <div class="grid">
                                                         <img class="model" src="Photos/powerbi.svg" alt="Power BI logo" />
                                                         <div class="myExp">
-                                                            <h3>My Experience</h3>
+                                                            <h3 id="powerBI">My Experience</h3>
                                                             <div class="card-text">
                                                                 <p> Used PowerBI to create data visualizations from data extracted from Microsoft SQL Server. I have worked with ArcGIS Maps, Drill down Donut Charts and a multitude of other Data visualization charts. </p>
                                                             </div>
@@ -475,9 +475,11 @@
                         </table>
                     </div>
                 </div>
+            </div>     
             </div>
-        </div>
+     </div>
     </section>
+    
     <!--Skills end-->
     <!--Campus Involvement-->
     <section id="campus" class="projects shadow-lg">
@@ -589,14 +591,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
