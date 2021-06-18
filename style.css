@@ -779,15 +779,18 @@ a[aria-expanded=true] .fa-chevron-down {
 }
         
 @media screen and (max-width: 450px) {
-    .container .slider .myskills .box {
-        width: 250px;
+     .container .slider .myskills .box {
+        width: 200px;
     }
      .padding .container .slider .myskills {
-        width:305px;
+        width:250px;
     }
     .grid .myExp p {
         font-size: 8px;
+        width:12vc0%;
     }
+    .grid .myExp h3 {
+        right:60%;
 
 }
         
