@@ -778,7 +778,16 @@ a[aria-expanded=true] .fa-chevron-down {
     }
 }
         
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 450px) {
+    .container .slider .myskills .box {
+        width: 250px;
+    }
+     .padding .container .slider .myskills {
+        width:305px;
+    }
+    .grid .myExp p {
+        font-size: 8px;
+    }
 
 }
         
