@@ -624,6 +624,7 @@ a[aria-expanded=true] .fa-chevron-down {
 }
 .firstBtn {
     color: #FA991C;
+    box-shadow: 2px 2px 25px #FA991C;
 }
 .tabButton:focus {
     outline: none;
