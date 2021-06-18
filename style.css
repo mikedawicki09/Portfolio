@@ -780,14 +780,14 @@ a[aria-expanded=true] .fa-chevron-down {
         
 @media screen and (max-width: 450px) {
      .container .slider .myskills .box {
-        width: 200px;
+        width: 220px;
     }
      .padding .container .slider .myskills {
-        width:250px;
+        width:240px;
     }
     .grid .myExp p {
-        font-size: 8px;
-        width:12vc0%;
+        font-size: 10px;
+        width:120%;
     }
     .grid .myExp h3 {
         right:60%;
