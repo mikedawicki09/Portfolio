@@ -29,6 +29,7 @@ function openTab(page, elmnt, skillType) {
 
     for (i = 0; i < tabButton.length; i++) {
         tabButton[i].style.color = "black";
+        tabButton[i].style.boxShadow ="2px 2px 25px rgba(0,0,0,0.2)";
     }
     var slider = document.getElementById(skillType);
     /*loops through each of the selected elements and hides them*/
@@ -39,6 +40,7 @@ function openTab(page, elmnt, skillType) {
 
     document.getElementById(page).style.display = "block";
     elmnt.style.color = "#FA991C";
+    elmnt.style.boxShadow = "2px 2px 25px #FA991C";
 
     count = 0;
 
