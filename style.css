@@ -416,6 +416,7 @@ a[aria-expanded=true] .fa-chevron-down {
     transform: rotate(180deg);
 }
 
+
 .fa-plus {
     transition: all 0.4s linear;
 }
@@ -594,59 +595,48 @@ a[aria-expanded=true] .fa-chevron-down {
     padding: 2%;
 }
 
-/*styling for skills section*/
 .tab-header-grid {
     display: grid;
-    width: 70%;
+    width: 100%;
     grid-template-columns: repeat(3,1fr);
     margin-left: auto;
     margin-right: auto;
+    position: relative;
 }
-
-.padding {
-    padding: 50px 0;
-}
-
 .grid-column {
-    padding: 2em;
+    padding: 5%;
 }
-
 .tabButton img {
     height: 18%;
     width: 18%;
     margin-left: 40%;
     display: block;
 }
-
 .tabButton {
     background-color: #f5f5f5;
     color: black;
     border-radius: 10px;
     box-shadow: 5px 10px 5px #ccc;
-    width: 90%;
-    min-width: 110px;
-    padding: 20px 5%;
+    width: 100%;
+    padding: 10% 15%;
+    margin:0%;
     border: none;
 }
-
 .firstBtn {
     color: #FA991C;
 }
-
 .tabButton:focus {
     outline: none;
 }
-
 .tabButton:hover {
     background-color: #e8e8e8;
 }
-
 .tab-indicator {
     border-bottom: 5px solid #FA991C;
     box-shadow: 5px 1px 5px 1px #FA991C;
     border-radius: 10px;
-    width: 18%;
-    left: 16.5%;
+    width: 29%;
+    left: 2%;
     top:4px;
     position: relative;
     transition: all 0.7s ease;
@@ -660,11 +650,10 @@ a[aria-expanded=true] .fa-chevron-down {
     background-color: #f5f5f5;
     border: none;
     box-shadow: 5px 10px 5px #ccc;
-    width: 65%;
+    width: 96%;
     margin-top: 2em;
     margin-left: auto;
     position: relative;
-    right: 20px;
     margin-right: auto;
 }
 
@@ -765,161 +754,87 @@ a[aria-expanded=true] .fa-chevron-down {
         outline: none;
     }
     .indicator-track {
-        width:65%;
+        width:95%;
         background-color:lightgray;
         display:flex;
         margin-left:auto;
         position:relative;
-        right:18px;
         margin-right:auto;
         height:5px;
     }
-@media screen and (max-width: 800px) {
-
-
-    .myskills .box {
-        width: 350px;
-    }
-
-    .box p {
-        font-size: 12px;
-    }
-
-    .slider .myskills {
-        width: 415px;
-    }
-    .padding .tab-body-grid {
-        width:80%;
-        left:.5em;
-    }
-    .padding .indicator-track {
-        width:79%;
-        right:0px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .tab-header-grid {
-        margin-left: 0px;
-    }
-
-    .tab-body-grid {
-        margin-left: 30px;
-        min-width: 480px;
-    }
-    .padding .indicator-track {
-        width: 88%;
-        left:.6em;
-    }
-    .padding .tab-indicator {
-        left:8%;
-    }
-   
-}
-
+        
 @media screen and (max-width: 500px) {
-    .slider .myskills .box {
-        width: 325px;
-    }
-
-    .myskills .box p {
-        font-size: 12px;
-    }
-
-    .slider .myskills {
-        width: 385px;
-    }
      .landing-text h1 {
          font-size: 400%;
     }
     .landing-text h3 {
         font-size:20px;
     }
+    .slider .myskills .box {
+        width: 290px;
+    }
+     .container .slider .myskills {
+        width:347px;
+    }
+}
+        
+@media screen and (max-width: 550px) {
+
+}
+        
+@media screen and (max-width: 600px) {
+
 
 }
 
-@media screen and (max-width: 1100px) {
-    .box {
-        width: 500px;
+@media screen and (max-width: 800px) {
+    .myskills .box {
+        width:320px;
     }
-
-        .box p {
-            font-size: 15px;
-        }
-
-    .myskills {
-        width: 565px;
+    .slider .myskills {
+        width: 380px;
     }
-    .tabButton {
+    .model {
+        height: 45%;
+        left: 60%;
+        bottom: 2%;
+        position: relative;
+        width: 40%;
+    }
+    .myExp p {
+        font-size 10px;
+        position: relative;
+        top:20%;
+        width:160%;
+        right: 70%;   
+    }
+    .myExp h3 {
         width: 120%;
+        position: relative;
+        top:20%;
+        right:65%;
     }
-    .tab-header-grid {
-        margin-right:12em;
+    #powerBI {
+        margin-bottom: 50px;
     }
-    .indicator-track {
-        width:67%;
-        right:10px;
-    }
-    .tab-indicator {
-        width:20%;
-        left: 16%;
-    }
-    .tab-body-grid {
-        width: 67%;
-    }
+}
+
+@media screen and (max-width: 900px) {
 }
 
 @media screen and (max-width: 1000px) {
-    .box {
-        width: 450px;
+     .box {
+        width:500px;
     }
-
-        .box p {
-            font-size: 14px;
-        }
-
     .myskills {
-        width: 515px;
-    }
-   .tab-header-grid {
-        margin-right: 11em;
-    }
-    .indicator-track {
-        width: 66%;
-        right:16px;
-    }
-    .tab-indicator {
-        width: 20%;
-        left: 15%;
+        width: 560px;
     }
 }
 
-    @media screen and (max-width: 900px) {
-        .box {
-            width: 400px;
-        }
-
-            .box p {
-                font-size: 13px;
-            }
-
-        .myskills {
-            width: 465px;
-        }
-
-        .myExp h3 {
-            font-size: 20px;
-        }
-        .tab-header-grid {
-            margin-right: 9em;
-        }
-        .tab-body-grid {
-            width:71%;
-            left:-.5em;
-        }
-        .indicator-track {
-            width:70%;
-            right:7px;
-        }
-    
-    }
+@media screen and (max-width: 1100px) {
+}
+#skill .container {
+    border: 3px solid #FA991C;
+    padding: 30px;
+    border-radius: 10px;
+}
