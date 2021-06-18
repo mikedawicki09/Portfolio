@@ -2,27 +2,18 @@ function changeTab(page) {
     var indicator = document.querySelector(".tab-indicator");
 
     if (page == "tools") {
-        if (indicator.style.left = "16.5%") {
-            indicator.style.left = "110%";
-        }
         if (indicator.style.left = "64%") {
-            indicator.style.left = "40%";
+            indicator.style.left = "35.5%";
         }
     }
     if (page == "languages") {
-        if (indicator.style.left = "23%") {
-            indicator.style.left = "16.5%";
-        }
         if (indicator.style.left = "64%") {
-            indicator.style.left = "16.5%";
+            indicator.style.left = "2%";
         }
     }
     if (page == "frameworks") {
-        if (indicator.style.left = "23%") {
-            indicator.style.left = "64%";
-        }
-        if (indicator.style.left = "16.5%") {
-            indicator.style.left = "63.5%";
+        if (indicator.style.left = "2%") {
+            indicator.style.left = "68.5%";
         }
     }
 }
