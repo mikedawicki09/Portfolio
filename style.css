@@ -680,6 +680,7 @@ a[aria-expanded=true] .fa-chevron-down {
 
 .box:hover {
     box-shadow: 2px 2px 25px #FA991C;
+    transform: scale(1.03);
 }
 
 .myskills {
@@ -695,6 +696,7 @@ a[aria-expanded=true] .fa-chevron-down {
     box-shadow: 2px 2px 25px rgba(0,0,0,0.2);
     border-radius: 10px;
     position: relative;
+    transition: 0.3s;
 }
 
 .myExp {
