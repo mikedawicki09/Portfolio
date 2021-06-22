@@ -835,13 +835,10 @@ a[aria-expanded=true] .fa-plus {
     border: 1px solid #ccc;
     margin-bottom: 50px;
     border-radius: 10px;
-    background-color: transparent;
-    -webkit-perspective: 1000px;
+    background-color: white;
     perspective: 1000px;
     max-height: 25em;
-    -webkit-transition: -webkit-transform 1s;
     transition: transform 1s;
-    -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     position: relative;
     display: grid;
@@ -908,11 +905,8 @@ a[aria-expanded=true] .fa-plus {
 
 .project-card.flip {
     transform: rotateY(180deg);
-    -webkit-transform: rotateY(180deg);
     max-height: none;
 }
-.project-card.flip img {
-    display:none;
 
 .front-card, .back-card {
     position: relative;
@@ -924,7 +918,6 @@ a[aria-expanded=true] .fa-plus {
 
 .back-card {
     transform: rotateY(180deg);
-    -webkit-transform: rotateY(180deg);
 }
 .card-body p {
     color: #828282;
@@ -970,7 +963,4 @@ a[aria-expanded=true] .fa-plus {
         box-shadow: -5px -5px 10px #d7dfe2, 5px 5px 10px #82a9d0, inset -5px -5px 10px #d7dfe2;
         color: #82a9d0;
         text-decoration:none;
-    }
-#project .container {
-    background-color:white;
     }
