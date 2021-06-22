@@ -838,7 +838,7 @@ a[aria-expanded=true] .fa-plus {
     border: 1px solid #ccc;
     margin-bottom: 50px;
     border-radius: 10px;
-    background: #fff;
+    background: transparent;
     -webkit-perspective: 1000px;
     perspective: 1000px;
     max-height: 25em;
