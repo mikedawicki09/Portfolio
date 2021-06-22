@@ -836,9 +836,12 @@ a[aria-expanded=true] .fa-plus {
     margin-bottom: 50px;
     border-radius: 10px;
     background-color: white;
+    -webkit-perspective: 1000px;
     perspective: 1000px;
     max-height: 25em;
     transition: transform 1s;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform 1s;
     transform-style: preserve-3d;
     position: relative;
     display: grid;
@@ -905,6 +908,7 @@ a[aria-expanded=true] .fa-plus {
 
 .project-card.flip {
     transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
     max-height: none;
 }
 
@@ -918,6 +922,7 @@ a[aria-expanded=true] .fa-plus {
 
 .back-card {
     transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
 }
 .card-body p {
     color: #828282;
