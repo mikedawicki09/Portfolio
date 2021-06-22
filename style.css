@@ -848,6 +848,8 @@ a[aria-expanded=true] .fa-plus {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "overlap";
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 .project-img img {
