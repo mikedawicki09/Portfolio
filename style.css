@@ -915,9 +915,6 @@ a[aria-expanded=true] .fa-plus {
     transform: rotateY(180deg);
     max-height: none;
 }
-.project-card.flip img {
-    display:none;
-}
 .front-card, .back-card {
     position: relative;
     height: 100%;
