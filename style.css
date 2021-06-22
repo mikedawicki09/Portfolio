@@ -823,10 +823,13 @@ a[aria-expanded=true] .fa-plus {
 
 /*project section*/
 .project-row {
+    display: -webkit-flex;
     display: flex;
-    margin-top:40px;
+    margin-top: 40px;
+    -webkit-flex-direction: row;
     flex-direction: row;
     justify-content: space-around;
+    -webkit-flex-flow: wrap;
     flex-flow: wrap;
 }
 
@@ -836,9 +839,12 @@ a[aria-expanded=true] .fa-plus {
     margin-bottom: 50px;
     border-radius: 10px;
     background: #fff;
+    -webkit-perspective: 1000px;
     perspective: 1000px;
     max-height: 25em;
+    -webkit-transition: transform 1s;
     transition: transform 1s;
+    -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     position: relative;
     display: grid;
@@ -884,6 +890,7 @@ a[aria-expanded=true] .fa-plus {
     }
 
 .project-card:hover {
+    -webkit-transform:scale(1.08);
     transform: scale(1.08);
     box-shadow: 0 0 40px -10px rgba(0,0,0,0.25);
 }
@@ -904,6 +911,7 @@ a[aria-expanded=true] .fa-plus {
 }
 
 .project-card.flip {
+    -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
     max-height: none;
 }
@@ -911,12 +919,13 @@ a[aria-expanded=true] .fa-plus {
 .front-card, .back-card {
     position: relative;
     height: 100%;
-    backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     grid-area: overlap;
 }
 
 .back-card {
+    -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
 .card-body p {
