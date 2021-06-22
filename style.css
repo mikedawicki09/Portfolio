@@ -848,8 +848,6 @@ a[aria-expanded=true] .fa-plus {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "overlap";
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
 }
 
 .project-img img {
@@ -913,6 +911,8 @@ a[aria-expanded=true] .fa-plus {
     -webkit-transform: rotateY(180deg);
     max-height: none;
 }
+.project-card.flip img {
+    display:none;
 
 .front-card, .back-card {
     position: relative;
