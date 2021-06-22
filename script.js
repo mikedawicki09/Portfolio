@@ -29,7 +29,7 @@ function openTab(page, elmnt, skillType) {
 
     for (i = 0; i < tabButton.length; i++) {
         tabButton[i].style.color = "black";
-        tabButton[i].style.boxShadow ="2px 2px 25px rgba(0,0,0,0.2)";
+        tabButton[i].style.boxShadow = "2px 2px 25px rgba(0,0,0,0.2)";
     }
     var slider = document.getElementById(skillType);
     /*loops through each of the selected elements and hides them*/
@@ -46,18 +46,6 @@ function openTab(page, elmnt, skillType) {
 
 }
 
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function () {
-    var currentScrollPos = window.pageYOffset;
-    var navigation = document.querySelector("#nav");
-    if (prevScrollpos > currentScrollPos) {
-        navigation.style.display = "block";
-    }
-    else {
-        navigation.style.display = "none";
-    }
-    prevScrollpos = currentScrollPos;
-}
 
 
 
@@ -75,7 +63,7 @@ function sliderScript(num, skillType) {
                 (skillType == 'frameSkill') ? i.style.top = "-95%" : i.style.top = "-95%";
                 break;
             case 2:
-                (skillType == 'frameSkill') ? i.style.top = "-190%" : i.style.top= "-190%";
+                (skillType == 'frameSkill') ? i.style.top = "-190%" : i.style.top = "-190%";
                 break;
             case 3:
                 (skillType == 'frameSkill') ? count = 2 : i.style.top = "-285%";
@@ -128,6 +116,17 @@ function myFunction() {
     } else {
         document.getElementById("floatButton").style.display = "none";
         document.getElementById("nav").style.display = "block";
+    }
+}
+
+//function to flip project card 
+function cardFlip(project,side) {
+    var project = document.getElementById(project);
+    if (side == 0) {
+        project.classList.add("flip");
+    }
+    else {
+        project.classList.remove("flip");
     }
 }
 
