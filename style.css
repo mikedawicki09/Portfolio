@@ -978,4 +978,5 @@ a[aria-expanded=true] .fa-plus {
     }
 #project .container {
     border: 3px solid #FA991C;
+    background-color:white;
 }
