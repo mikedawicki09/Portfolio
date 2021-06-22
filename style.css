@@ -835,7 +835,7 @@ a[aria-expanded=true] .fa-plus {
     border: 1px solid #ccc;
     margin-bottom: 50px;
     border-radius: 10px;
-    background-color: white;
+    background: #fff;
     perspective: 1000px;
     max-height: 25em;
     transition: transform 1s;
