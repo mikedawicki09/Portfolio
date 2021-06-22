@@ -857,7 +857,7 @@ a[aria-expanded=true] .fa-plus {
     width: 45%;
     height: 45%;
     filter: invert(61%) sepia(76%) saturate(186%) hue-rotate(169deg) brightness(94%) contrast(87%);
-    transition-delay: 1s;
+    transition-delay: 5s;
 }
 
 .project-img {
@@ -917,7 +917,7 @@ a[aria-expanded=true] .fa-plus {
     max-height: none;
 }
 .project-card.flip img {
-    display:none;
+    opacity:0;
 }
 .front-card, .back-card {
     position: relative;
