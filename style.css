@@ -917,7 +917,7 @@ a[aria-expanded=true] .fa-plus {
 }
 .project-card.flip img {
     display:none;
-
+}
 .front-card, .back-card {
     position: relative;
     height: 100%;
