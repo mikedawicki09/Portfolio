@@ -857,6 +857,7 @@ a[aria-expanded=true] .fa-plus {
     width: 45%;
     height: 45%;
     filter: invert(61%) sepia(76%) saturate(186%) hue-rotate(169deg) brightness(94%) contrast(87%);
+    transition-delay: 1s;
 }
 
 .project-img {
@@ -975,4 +976,6 @@ a[aria-expanded=true] .fa-plus {
         color: #82a9d0;
         text-decoration:none;
     }
-
+#project .container {
+    border: 3px solid #FA991C;
+}
