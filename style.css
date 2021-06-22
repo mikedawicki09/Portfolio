@@ -839,9 +839,9 @@ a[aria-expanded=true] .fa-plus {
     -webkit-perspective: 1000px;
     perspective: 1000px;
     max-height: 25em;
+    -webkit-transition: -webkit-transform 1s;
     transition: transform 1s;
     -webkit-transform-style: preserve-3d;
-    -webkit-transition: -webkit-transform 1s;
     transform-style: preserve-3d;
     position: relative;
     display: grid;
