@@ -600,6 +600,9 @@ a[aria-expanded=true] .fa-plus {
     .container .project-row .project-card {
         width: 85%;
     }
+    .cardHead {
+        font-size: 16px;
+    }
 }
 /*screen width at 800px and less*/
 @media screen and (max-width: 800px) {
