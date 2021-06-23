@@ -559,7 +559,7 @@ a[aria-expanded=true] .fa-plus {
 /*screen width 450px and less*/
 @media screen and (max-width: 450px) {
     .container .slider .myskills .box {
-        width: 220px;
+        width: 210px;
     }
     .padding .container .slider .myskills {
         width: 240px;
@@ -568,7 +568,7 @@ a[aria-expanded=true] .fa-plus {
         font-size: 11px;
         width: 100%;
         height: 100%;
-        right: 50%;
+        right: 20%;
     }
     .grid .myExp h3 {
         right: 52%;
