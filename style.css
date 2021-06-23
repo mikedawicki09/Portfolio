@@ -580,6 +580,9 @@ a[aria-expanded=true] .fa-plus {
     .padding .container .project-row .project-card {
         width: 95%;
     }
+    .footerContent p {
+        font-size: 16px;
+    }
 }
 /*screen width at 500px and less*/
 @media screen and (max-width: 500px) {
