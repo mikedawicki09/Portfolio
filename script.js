@@ -1,3 +1,4 @@
+//function to slide tab-indicator to designated tab button
 function changeTab(page) {
     var indicator = document.querySelector(".tab-indicator");
 
@@ -18,12 +19,11 @@ function changeTab(page) {
     }
 }
 
-
-/*function to open the skill tabs*/
+//function to open the skill tabs
 function openTab(page, elmnt, skillType) {
     changeTab(page);
     var i, tabContent;
-    /*grabs all elements that have the class tabContent*/
+    //grabs all elements that have the class tabContent
     tabContent = document.getElementsByClassName("tabContent");
     var tabButton = document.getElementsByClassName("tabButton");
 
@@ -32,7 +32,7 @@ function openTab(page, elmnt, skillType) {
         tabButton[i].style.boxShadow = "2px 2px 25px rgba(0,0,0,0.2)";
     }
     var slider = document.getElementById(skillType);
-    /*loops through each of the selected elements and hides them*/
+    //loops through each of the selected elements and hides them
     for (i = 0; i < tabContent.length; i++) {
         tabContent[i].style.display = "none";
     }
@@ -46,10 +46,7 @@ function openTab(page, elmnt, skillType) {
 
 }
 
-
-
-
-
+//function to slide through skill carousel slider
 var count = 0;
 function sliderScript(num, skillType) {
     var listItem = document.getElementsByClassName(skillType);
@@ -81,9 +78,9 @@ function sliderScript(num, skillType) {
             count = 5;
         }
     }
-
 }
 
+//function to smooth scroll to section of the page 
 $(document).ready(function () {
     var scrollLink = $('.scroll');
     scrollLink.click(function (e) {
@@ -94,12 +91,14 @@ $(document).ready(function () {
     })
 })
 
+//function to show side navigation bar 
 function showNav() {
     const navbarList = document.querySelector(".my-nav-list");
     const menuBtn = document.querySelector(".menu-btn");
     navbarList.classList.add("active");
     menuBtn.classList.add("hide");
 }
+//function to hide side navigation button
 function removeNav() {
     const navbarList = document.querySelector(".my-nav-list");
     const menuBtn = document.querySelector(".menu-btn");
@@ -107,8 +106,8 @@ function removeNav() {
     menuBtn.classList.remove("hide");
 }
 
+//function to hide top navigation bar and display floating button
 window.onscroll = function () { myFunction() };
-
 function myFunction() {
     if (document.body.scrollTop > 550 || document.documentElement.scrollTop > 550) {
         document.getElementById("floatButton").style.display = "block";
