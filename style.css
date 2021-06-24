@@ -692,8 +692,8 @@ a[aria-expanded=true] .fa-plus {
         font-size: 16px;
     }
     .container .campus-row .campus-card {
-        width:90%;
-        margin-left:14%;
+        width:95%;
+        margin-left:12%;
     }
 }
 /*screen width at 500px and less*/
