@@ -129,6 +129,26 @@ function cardFlip(project,side) {
     }
 }
 
-
+//function to open card information
+var campusCount=0;
+function fade(card,elmnt) {
+    var plus = elmnt.querySelector(".fa-plus");
+    var textArea = document.getElementById(card);
+   var orgText = textArea.querySelector(".org-text");
+    switch(campusCount) {
+        case 0:
+            orgText.classList.remove("slow");
+            textArea.classList.add("toggle-area");
+            plus.classList.add("rotate");
+            campusCount=1;
+            break;
+        case 1: 
+            orgText.classList.add("slow");
+            textArea.classList.remove("toggle-area");
+            plus.classList.remove("rotate");
+            campusCount=0;
+            break;
+        }
+    }
 
 
