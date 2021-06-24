@@ -691,6 +691,9 @@ a[aria-expanded=true] .fa-plus {
     .footerContent p {
         font-size: 16px;
     }
+    .campus-row .campus-card {
+        width:90%;
+    }
 }
 /*screen width at 500px and less*/
 @media screen and (max-width: 500px) {
