@@ -454,81 +454,64 @@
 
     <!--Skills end-->
     <!--Campus Involvement-->
-    <section id="campus" class="projects shadow-lg">
-        <div class="padding">
-            <h2 class="text-center">Ca<u class="underline">mpus Involvem</u>ent</h2>
-            <div class="container shadow my-5 blueBack">
-                <table style="width: 100%;">
-                    <tr class="row">
-                        <td class="col-lg-6">
-                            <div class="card">
-                                <div class="card-body difCardStyle">
-                                    <h3 class="text-dark  mb-3 cardHead">Student Government Association</h3>
-                                    <a data-toggle="collapse" href="#sga" aria-expanded="false" class="addSign">
-                                        <i class="fa fa-plus pull-right"></i>
-                                    </a>
-                                    <div class="collapse fade" id="sga">
-                                        <p style="color: #828282;">
-                                            A College of Business Senator advocating for the needs of students across campus. I was a member of the finance committee that distributes over $130,000 to student run organizations throughout James Madison University.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td class="col-lg-6">
-                            <div class="card">
-                                <div class="card-body difCardStyle">
-                                    <h3 class="text-dark  mb-3 cardHead">Association of Information Systems</h3>
-                                    <a data-toggle="collapse" href="#ais" aria-expanded="false" class="addSign">
-                                        <i class="fa fa-plus pull-right"></i>
-                                    </a>
-                                    <div class="collapse fade" id="ais">
-                                        <p style="color: #828282;">
-                                            Association of Information Systems provides professional opportunities in which we met and discussed with recruiters currently in the information systems industry. AIS provided education programs for advancing technology and business skills, leadership development opportunities, networking and peer mentoring.
-
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr class="row">
-                        <td class="col-lg-6">
-                            <div class="card">
-                                <div class="card-body difCardStyle">
-                                    <h3 class="text-dark  mb-3 cardHead">Phi Alpha Delta</h3>
-                                    <a data-toggle="collapse" href="#pad" aria-expanded="false" class="addSign">
-                                        <i class="fa fa-plus pull-right"></i>
-                                    </a>
-                                    <div class="collapse fade" id="pad">
-                                        <p style="color: #828282;">
-                                            Being involved in Phi Alpha Delta, a professional Pre-Law Fraternity, has further enhanced my professional skills while participating in a group-oriented environment. I was a Member of the Philanthropy Committee that develops and implements fundraising plans and strategies for ALS.
-
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td class="col-lg-6">
-                            <div class="card">
-                                <div class="card-body difCardStyle">
-                                    <h3 class="text-dark  mb-3 cardHead">Student Defenders</h3>
-                                    <a data-toggle="collapse" href="#sd" aria-expanded="false" class="addSign">
-                                        <i class="fa fa-plus pull-right"></i>
-                                    </a>
-                                    <div class="collapse fade" id="sd">
-                                        <p style="color: #828282;">
-                                            Student Defenders provides guidance and counseling to students enduring the university judicial process. Our organization was founded to support due process, free speech and student's rights. As the communications chair, I maintained all social media platforms to spread awareness about what are organization does and how we can help JMU students.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
+   <section id="campus" class="shadow-lg">
+    <div class="padding">
+        <h2 class="text-center">Ca<u class="underline">mpus Involvem</u>ent</h2>
+        <div class="container shadow-lg">
+            <div class="campus-row">
+                <div class="campus-card">
+                    <div class="top-area">
+                        <img src="Photos/sga.jpeg"/>
+                    </div>
+                    <div class="button-area">
+                        <button onclick="fade('card1',this)" class="toggle-button"><i class="fa fa-plus"></i></button>
+                    </div>
+                    <div id="card1" class="bottom-area">
+                        <p class="org-text"> A College of Business Senator advocating for the needs of students across campus. I was a member of the finance committee that distributes over $130,000 to student run organizations throughout James Madison University.</p>
+                    </div>
+                    <div class="campus-title">Student Government Association</div>
+                </div>
+                <div class="campus-card">
+                    <div class="top-area">
+                        <img id="ais-img" src="Photos/ais.jpeg"/>
+                    </div>
+                     <div class="button-area">
+                        <button onclick="fade('card2',this)" class="toggle-button"><i class="fa fa-plus"></i></button>
+                    </div>
+                    <div id="card2" class="bottom-area">
+                        <p class="org-text"> Association of Information Systems provides professional opportunities in which we met and discussed with recruiters currently in the information systems industry. AIS provided education programs for advancing technology and business skills, leadership development opportunities, networking and peer mentoring.</p>
+                    </div>
+                     <div class="campus-title">Association for Information Systems </div>
+                </div>
+                <div class="campus-card">
+                    <div class="top-area">
+                        <img id="pad-img" src="Photos/pad.jpeg"/>
+                    </div>
+                     <div class="button-area">
+                        <button onclick="fade('card3',this)" class="toggle-button"><i class="fa fa-plus"></i></button>
+                    </div>
+                    <div id="card3" class="bottom-area">
+                        <p class="org-text"> Being involved in Phi Alpha Delta, a professional Pre-Law Fraternity, has further enhanced my professional skills while participating in a group-oriented environment. I was a Member of the Philanthropy Committee that develops and implements fundraising plans and strategies for ALS.</p>
+                    </div>
+                     <div class="campus-title">Phi Alpha Delta</div>
+                </div>
+                <div class="campus-card">
+                    <div class="top-area">
+                        <img id="sd-img" src="Photos/sd.jpeg"/>
+                    </div>
+                     <div class="button-area">
+                        <button onclick="fade('card4',this)" class="toggle-button"><i class="fa fa-plus"></i></button>
+                    </div>
+                    <div id="card4" class="bottom-area">
+                        <p class="org-text">  Student Defenders provides guidance and counseling to students enduring the university judicial process. Our organization was founded to support due process, free speech and student's rights. As the communications chair, I maintained all social media platforms to spread awareness about how our organization can help JMU students.</p>
+                    </div>
+                     <div class="campus-title">Student Defenders</div>
+                </div>
             </div>
+
         </div>
-    </section>
+    </div>
+</section>
     <!--Campus Involvement End-->
     <!--Footer Section-->
     <section id="contacted" class="sticky-bottom contact">
