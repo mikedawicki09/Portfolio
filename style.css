@@ -691,7 +691,7 @@ a[aria-expanded=true] .fa-plus {
     .footerContent p {
         font-size: 16px;
     }
-    .campus-row .campus-card {
+    .container .campus-row .campus-card {
         width:90%;
     }
 }
