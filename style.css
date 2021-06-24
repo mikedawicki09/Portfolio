@@ -693,6 +693,7 @@ a[aria-expanded=true] .fa-plus {
     }
     .container .campus-row .campus-card {
         width:90%;
+        margin-left:14%;
     }
 }
 /*screen width at 500px and less*/
