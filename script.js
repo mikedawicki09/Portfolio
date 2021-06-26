@@ -139,13 +139,13 @@ function fade(card,elmnt) {
         case 0:
             orgText.classList.remove("slow");
             textArea.classList.add("toggle-area");
-            plus.classList.add("rotate");
+            plus.style.transform = 'rotate(135deg)';
             campusCount=1;
             break;
         case 1: 
             orgText.classList.add("slow");
             textArea.classList.remove("toggle-area");
-            plus.classList.remove("rotate");
+            plus.style.transform = 'rotate(0deg)';
             campusCount=0;
             break;
         }
