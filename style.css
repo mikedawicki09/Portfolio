@@ -691,6 +691,9 @@ a[aria-expanded=true] .fa-plus {
         width:95%;
         margin-left:12%;
     }
+    #home {
+        background-color: #1f2833;
+    }
 }
 /*screen width at 500px and less*/
 @media screen and (max-width: 500px) {
