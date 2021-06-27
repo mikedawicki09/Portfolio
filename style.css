@@ -707,7 +707,7 @@ a[aria-expanded=true] .fa-plus {
         width: 347px;
     }
     .box .myExp p {
-        right:70%;
+        right:40%;
     }
 
     
@@ -782,7 +782,7 @@ a[aria-expanded=true] .fa-plus {
         position: relative;
         top: 20%;
         width: 160%;
-        right: 40%;
+        right: 80%;
     }
     .myExp h3 {
         width: 120%;
