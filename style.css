@@ -687,11 +687,12 @@ a[aria-expanded=true] .fa-plus {
     .footerContent p {
         font-size: 16px;
     }
-    .container .campus-row .campus-card {
+     .container .campus-row .campus-card {
         width:95%;
-        margin-left:12%;
+        margin-left:8%;
     }
     #home {
+        background: none;
         background-color: #1f2833;
     }
 }
