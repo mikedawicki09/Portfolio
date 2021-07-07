@@ -178,11 +178,24 @@ a[aria-expanded=true] .fa-plus {
 }
 
 /*STYLING FOR ABOUT ME SECTION*/
-.lead {
+   .flex-about {
+        display: flex;
+        flex-direction: column;
+        flex-flow: wrap;
+        justify-content: center;
+        
+    }
+    .flex-column-about {
+        width: 50em;
+    }
+    .lead {
     color: #828282;
     padding: 10px;
     text-align: left;
 }
+    .flex-column-title {
+        width:200px;
+    }
 .text-center {
     margin: 0px 0px 20px;
 }
