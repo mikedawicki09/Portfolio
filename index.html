@@ -75,7 +75,7 @@
     </section>
     <!--About Me End-->
     <!--Projects section-->
-    <section id="project" class="shadow-lg">
+      <section id="project" class="shadow-lg">
         <div class="padding">
             <h2 class="text-center">Pr<u class="underline">ojec</u>ts</h2>
             <div class="container shadow-lg">
@@ -91,37 +91,46 @@
                             </div>
                         </div>
                         <div class="back-card">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h3>The Project</h3>
-                                    <a data-toggle="collapse" href="#desc" aria-expanded="false"><i class="fa fa-plus"></i></a>
-                                    <div class="collapse fade" id="desc">
-                                        <p>The Computer Information System's Senior capstone was a semester long project in which we built an information system from the ground up for a client in the Harrisonburg community. This competition required my team and I to build a system that both best fit the client’s business needs and increased the efficiency of their business.</p>
+                            <div class="proj-card">
+                                <div class="proj-card-body">
+                                    <div class="top-area-grid">
+                                        <h3>The Project</h3>
+                                        <button onclick="fade('desc',this)" class="toggle-button"><i class="fa fa-plus"></i></button>
+                                    </div>
+                                    <div id="desc" class="bottom-area">
+                                         <p class="org-text">The Computer Information System's Senior capstone was a semester long project in which we built an information system from the ground up for a client in the Harrisonburg community. This competition required my team and I to build a system that both best fit the client’s business needs and increased the efficiency of their business.
                                         <a href="https://github.com/mikedawicki09/GreenValleyAuctionsSystems" target="_blank" class="project-btn">Source Code</a>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
-                                <div class="card-body">
-                                    <h3>Our System</h3>
-                                    <a data-toggle="collapse" href="#system" aria-expanded="false"><i class="fa fa-plus"></i></a>
-                                    <div class="collapse fade" id="system">
-                                        <p>Our clients were an auction and moving service's company that needed a system that would replace their cluttered and out-of-date filing system. We coded our system using Microsoft's ASP.NET, Bootstrap, SQL and C#. My team was chosen among the top two teams to present our system to a judge panel, CIS students, and CIS professors. To increase performance and make our system more robust, I dockerized our application via AWS Fargate and created a cluster to add redundancy, reducing the potential for single points of failure.</p>
+                            <div class="proj-card">
+                                <div class="proj-card-body">
+                                    <div class="top-area-grid">
+                                        <h3>Our System</h3>
+                                        <button onclick="fade('system',this)" class="toggle-button"><i class="fa fa-plus"></i></button>
+                                    </div>
+                                    <div id="system" class="bottom-area">
+                                        <p class="org-text">Our clients were an auction and moving service's company that needed a system that would replace their cluttered and out-of-date filing system. We coded our system using Microsoft's ASP.NET, Bootstrap, SQL and C#. My team was chosen among the top two teams to present our system to a judge panel, CIS students, and CIS professors. </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
-                                <div class="card-body">
-                                    <h3>Our Database</h3>
-                                    <a data-toggle="collapse" href="#erd" aria-expanded="false"><i class="fa fa-plus"></i></a>
-                                    <div class="collapse fade" id="erd">
-                                        <p>We coded our relational database with Microsoft SQL Server and developed our database to match our client's needs while also maintaining third normal form and removing any redundancies. From meetings with our client's, we realized that both types of services were very similar which allowed us to integrate generalization into our Entity Relationship Diagram.</p>
+                            <div class="proj-card">
+                                <div class="proj-card-body">
+                                    <div class="top-area-grid">
+                                        <h3>Our Database</h3>
+                                        <button onclick="fade('erd',this)" class="toggle-button"><i class="fa fa-plus"></i></button>
+                                    </div>
+                                    <div id="erd" class="bottom-area">
+                                        <p class="org-text">We coded our relational database with Microsoft SQL Server and developed our database to match our client's needs while also maintaining third normal form and removing any redundancies. From meetings with our client's, we realized that both types of services were very similar which allowed us to integrate generalization into our Entity Relationship Diagram.
                                         <a href="Files/GVA_ERD.pdf" target="_blank" class="project-btn">View Diagram</a>
+                                        </p>
                                     </div>
                                 </div>
-                            </div>
-                            <button onclick="cardFlip('proj1','1')">Back to Front</button>
+                            </div>  
+                             <button onclick="cardFlip('proj1','1')">Back to Front</button>
                         </div>
+                           
                     </div>
                     <div id="proj2" class="project-card">
                         <div class="front-card">
@@ -134,22 +143,27 @@
                             </div>
                         </div>
                         <div class="back-card">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h3>The Project</h3>
-                                    <a data-toggle="collapse" href="#about" aria-expanded="false"><i class="fa fa-plus"></i></a>
-                                    <div class="collapse fade" id="about">
-                                        <p>For this project, we developed a relational database to replicate a company's data structure with real data. We utilized Oracle’s SQL Developer Environment to create, manipulate, and query data from the database.</p>
+                            <div class="proj-card">
+                                <div class="proj-card-body">
+                                    <div class="top-area-grid">
+                                        <h3>The Project</h3>
+                                        <button onclick="fade('about',this)" class="toggle-button"><i class="fa fa-plus"></i></button>
+                                    </div>
+                                    <div id="about" class="bottom-area">
+                                        <p class="org-text">For this project, we developed a relational database to replicate a company's data structure with real data. We utilized Oracle’s SQL Developer Environment to create, manipulate, and query data from the database.
                                         <a href="Files/Final%20Report-2.pdf" target="_blank" class="project-btn">View Project</a>
+                                        </p>                                    
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
-                                <div class="card-body">
-                                    <h3>Our Database</h3>
-                                    <a data-toggle="collapse" href="#ourDB" aria-expanded="false"><i class="fa fa-plus"></i></a>
-                                    <div class="collapse fade" id="ourDB">
-                                        <p>We created an conceptual ERD model to design our database while also developing complex multi-join SQL queries to create and manipulate the tables to provide our client with meaningful information to help them make better informed business decsions.</p>
+                            <div class="proj-card">
+                                <div class="proj-card-body">
+                                    <div class="top-area-grid">
+                                        <h3>Our Database</h3>
+                                        <button onclick="fade('ourDB',this)" class="toggle-button"><i class="fa fa-plus"></i></button>
+                                    </div>
+                                    <div id="ourDB" class="bottom-area">
+                                        <p class="org-text">We created an conceptual ERD model to design our database while also developing complex multi-join SQL queries to create and manipulate the tables to provide our client with meaningful information to help them make better informed business decsions.</p>
                                     </div>
                                 </div>
                             </div>
@@ -167,24 +181,28 @@
                             </div>
                         </div>
                         <div class="back-card">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h3>The Project</h3>
-                                    <a data-toggle="collapse" href="#readAbout" aria-expanded="false"><i class="fa fa-plus"></i></a>
-                                    <div class="collapse fade" id="readAbout">
-                                        <p>This project focused on building a database with Amazon Web Services's non-relational database known as DynamoDB. The project involved manipulating the database using Python commands. From this project, I gained relevant experience using AWS services including Identity and Access Management (IAM) and DynamoDB.</p>
+                            <div class="proj-card">
+                                <div class="proj-card-body">
+                                    <div class="top-area-grid">
+                                        <h3>The Project</h3>
+                                        <button onclick="fade('readAbout',this)" class="toggle-button"><i class="fa fa-plus"></i></button>
+                                    </div>
+                                    <div id="readAbout" class="bottom-area">
+                                        <p class="org-text">This project focused on building a database with Amazon Web Services's non-relational database known as DynamoDB. The project involved manipulating the database using Python commands. From this project, I gained relevant experience using AWS services including Identity and Access Management (IAM) and DynamoDB.
                                         <a href="https://github.com/mikedawicki09/AmazonDynamoDB" target="_blank" class="project-btn">Source Code</a>
+                                        </p>
+                                        
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
-                                <div class="card-body">
-                                    <h3>My Database</h3>
-                                    <a data-toggle="collapse" href="#myDB" aria-expanded="false">
-                                        <i class="fa fa-plus"></i>
-                                    </a>
-                                    <div class="collapse fade" id="myDB">
-                                        <p>For this project, I coded my entire database using Python. I wrote commands to create tables as well as wrote commands to insert, update and delete data as needed. I also wrote commands to query specific infromation from the database.
+                            <div class="proj-card">
+                                <div class="proj-card-body">
+                                    <div class="top-area-grid">
+                                        <h3>My Database</h3>
+                                        <button onclick="fade('myDB',this)" class="toggle-button"><i class="fa fa-plus"></i></button>
+                                    </div>
+                                    <div id="myDB" class="bottom-area">
+                                        <p class="org-text">For this project, I coded my entire database using Python. I wrote commands to create tables as well as wrote commands to insert, update and delete data as needed. I also wrote commands to query specific infromation from the database.
                                     </div>
                                 </div>
                             </div>
@@ -195,6 +213,7 @@
             </div>
         </div>
     </section>
+        
     <!--Projects End-->
     <!--Skills Section-->
     <section id="skill">
