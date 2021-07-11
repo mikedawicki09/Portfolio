@@ -466,7 +466,7 @@ a[aria-expanded=true] .fa-plus {
     text-align: center;
 }
 .project-title h3 {
-    font-size: 20px;
+    font-size: 18px;
     padding-bottom: 10px;
 }
 .project-card button {
@@ -513,52 +513,100 @@ a[aria-expanded=true] .fa-plus {
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
-.card-body p {
-    color: #828282;
-}
-.card-body h3 {
-    display: inline-block;
-    font-size: 22px;
-    margin-top: 2%;
-}
-.card-body a {
-    display: inline-block;
-    float: right;
-    font-size: 20px;
-    color: gray;
-    outline: none;
-    cursor: pointer;
-    margin-top: 2%;
-}
-.card-body a:hover {
-    color: #FA991C;
-}
+
 .back-card button {
     margin-left: 2em;
     margin-top: 18px;
-}
-.collapse a {
-    border-radius: 5em;
-    padding: 10px 5px;
-    width: 88%;
-    color: #FA991C;
-    box-shadow: inset 5px 5px 10px #d7dfe2, inset -5px -5px 10px #D7DFE2;
-    background-color: white;
-    border: none;
-    text-align: center;
-    margin-right: .8em;
-    font-size:16px;
-    outline: none;
-}
-.collapse a:hover {
-    box-shadow: -5px -5px 10px #d7dfe2, 5px 5px 10px #FA991C, inset -5px -5px 10px #d7dfe2;
-    color: #FA991C;
-    text-decoration: none;
 }
 #project .container {
     border: 3px solid #FA991C;
     background-color: white;
 }
+.fa-plus {
+    transition: all 0.4s linear;
+}
+.proj-card {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+.proj-card-body {
+    padding:20px;
+}
+.proj-card-body button {
+    background: none;
+    box-shadow: none; 
+    font-size: 20px;
+    margin: 0;
+    margin-left: 50%;
+    padding: 0;
+    color: gray;
+}
+.proj-card-body button:hover {
+    background: none;
+    box-shadow: none; 
+}
+.top-area-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top:2%;
+}
+.bottom-area {
+    height: 0em;
+    padding:0em;
+     z-index: 4;
+    background-color: #ededed;
+    transition: all 400ms ease-in-out;
+}
+.proj-card-body .bottom-area {
+    background-color: white;
+}    
+.bottom-area.toggle-area {
+    opacity: 1;
+    height: 17.5em;
+}
+.bottom-area p {
+    opacity: 0;
+    transition: all 800ms ease-in-out;
+    padding:1em;
+    visibility: hidden;
+}
+ .bottom-area.toggle-area p {
+    opacity: 1;
+     visibility: visible;   
+}
+.bottom-area p a {
+    display: block;
+    text-align: center;
+    border-radius: 5em;
+     box-shadow: inset 5px 5px 10px #d7dfe2, inset -5px -5px 10px #D7DFE2;
+    padding: 10px 5px;
+    color: #FA991C;
+    bottom:40px;
+    
+}
+    .bottom-area p a:hover {
+         box-shadow: -5px -5px 10px #d7dfe2, 5px 5px 10px #FA991C, inset -5px -5px 10px #d7dfe2;
+        color: #FA991C;
+        text-decoration: none;
+    }   
+.org-text {
+    font-size:13px;
+}
+ .org-text.slow {
+    transition: all 300ms ease-in-out;
+}
+.toggle-button:focus {
+    outline: none;
+}
+.fa-plus:hover {
+    color: #FA991C;
+}
+.project-btn{
+    margin-top: 10px;
+    }
+    .top-area-grid h3 {
+        font-size:18px;
+    }
 
 
 /*STYLING FOR CAMPUS INVOLVEMENT SECTION*/
@@ -596,6 +644,9 @@ a[aria-expanded=true] .fa-plus {
     .toggle-button:focus {
         outline: none;
     }
+.fa-plus {
+    color: gray;
+}
     .fa-plus:hover {
         color: #FA991C;
     }
@@ -622,10 +673,6 @@ a[aria-expanded=true] .fa-plus {
         background-color: #ededed;
         transition: all 400ms ease-in-out;
     }
-        .bottom-area.toggle-area {
-            opacity: 1;
-            height: 16em;
-    }
      .bottom-area p {
         opacity: 0;
         transition: all 800ms ease-in-out;
@@ -634,10 +681,14 @@ a[aria-expanded=true] .fa-plus {
      .bottom-area.toggle-area p {
         opacity: 1;
     }
+     .bottom-area.toggle-area {
+            opacity: 1;
+            height: 16em;
+    }
     .org-text {
         font-size:13px;
     }
-     .org-text.slow {
+     .bottom-area.slow {
         transition: all 300ms ease-in-out;
     }
     .campus-title {
