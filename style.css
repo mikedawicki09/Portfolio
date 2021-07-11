@@ -567,7 +567,7 @@ a[aria-expanded=true] .fa-plus {
 .bottom-area p {
     opacity: 0;
     transition: all 800ms ease-in-out;
-    padding:1em;
+    padding:.5em;
     visibility: hidden;
 }
  .bottom-area.toggle-area p {
