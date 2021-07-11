@@ -562,7 +562,7 @@ a[aria-expanded=true] .fa-plus {
 }    
 .bottom-area.toggle-area {
     opacity: 1;
-    height: 21em;
+    height: 20em;
 }
 .bottom-area p {
     opacity: 0;
@@ -681,7 +681,7 @@ a[aria-expanded=true] .fa-plus {
      .bottom-area.toggle-area p {
         opacity: 1;
     }
-     .bottom-area.toggle-area {
+     .campus-card .bottom-area.toggle-area {
             opacity: 1;
             height: 16em;
     }
