@@ -562,7 +562,7 @@ a[aria-expanded=true] .fa-plus {
 }    
 .bottom-area.toggle-area {
     opacity: 1;
-    height: 19em;
+    height: 21em;
 }
 .bottom-area p {
     opacity: 0;
