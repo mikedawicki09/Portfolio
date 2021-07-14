@@ -301,6 +301,7 @@ a[aria-expanded=true] .fa-plus {
 }
 .tabButton:hover {
     background-color: #e8e8e8;
+    transform: scale(1.05);
 }
 .tab-indicator {
     border-bottom: 5px solid #FA991C;
