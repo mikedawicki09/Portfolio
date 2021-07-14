@@ -10,7 +10,7 @@ html, body {
     padding: 80px 0;
 }
 .container {
-    border: 3px solid #FA991C;
+    border: 1px solid #ccc;
     padding: 50px;
     border-radius: 10px;
 }
@@ -178,24 +178,30 @@ a[aria-expanded=true] .fa-plus {
 }
 
 /*STYLING FOR ABOUT ME SECTION*/
-   .flex-about {
-        display: flex;
-        flex-direction: column;
-        flex-flow: wrap;
-        justify-content: center;
-        
-    }
-    .flex-column-about {
-        width: 50em;
-    }
-    .lead {
+#aboutMe  {
+    background-color: #fffbf4;
+}
+#aboutMe .container {
+    background-color: white;
+}
+.flex-about {
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    justify-content: center;
+
+}
+.flex-column-about {
+    width: 50em;
+}
+.lead {
     color: #828282;
     padding: 10px;
     text-align: left;
 }
-    .flex-column-title {
-        width:200px;
-    }
+.flex-column-title {
+    width:200px;
+}
 .text-center {
     margin: 0px 0px 20px;
 }
@@ -351,7 +357,8 @@ a[aria-expanded=true] .fa-plus {
     width: 550px;
     height: 350px;
     border: 1px solid #ccc;
-    background-color: #1f2833;
+   border-left: 4px solid #FA991C;
+    background-color:white;
     box-shadow: 2px 2px 25px rgba(0,0,0,0.2);
     border-radius: 10px;
     position: relative;
@@ -363,7 +370,7 @@ a[aria-expanded=true] .fa-plus {
 }
 .myExp p {
     margin: 10px;
-    color: white;
+    color: black;
     font-size: 15px;
 }
 
@@ -414,9 +421,12 @@ a[aria-expanded=true] .fa-plus {
     height: 5px;
 }
 #skill .container {
-    border: 3px solid #FA991C;
     padding: 30px;
     border-radius: 10px;
+    background-color: white;
+}
+#skill {
+    background-color: #fffbf4;;
 }
 
 /*STYLING FOR PROJECT SECTION*/
@@ -430,9 +440,13 @@ a[aria-expanded=true] .fa-plus {
     -webkit-flex-flow: wrap;
     flex-flow: wrap;
 }
-#project {
-    background-color: #ededed;
+#project .container {
+    background-color:  white;
 }
+#project {
+  background-color: #fffbf4;
+}
+
 .project-card {
     width: 30%;
     border: 1px solid #ccc;
@@ -518,10 +532,7 @@ a[aria-expanded=true] .fa-plus {
     margin-left: 2em;
     margin-top: 18px;
 }
-#project .container {
-    border: 3px solid #FA991C;
-    background-color: white;
-}
+
 .fa-plus {
     transition: all 0.4s linear;
 }
@@ -719,8 +730,13 @@ a[aria-expanded=true] .fa-plus {
         width:11em;
         margin-top: 25px;
     }
+#campus .container {
+    background-color: white;
+}
 
-
+#campus {
+    background-color: #fffbf4;
+}
 
 /*STYLING FOR MEDIA QUERIES*/
 
