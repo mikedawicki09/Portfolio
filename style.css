@@ -160,7 +160,8 @@ a[aria-expanded=true] .fa-plus {
 }
 .landing-text h3 {
     color: WHITE;
-    margin: 20px;
+    font-size: 45px;
+    margin: 25px;
 }
 .button {
     border: 1px solid #FA991C;
@@ -300,8 +301,8 @@ a[aria-expanded=true] .fa-plus {
     outline: none;
 }
 .tabButton:hover {
-    background-color: #e8e8e8;
     transform: scale(1.05);
+    background-color: #ededed;
 }
 .tab-indicator {
     border-bottom: 5px solid #FA991C;
