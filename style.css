@@ -785,9 +785,6 @@ a[aria-expanded=true] .fa-plus {
     .lead {
         font-size: 15px;
     }
-    .container .project-row .project-card {
-        width: 85%;
-    }
     .difCardStyle .cardHead {
         font-size: 14px;
     }
@@ -863,9 +860,12 @@ a[aria-expanded=true] .fa-plus {
         margin-bottom: 50px;
     }
     .campus-row .campus-card {
-            width:65%;
+        width:65%;
         margin-left: 17%;
-        }
+    }
+    .project-row .project-card {
+        width: 75%;
+    }
 }
 /*screen width 1000px and less*/
 @media screen and (max-width: 1000px) {
@@ -875,7 +875,7 @@ a[aria-expanded=true] .fa-plus {
     .myskills {
         width: 560px;
     }
-    .project-row .project-card {
+    .project-card {
         width: 55%;
     }
 }
