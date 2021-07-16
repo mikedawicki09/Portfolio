@@ -742,7 +742,6 @@ a[aria-expanded=true] .fa-plus {
 
 /*STYLING FOR MEDIA QUERIES*/
 
-/*screen width 450px and less*/
 @media screen and (max-width: 450px) {
     .container .slider .myskills .box {
         width: 230px;
@@ -750,16 +749,16 @@ a[aria-expanded=true] .fa-plus {
     .padding .container .slider .myskills {
         width: 250px;
     }
-    .grid .myExp p {
+    .box .grid .myExp p {
         font-size: 12px;
         width: 100%;
         height: 100%;
         right: 0%;
     }
-    .grid .myExp h3 {
+    .box .grid .myExp h3 {
         right: 25%;
     }
-    .grid .model {
+    .box .grid .model {
         height: 65%;
         width: 50%;
     }
@@ -792,7 +791,7 @@ a[aria-expanded=true] .fa-plus {
     .container .slider .myskills {
         width: 347px;
     }
-    .box .myExp p {
+    .grid .myExp p {
         right:70%;
     }
 
