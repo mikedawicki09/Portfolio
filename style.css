@@ -431,7 +431,7 @@ a[aria-expanded=true] .fa-plus {
     background-color: #fffbf4;;
 }
 
-/*STYLING FOR PROJECT SECTION*/
+/*STYLING FOR PROJECTS SECTION*/
 .project-row {
     display: -webkit-flex;
     display: flex;
@@ -463,6 +463,7 @@ a[aria-expanded=true] .fa-plus {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     position: relative;
+    align-self: flex-start;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -495,7 +496,33 @@ a[aria-expanded=true] .fa-plus {
     background-color: white;
     border: none;
     outline: none;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.5s;
 }
+   
+    .project-card button span {
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+    .project-card button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        font-size: 15px;
+        right: -15px;
+        transition: 0.5s;
+    } 
+    .project-card button:hover span {
+        padding-right: 25px;
+    }
+    .project-card button:hover span:after {
+        opacity: 1;
+        transform: scale(1.45);
+        right:0;
+    }
 .project-card button:hover {
     box-shadow: -5px -5px 10px #d7dfe2, 5px 5px 10px #82a9d0, inset -5px -5px 10px #d7dfe2;
 }
@@ -533,8 +560,9 @@ a[aria-expanded=true] .fa-plus {
 .back-card button {
     margin-left: 2em;
     margin-top: 18px;
+    display: inline-block;
+    transition: all 0.5s;
 }
-
 .fa-plus {
     transition: all 0.4s linear;
 }
