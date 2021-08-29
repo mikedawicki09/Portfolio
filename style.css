@@ -556,7 +556,12 @@ a[aria-expanded=true] .fa-plus {
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
-
+.project-card .back-card button {
+    opacity: 0;
+}
+.project-card.flip .back-card button {
+    opacity: 1;
+    }
 .back-card button {
     margin-left: 2em;
     margin-top: 18px;
