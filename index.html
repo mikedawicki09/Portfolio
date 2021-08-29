@@ -3,294 +3,565 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name ="viewport" content = "width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Michael Dawicki-Resume</title>
     <!--Bootstrap CSS-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Style CSS-->
-    <link rel="stylesheet"  href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type=text/javascript src="script.js"></script>
 </head>
-<body>
-    
-<!--Navigation-->
-<nav class = "navbar navbar-expand-md navbar-dark">
-<div class = "container-fluid">
-    <a class = "navbar-brand" >Mike Dawicki</a>
-    <button class = "navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-        <span class = "navbar-toggler-icon"></span>
-    </button>
-    <div class= "collapse navbar-collapse" id = "navbarResponsive">
-        <ul class ="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class = "nav-link" href = "#aboutMe">About Me</a>
-            </li>
-            <li class ="nav-item">
-                <a class = "nav-link" href = "#project">Projects</a>
-            </li>
-            <li class ="nav-item">
-                <a class = "nav-link" href = "#skill">Skills</a>
-            </li>
-            <li class = "nav-item">
-                <a class = "nav-link" href = "#contacted">Contact</a>
-            </li>       
-        </ul>
-    </div>
-</div>
-</nav>
-<!--Naviagtion End-->
-    
-<!--Head Image-->
-<div id = "home" class = "header">
-    <div class="landing-text">
-        <h1 class="display-3 color">Mike Dawicki</h1>
-        <h3 class="display-5 color">Computer Information Systems Major</h3>
-        <a href = "Files/Resume%20.docx" class = "button btn-lg">Download Resume</a>
-        <img src="/Photos/background.jpg" style="display:none;">
-    </div>
-</div>
-<!--Head End-->
-    
-<!--About Me section-->
-<section id = "aboutMe">
-    <div class = "padding">   
-        <div class= "container shadow-lg">
-            <div class = "row">
-                <div class = "col-md-2">
-                    <h2 style="width: 200px; float: left;">A<u class = "underline">bout M</u>e</h2>
-                </div>
-                <div class ="col-md-10">
-                    <p class = "lead">I am a senior at James Madison University and will graduate with a Bachelors of Business Administration in Computer Information Systems in May of 2021. During the course of my studies, I have had hands-on experience with web development and deployment, developing and maintaining both SQL and NoSQL databases, cloud computing via AWS and multiple object-oriented programming languages. My curriculum has stressed the importance of critical thinking and strategically solving real world business problems. After graduation, I plan to continue in the field of information technology while further developing my programming and networking skills.
-                    </p>     
-                </div>
-            </div> 
-        </div>    
-    </div>
-</section>
-<!--About Me End-->
-      
-<!--Projects section-->
-<section id = "project" class = "projects shadow-lg">
-    <div class = "padding">
-        <h2 class = "text-center">Pr<u class="underline">ojec</u>ts</h2>
-        <div class="container shadow my-5" style="background-color: #557A95; border: 2px solid white; ">
-            <div class="card" style="border: 2px solid white; margin-bottom: 3px;">
-                <div class="card-body" style="background-color: #F5F5F5">
-                    <h2 class="heading">CIS Senior Capstone Project</h2>
-                       <a data-toggle="collapse" href="" data-target="#c1" class="addSign"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                        </svg></a>
-                    <div id="c1" class = "row collapse fade py-4">
-                        <div class = "col-lg-5" style="margin-top:2%; height: 100%;">
-                            <img src = "/Photos/Green valley system.png"  class = "images" style="margin-bottom: 5%;" alt = "CIS Senior Capstone">
-                            <a href="https://github.com/mikedawicki09/GreenValleyAuctionsSystems" target="_blank" class="btn btn-outline-info view">Source Code</a>
-                        </div>
-                        <div class = "col-lg-7" style="height: 100%;">                          
-                            <div class="card" style="margin-top: 7%;">                       
-                                <div class="card-body cardStyle">
-                                    <h3 class = "text-dark  mb-3 cardHead">The Project</h3>
-                                    <a data-toggle="collapse" href="" data-target="#desc" class="addSign">+</a>
-                                    <div class="collapse fade" id="desc">                                  
-                                        <p style="color: #828282;">The Computer Information System's Senior capstone was a semester long project in which we built an information system from the ground up for a client in the Harrisonburg community. This capstone included 16 teams that competed to build a system that both best fit the clients needs and added value to their business's every workday.
-                                        </p>                           
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-body cardStyle">
-                                    <h3 class = "text-dark  mb-3 cardHead">Our System</h3>
-                                    <a data-toggle="collapse" href="" data-target="#system" class="addSign">+</a>
-                                    <div class="collapse fade" id="system">
-                                        <p style="color: #828282;">Our client's were an auction and moving service's company that needed a system that would replace their current, cultered and out-of-date filing system. We coded our system using Microsoft's ASP.NET, Bootstrap, SQL and C#. My team was chosen among the top two teams to present our system to a judge panel, CIS students, and CIS professors. 
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-body cardStyle">
-                                    <h3 class = "text-dark  mb-3 cardHead">Our Database</h3>
-                                    <a data-toggle="collapse" href="" data-target="#erd"   class="addSign">+</a>
-                                    <div class="collapse fade" id="erd">
-                                        <p style="color: #828282;">We coded our relational database with microsoft sql server and developed our database to match our client's needs while also maintaining third normal form and removing any redudancies. From meetings with our client's, we realized that both types of services were very similar which allowed us to integrate generalization into our Entity Relationship Diagram.
-                                        </p>
-                                        <a href="/Files/GVA_ERD.pdf" target="_blank" class="btn btn-outline-info view">View Diagram</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
-            </div>
-            <div class="card" style=" border: 2px solid white; margin-bottom: 3px;">
-                <div class="card-body" style="background-color: #f5f5f5">
-                    <h2 class="heading">SQL Database Project</h2>
-                    <a data-toggle="collapse" href="" data-target="#c2" class="addSign"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                        </svg></a>
-              
-                    <div id="c2" class = "row collapse fade py-4">
-                        <div class = "col-lg-5" style="height: 100%;">
-                            <img src = "/Photos/sql%20.png" class = "images" style="margin-bottom: 5%;" alt = "SQL Database">
-                            <a href="Files/Final%20Report-2.pdf" target="_blank" class="btn btn-outline-info view">View Project</a>
-                        </div>
-                        <div class = "col-lg-7" style="height: 100%;">
-                            <div class="card" style="margin-top: 7%;">
-                                <div class="card-body cardStyle">
-                                    <h3 class = "text-dark  mb-3 cardHead">The Project</h3>
-                                    <a data-toggle="collapse" href="" data-target="#about"  class="addSign">+</a>
-                                    <div class="collapse fade" id="about">
-                                        <p style="color: #828282;">For this project, we developed a relational database to replicate a company's data structure with real data by using Oracle. 
-                                        </p>
-                                    </div> 
-                                </div>
-                            </div>
-                              <div class="card">
-                            <div class="card-body cardStyle">
-                                <h3 class = "text-dark  mb-3 cardHead">Our Database</h3>
-                                <a data-toggle="collapse" href="" data-target="#ourDB"   class="addSign">+</a>
-                                <div class="collapse fade" id="ourDB">
-                                     <p style="color: #828282;">For this project, we created an conceptual ERD model to design our database while also developing SQL queries to create and manipulate the tables to provide our client with meaningful data to help them make better informed business decsions.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                 </div>
-            </div>    
-            <div class="card" style=" border: 2px solid white; margin-bottom: 3px;">
-                <div class="card-body" style="background-color: #F2F2F2">
-                    <h2 class="heading">Amazon Web Services DynamoDB Project</h2>
-                    <a data-toggle="collapse" href="" data-target="#c3" class="addSign"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                        </svg></a>
-                    <div id="c3" class = "row collapse fade py-4">
-                        <div  class= "col-lg-5" style="height: 100%;">
-                            <img src="Photos/awsDynamoDB.png" class = "images" style="margin-bottom: 5%;" alt = "Business plan logo">
-                            <a href="https://github.com/mikedawicki09/AmazonDynamoDB" target="_blank" class="btn btn-outline-info view">Source Code</a>
-                        </div>
-                    <div class = "col-lg-7" style="height: 100%;">
-                        <div class="card" style="margin-top: 7%;">
-                            <div class="card-body cardStyle">
-                                <h3 class = "text-dark  mb-3 cardHead">The Project</h3>
-                                <a data-toggle="collapse" href="" data-target="#readAbout" class="addSign">+</a>
-                                <div class="collapse fade" id="readAbout">
-                                    <p style="color: #828282;">This project focused on building a database with Amazon Web Services's non-relational database known as DynamoDB. The project involved manipulating the database using Python commands. From this project, I gained relevant experience using AWS services including Identity and Access Management (IAM) and DynamoDB.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                         <div class="card">
-                            <div class="card-body cardStyle">
-                                <h3 class = "text-dark  mb-3 cardHead">My Database</h3>
-                                <a data-toggle="collapse" href="" data-target="#myDB"  class="addSign">+</a>
-                                <div class="collapse fade" id="myDB">
-                                     <p style="color: #828282;">For this project, I coded my entire database using Python IDLE. In this assignment, I wrote commands to create tables as well as wrote commands to insert, update and delete data as needed. I also wrote commands to query specific infromation from the database. 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>     
-            </div>
-        </div>
-    </div>
-</div>
-</section>
-<!--Projects End-->
-    
-<!--Skills Section-->
-<section id = "skill">
-    <div class = "padding">
-        <h2 class = "text-center">S<u class="underline">kill</u>s</h2>
-        <div class = "container shadow-lg" >
-            <ul class = "horizontal-list list text-center" style="width: 80%; margin-left: 8%;">
-                <li class="shadow" >C#</li>
-                <li class="shadow">Java</li>
-                <li class="shadow">Python</li>
-                <li class="shadow">SQL</li>
-                <li class="shadow">HTML</li>
-                <li class="shadow">CSS</li>
-                <li class="shadow">Oracle</li>
-                <li class="shadow">Bootstrap</li>
-                <li class="shadow">AWS</li>
-                <li class="shadow">ASP.NET</li>
-            </ul>
-        </div>
-    </div>
-</section>
-<!--Skills end-->
 
-<!--Footer Section-->
-<section id="contacted" class="sticky-bottom">
-    <div class = "container-fluid padding shadow-lg" style="background-color: #557A95">
-        <div class = "row text-center">
-            <div class = "col-md-4">
-                <span  class = "copyright styling">Copyright &copy; 2021 Mike Dawicki</span>
-            </div>
-            <div class = "col-md-4">
-                <a href = "#home" class="btn btn-outline-info drop" style="float: none;"> &#x25B2;</a>       
-            </div>
-            <div class = "col-md-4 styling">
-                <div class="table-responsive">
-                <table id="contactMe" class="table">
-                    <tr>
-                        <td>
-                            <h2 style=" max-width: 120%;">Contact me at</h2>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p style="max-width: 77%;">Phone: (267) 566-7674</p>   
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p style="max-width: 95%;">Email: mikedawicki99@gmail.com</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style=" width: 120%;">
-                            <a href = "https://www.linkedin.com/in/michael-dawicki-62123915a/" target="_blank"><i class = "fab fa-linkedin fa-3x icon"></i></a>                                    
-                            <a href = "https://github.com/mikedawicki09" target = "_blank"><i class = "fab fa-github fa-3x icon"></i></a>
-                            <a href = "mailto: mikedawicki99@gmail.com" ><i class = "fas fa-envelope-square fa-3x icon"></i></a>
-                        </td>
-                    </tr>
-                </table>
+
+<body>
+    <a href="#home" id="floatButton" class="scroll"><i class="fas fa-chevron-circle-up"></i></a>
+    <!--Navigation-->
+    <nav id="nav" class="myNavbar">
+        <div class="my-nav">
+            <ul class="my-nav-list">
+                <div class="navicon cancel-btn" onclick="removeNav()">
+                    <i class="far fa-times-circle"></i>
                 </div>
-            </div>      
-        </div>  
+                <li>
+                    <a class="scroll" href="#aboutMe">About Me</a>
+                </li>
+                <li>
+                    <a class="scroll" href="#project">Projects</a>
+                </li>
+                <li>
+                    <a class="scroll" href="#skill">Skills</a>
+                </li>
+                <li>
+                    <a class="scroll" href="#campus">Campus Involvement</a>
+                </li>
+                <li>
+                    <a class="scroll" href="#contacted">Contact</a>
+                </li>
+            </ul>
+            <div class="navicon menu-btn" onclick="showNav()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <!--Naviagtion End-->
+    <div id="home" class="banner">
+        <div id="landing-anim" class="landing-text">
+            <h1 class="display-3 color">Mike Dawicki</h1>
+            <h3 class="display-5 color">ETL Engineer</h3>
+            <a href="Files/Resume.pdf" class="button" download="Files/Resume.pdf">Download Resume</a>
+        </div>
+    </div>
+    <!--Head End-->
+    <!--About Me section-->      
+   <section id="aboutMe">
+        <div class="padding">
+            <div class="container shadow-lg">
+                <div class="flex-about">
+                    <div class="flex-column-title">
+                        <h2>A<u class="underline">bout M</u>e</h2>
+                    </div>
+                    <div class="flex-column-about">
+                        <p class="lead">
+                            I am a college graduate from James Madison University with a Bachelors of Business Administration in Computer Information Systems. During the course of my studies, I have had hands-on experience with web development and deployment, database management and design, cloud computing via AWS and multiple object-oriented programming languages. My curriculum has stressed the importance of critical thinking and strategically solving real world business problems.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--About Me End-->
+    <!--Projects section-->
+      <section id="project">
+        <div class="padding">
+            <h2 class="text-center">Pr<u class="underline">ojec</u>ts</h2>
+            <div class="container shadow-lg">
+                <div class="project-row">
+                    <div id="proj1" class="project-card">
+                        <div class="front-card">
+                            <div class="project-img">
+                                <img src="Photos/capstone.svg">
+                            </div>
+                            <div class="project-title">
+                                <h3>C# Web Application</h3>
+                                <button onclick="cardFlip('proj1','0')"><span>Read About</span></button>
+                            </div>
+                        </div>
+                        <div class="back-card">
+                            <div class="proj-card">
+                                <div class="proj-card-body">
+                                    <div class="top-area-grid">
+                                        <h3>The Project</h3>
+                                        <button onclick="fade('desc',this)" class="toggle-button"><i class="fa fa-plus"></i></button>
+                                    </div>
+                                    <div id="desc" class="bottom-area">
+                                         <p class="org-text">The Computer Information System's Senior capstone was a semester long project in which we built an information system from the ground up for a client in the Harrisonburg community. This competition required my team and I to build a system that both best fit the client’s business needs and increased the efficiency of their business.
+                                        <a href="https://github.com/mikedawicki09/GreenValleyAuctionsSystems" target="_blank" class="project-btn">Source Code</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="proj-card">
+                                <div class="proj-card-body">
+                                    <div class="top-area-grid">
+                                        <h3>Our System</h3>
+                                        <button onclick="fade('system',this)" class="toggle-button"><i class="fa fa-plus"></i></button>
+                                    </div>
+                                    <div id="system" class="bottom-area">
+                                        <p class="org-text">Our clients were an auction and moving service's company that needed a system that would replace their cluttered and out-of-date filing system. We coded our system using Microsoft's ASP.NET, Bootstrap, SQL and C#. My team was chosen among the top two teams to present our system to a judge panel, CIS students, and CIS professors. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="proj-card">
+                                <div class="proj-card-body">
+                                    <div class="top-area-grid">
+                                        <h3>Our Database</h3>
+                                        <button onclick="fade('erd',this)" class="toggle-button"><i class="fa fa-plus"></i></button>
+                                    </div>
+                                    <div id="erd" class="bottom-area">
+                                        <p class="org-text">We coded our relational database with Microsoft SQL Server and developed our database to match our client's needs while also maintaining third normal form and removing any redundancies. From meetings with our client's, we realized that both types of services were very similar which allowed us to integrate generalization into our Entity Relationship Diagram.
+                                        <a href="Files/GVA_ERD.pdf" target="_blank" class="project-btn">View Diagram</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>  
+                             <button onclick="cardFlip('proj1','1')"><span>Back to Front</span></button>
+                        </div>
+                           
+                    </div>
+                    <div id="proj2" class="project-card">
+                        <div class="front-card">
+                            <div class="project-img">
+                                <img src="Photos/sqlProject.svg">
+                            </div>
+                            <div class="project-title">
+                                <h3>SQL Database Project</h3>
+                                <button onclick="cardFlip('proj2','0')"><span>Read About</span></button>
+                            </div>
+                        </div>
+                        <div class="back-card">
+                            <div class="proj-card">
+                                <div class="proj-card-body">
+                                    <div class="top-area-grid">
+                                        <h3>The Project</h3>
+                                        <button onclick="fade('about',this)" class="toggle-button"><i class="fa fa-plus"></i></button>
+                                    </div>
+                                    <div id="about" class="bottom-area">
+                                        <p class="org-text">For this project, we developed a relational database to replicate a company's data structure with real data. We utilized Oracle’s SQL Developer Environment to create, manipulate, and query data from the database.
+                                        <a href="Files/Final%20Report-2.pdf" target="_blank" class="project-btn">View Project</a>
+                                        </p>                                    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="proj-card">
+                                <div class="proj-card-body">
+                                    <div class="top-area-grid">
+                                        <h3>Our Database</h3>
+                                        <button onclick="fade('ourDB',this)" class="toggle-button"><i class="fa fa-plus"></i></button>
+                                    </div>
+                                    <div id="ourDB" class="bottom-area">
+                                        <p class="org-text">We created an conceptual ERD model to design our database while also developing complex multi-join SQL queries to create and manipulate the tables to provide our client with meaningful information to help them make better informed business decsions.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button onclick="cardFlip('proj2','1')"><span>Back to Front</span></button>
+                        </div>
+                    </div>
+                    <div id="proj3" class="project-card">
+                        <div class="front-card">
+                            <div class="project-img">
+                                <img src="Photos/dynamo.svg">
+                            </div>
+                            <div class="project-title">
+                                <h3>AWS DynamoDB Project</h3>
+                                <button onclick="cardFlip('proj3','0')"><span>Read About</span></button>
+                            </div>
+                        </div>
+                        <div class="back-card">
+                            <div class="proj-card">
+                                <div class="proj-card-body">
+                                    <div class="top-area-grid">
+                                        <h3>The Project</h3>
+                                        <button onclick="fade('readAbout',this)" class="toggle-button"><i class="fa fa-plus"></i></button>
+                                    </div>
+                                    <div id="readAbout" class="bottom-area">
+                                        <p class="org-text">This project focused on building a database with Amazon Web Services's non-relational database known as DynamoDB. The project involved manipulating the database using Python commands. From this project, I gained relevant experience using AWS services including Identity and Access Management (IAM) and DynamoDB.
+                                        <a href="https://github.com/mikedawicki09/AmazonDynamoDB" target="_blank" class="project-btn">Source Code</a>
+                                        </p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="proj-card">
+                                <div class="proj-card-body">
+                                    <div class="top-area-grid">
+                                        <h3>My Database</h3>
+                                        <button onclick="fade('myDB',this)" class="toggle-button"><i class="fa fa-plus"></i></button>
+                                    </div>
+                                    <div id="myDB" class="bottom-area">
+                                        <p class="org-text">For this project, I coded my entire database using Python. I wrote commands to create tables as well as wrote commands to insert, update and delete data as needed. I also wrote commands to query specific infromation from the database.
+                                    </div>
+                                </div>
+                            </div>
+                            <button onclick="cardFlip('proj3','1')"><span>Back to Front</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <!--Projects End-->
+    <!--Skills Section-->
+    <section id="skill">
+        <div class="padding">
+            <h2 class="text-center">S<u class="underline">kill</u>s</h2>
+            <div class="container shadow-lg">
+                <div class="tab-header-grid">
+                    <div class="grid-column">
+                        <button class="tabButton firstBtn" onclick="openTab('languages',this, 'langSkill')">
+                            <img src="Photos/languages.svg" alt="langauges logo">Languages
+                        </button>
+                    </div>
+                    <div class="grid-column">
+                        <button class="tabButton" onclick="openTab('tools', this, 'myToolCards')">
+                            <img src="Photos/tools.svg" alt="Tools logo">Software
+                        </button>
+                    </div>
+                    <div class="grid-column">
+                        <button class="tabButton" onclick="openTab('frameworks',this, 'myFrameCards')">
+                            <img src="Photos/framework.svg" alt="frameworks">Frameworks
+                        </button>
+                    </div>
+                </div><div class="tab-indicator"></div>
+                <div class="indicator-track"></div>
+                <div class="tab-body-grid">
+                    <div id="languages" class="tabContent">
+                        <div class="skillContainer">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <div class="slider">
+                                            <ul class="myskills">
+                                                <li class="langSkill">
+                                                    <div class="box">
+                                                        <div class="grid">
+                                                            <img id="javaImg" src="Photos/java.svg" class="model">
+                                                            <div class="myExp">
+                                                                <h3>My Experience</h3>
+                                                                <p>Built business applications using Java. Used these applications to both understand and implement the basic fundamentals of Object-oriented programming including Encapsulation, Polymorphism, Inheritance, and Abstraction.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="langSkill">
+                                                    <div class="box">
+                                                        <div class="grid">
+                                                            <img src="Photos/python.svg" class="model">
+                                                            <div class="myExp">
+                                                                <h3>My Experience</h3>
+                                                                <p>Utilized Python to enhance my understanding of control structures, array processing logic and sub procedures and functions. Built NoSQL databases with Python via Amazon Web Services Non-Relational database services known as DynamoDB.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="langSkill">
+                                                    <div class="box">
+                                                        <div class="grid">
+                                                            <img src="Photos/c.svg" class="model">
+                                                            <div class="myExp">
+                                                                <h3>My Experience</h3>
+                                                                <p>Developed an information system from the ground up using C#. My system connected to a SQL database which allowed for customer information to be accessed at any point in time, hash user’s passwords with the hashing algorithm PDKDF2, and prevented cross site scripting.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="langSkill">
+                                                    <div class="box">
+                                                        <div class="grid">
+                                                            <img src="Photos/html.svg" class="model">
+                                                            <div class="myExp">
+                                                                <h3>My Experience</h3>
+                                                                <p> With 3 years of experience of building web pages with HTML and CSS, I have a thorough understanding on how to build webpages with proper document structure. My website portfolio was developed with HTML, CSS, JavaScript, and Bootstrap as a CSS framework.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="langSkill">
+                                                    <div class="box">
+                                                        <div class="grid">
+                                                            <img src="Photos/css.svg" class="model">
+                                                            <div class="myExp">
+                                                                <h3>My Experience</h3>
+                                                                <p> Styled countless webpages structured with HTML with CSS while maintaining a responsive design. I utilize media queries to allow the content on my web pages to adapt to differnt screen sizes and resolutions.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="langSkill">
+                                                    <div class="box">
+                                                        <div class="grid">
+                                                            <img src="Photos/sql.svg" class="model">
+                                                            <div class="myExp">
+                                                                <h3>My Experience</h3>
+                                                                <p>Developed a fundamental understanding of relational database analysis and design using SQL. I have developed and maintained databases using both Oracle and Microsoft SQL Server.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="skillButtonsDiv">
+                                            <button class="skillButton" onclick="sliderScript(-1, 'langSkill')"><i class="far fa-arrow-alt-circle-up"></i></button><br />
+                                            <button class="skillButton" onclick="sliderScript(1, 'langSkill')"><i class="far fa-arrow-alt-circle-down"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="tools" class="tabContent">
+                        <div class="skillContainer">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <div class="slider">
+                                            <ul class="myskills">
+                                                <li class="toolSkill">
+                                                    <div class="box">
+                                                        <div class="grid">
+                                                            <img class="model" src="Photos/sql.svg" alt="SQL logo" />
+                                                            <div class="myExp">
+                                                                <h3>My Experience</h3>
+                                                                <p>Gained experience using Microsoft SQL Server to develop relational databases throughout the past 4 years. I have used this software to build, manage, and query the databases for my senior capstone project as well as exporting data to both PowerBI and Tableau.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="toolSkill">
+                                                    <div class="box">
+                                                        <div class="grid">
+                                                            <img class="model" src="Photos/vs.svg" alt="Microsoft Visual Studio logo" />
+                                                            <div class="myExp">
+                                                                <h3>My Experience</h3>
+                                                                <p>Gained relevant experience using Microsoft Visual Studio to build web applications for the past 2 years. I have used this software to build my senior capstone project's web application. I also used Visual Studio to develop my website portfolio in which I used HTML, CSS, and Javascript.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="toolSkill">
+                                                    <div class="box">
+                                                        <div class="grid">
+                                                            <img class="model" src="Photos/aws.svg" alt="Amazon Web Services logo" />
+                                                            <div class="myExp">
+                                                                <h3>My Experience</h3>
+                                                                <p>Expanded my expertise in cloud computing from working with a variety of AWS services.  I have hands on experience deploying and managing EC2 instances, developing databases with DynamoDB and RDS, Elastic Beanstalk S3 bucket, and using docker containers with AWS Fargate.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="toolSkill">
+                                                    <div class="box">
+                                                        <div class="grid">
+                                                            <img class="model" src="Photos/github.svg" alt="GitHub logo" />
+                                                            <div class="myExp">
+                                                                <h3>My Experience</h3>
+                                                                <p>By using Github, I could easily collaborate and share code in real time by pulling code down from my GitHub repository as needed while also pushing code back up from my local repository. I also currently host my fully responsive portfolio website on GitHub Pages.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="toolSkill">
+                                                    <div class="box">
+                                                        <div class="grid">
+                                                            <img class="model" src="Photos/powerbi.svg" alt="Power BI logo" />
+                                                            <div class="myExp">
+                                                                <h3 id="powerBI">My Experience</h3>
+                                                                <div class="card-text">
+                                                                    <p> Used PowerBI to create data visualizations from data extracted from Microsoft SQL Server. I have worked with ArcGIS Maps, Drill down Donut Charts and a multitude of other Data visualization charts. </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="toolSkill">
+                                                    <div class="box">
+                                                        <div class="grid">
+                                                            <img class="model" src="Photos/oracle.svg" alt="Oracle logo" />
+                                                            <div class="myExp">
+                                                                <h3>My Experience</h3>
+                                                                <p>Gained experience using Oracle’s relational database management system in which I used SQL to build my databases. I had hands on experience creating, manipulating, and querying tables in my databases.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="skillButtonsDiv">
+                                            <button class="skillButton" onclick="sliderScript(-1, 'toolSkill')"><i class="far fa-arrow-alt-circle-up"></i></button><br />
+                                            <button class="skillButton" onclick="sliderScript(1, 'toolSkill')"><i class="far fa-arrow-alt-circle-down"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="frameworks" class="tabContent">
+                        <div class="skillContainer">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <div class="slider">
+                                            <ul class="myskills">
+                                                <li class="frameSkill">
+                                                    <div class="box">
+                                                        <div class="grid">
+                                                            <img src="Photos/bootstrap.svg" class="model" alt="Bootstrap logo" />
+                                                            <div class="myExp">
+                                                                <h3>My Experience</h3>
+                                                                <p>I have utilized Bootstrap as a CSS framework to assist in building fully responsive web applications. I have used Bootstrap’s grid system in many of my web applications along with my portfolio website to layout and align my content.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="frameSkill">
+                                                    <div class="box">
+                                                        <div class="grid">
+                                                            <img src="Photos/asp.svg" class="model" alt="Microsoft ASP.NET logo" />
+                                                            <div class="myExp">
+                                                                <h3>My Experience</h3>
+                                                                <p>Built an application for a moving and auction services client by using Microsoft’s ASP.net. By using ASP.net, I was able to develop both a fully responsive and dynamic application that added value to our client’s needs.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="frameSkill">
+                                                    <div class="box">
+                                                        <div class="grid">
+                                                            <img src="Photos/jquery.svg" class="model" alt="JQuery logo" />
+                                                            <div class="myExp">
+                                                                <h3>My Experience</h3>
+                                                                <p>I have built a lot of my applications using the JQuery library. I utilized methods from the JQuery library to add animations and make my pages more dynamic. I am also currently using JQuery in my portfolio website. </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="skillButtonsDiv">
+                                            <button class="skillButton" onclick="sliderScript(-1, 'frameSkill')"><i class="far fa-arrow-alt-circle-up"></i></button><br />
+                                            <button class="skillButton" onclick="sliderScript(1, 'frameSkill')"><i class="far fa-arrow-alt-circle-down"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Skills end-->
+    <!--Campus Involvement-->
+   <section id="campus">
+    <div class="padding">
+        <h2 class="text-center">Ca<u class="underline">mpus Involvem</u>ent</h2>
+        <div class="container shadow-lg">
+            <div class="campus-row">
+                <div class="campus-card">
+                    <div class="top-area">
+                        <img src="Photos/sga.jpeg"/>
+                    </div>
+                    <div class="button-area">
+                        <button onclick="fade('card1',this)" class="toggle-button"><i class="fa fa-plus"></i></button>
+                    </div>
+                    <div id="card1" class="bottom-area">
+                        <p class="org-text"> A College of Business Senator advocating for the needs of students across campus. I was a member of the finance committee that distributes over $130,000 to student run organizations throughout James Madison University.</p>
+                    </div>
+                    <div class="campus-title">Student Government Association</div>
+                </div>
+                <div class="campus-card">
+                    <div class="top-area">
+                        <img id="ais-img" src="Photos/ais.jpeg"/>
+                    </div>
+                     <div class="button-area">
+                        <button onclick="fade('card2',this)" class="toggle-button"><i class="fa fa-plus"></i></button>
+                    </div>
+                    <div id="card2" class="bottom-area">
+                        <p class="org-text"> Association of Information Systems provides professional opportunities in which we met and discussed with recruiters currently in the information systems industry. AIS provided education programs for advancing technology and business skills, leadership development opportunities, networking and peer mentoring.</p>
+                    </div>
+                     <div class="campus-title">Association for Information Systems </div>
+                </div>
+                <div class="campus-card">
+                    <div class="top-area">
+                        <img id="pad-img" src="Photos/pad.jpeg"/>
+                    </div>
+                     <div class="button-area">
+                        <button onclick="fade('card3',this)" class="toggle-button"><i class="fa fa-plus"></i></button>
+                    </div>
+                    <div id="card3" class="bottom-area">
+                        <p class="org-text"> Being involved in Phi Alpha Delta, a professional Pre-Law Fraternity, has further enhanced my professional skills while participating in a group-oriented environment. I was a Member of the Philanthropy Committee that develops and implements fundraising plans and strategies for ALS.</p>
+                    </div>
+                     <div class="campus-title">Phi Alpha Delta</div>
+                </div>
+                <div class="campus-card">
+                    <div class="top-area">
+                        <img id="sd-img" src="Photos/sd.jpeg"/>
+                    </div>
+                     <div class="button-area">
+                        <button onclick="fade('card4',this)" class="toggle-button"><i class="fa fa-plus"></i></button>
+                    </div>
+                    <div id="card4" class="bottom-area">
+                        <p class="org-text">  Student Defenders provides guidance and counseling to students enduring the university judicial process. Our organization was founded to support due process, free speech and student's rights. As the communications chair, I maintained all social media platforms to spread awareness about how our organization can help JMU students.</p>
+                    </div>
+                     <div class="campus-title">Student Defenders</div>
+                </div>
+            </div>
+
+        </div>
     </div>
 </section>
-<!--Footer End--> 
-    
-<!--jQuery-->
-<!--Footer End--> 
-    
-<!--jQuery-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<!--Popper JS-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<!--Bootstrap JS-->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<!--Font Awesome-->
-<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
-<!--script for smooth scrolling-->
-<script src="https://code.jquery.com/jquery-3.5.1.min.js">
-$(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
-</script>
+    <!--Campus Involvement End-->
+    <!--Footer Section-->
+    <section id="contacted" class="sticky-bottom contact">
+        <div class="container-fluid padding" style="background-color: #1f2833; color:white;">
+            <div class="footerContent">
+                <h3>Get in Touch</h3>
+                <p>
+                    <i class="fas fa-phone-alt footerIcon"></i>
+                    (267) 566-7674
+                    <i class="far fa-envelope footerIcon"></i>
+                    mikedawicki99@gmail.com
+                </p>
+                <ul class="socials">
+                    <li><a href="https://www.linkedin.com/in/michael-dawicki-62123915a/" target="_blank"><i class="fab fa-linkedin fa-3x icon"></i></a></li>
+                    <li><a href="https://github.com/mikedawicki09" target="_blank"><i class="fab fa-github fa-3x icon"></i></a></li>
+                    <li><a href="mailto: mikedawicki99@gmail.com"><i class="fas fa-envelope-square fa-3x icon"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>Created by Mike Dawicki | &copy; 2021 All rights reserved.</span>
+        </div>
+    </section>
+    <!--Footer End-->
+    <!--Popper JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!--Bootstrap JS-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--Font Awesome-->
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
+    <!--script for smooth scrolling-->
+
 </body>
 </html>
