@@ -416,6 +416,7 @@ a[aria-expanded=true] .fa-plus {
 .indicator-track {
     width: 95%;
     background-color: lightgray;
+    border-radius: 10px;
     display: flex;
     margin-left: auto;
     position: relative;
