@@ -23,6 +23,7 @@ function changeTab(page) {
 function openTab(page, elmnt, skillType) {
     changeTab(page);
     var i, tabContent;
+    var listItem = document.getElementsByClassName(skillType);
     //grabs all elements that have the class tabContent
     tabContent = document.getElementsByClassName("tabContent");
     var tabButton = document.getElementsByClassName("tabButton");
@@ -41,9 +42,12 @@ function openTab(page, elmnt, skillType) {
     document.getElementById(page).style.display = "block";
     elmnt.style.color = "#FA991C";
     elmnt.style.boxShadow = "2px 2px 25px #FA991C";
+    elmnt.style.backgroundColor = "#ccc";
 
+    for (var i of listItem) {
+        i.style.top = "0%";
+    }
     count = 0;
-
 }
 
 //function to slide through skill carousel slider
@@ -92,18 +96,27 @@ $(document).ready(function () {
 })
 
 //function to show side navigation bar 
-function showNav() {
-    const navbarList = document.querySelector(".my-nav-list");
+var open = false;
+function showNav(close) {
+   
     const menuBtn = document.querySelector(".menu-btn");
-    navbarList.classList.add("active");
-    menuBtn.classList.add("hide");
-}
-//function to hide side navigation button
-function removeNav() {
-    const navbarList = document.querySelector(".my-nav-list");
-    const menuBtn = document.querySelector(".menu-btn");
-    navbarList.classList.remove("active");
-    menuBtn.classList.remove("hide");
+    var navBar = document.getElementById("testnav").getElementsByTagName("li");
+ /*    for(var i=0; i< navBar.length;i++){
+        
+        navbar[i].
+    }
+     */
+    
+       /* if (!open) {
+            menuBtn.classList.add("open");
+            navBar.classList.add("active");
+            open = true;
+        }
+        else {
+            menuBtn.classList.remove("open");
+            navBar.classList.remove("active");
+            open = false;
+        }*/
 }
 
 //function to hide top navigation bar and display floating button
@@ -111,15 +124,25 @@ window.onscroll = function () { myFunction() };
 function myFunction() {
     if (document.body.scrollTop > 550 || document.documentElement.scrollTop > 550) {
         document.getElementById("floatButton").style.display = "block";
-        document.getElementById("nav").style.display = "none";
+        document.querySelector(".my-nav").classList.remove("active");
+        document.querySelector(".menu-btn").classList.remove("open");
+        open = false;
+
+        var movingObject = document.querySelector(".movingObject");
+        if (movingObject.style.top == "0%") {
+            movingObject.style = "95%";
+        }
+        if (movingObject.style.top == "95%") {
+            movingObject.style.top = "0%";
+        }
     } else {
         document.getElementById("floatButton").style.display = "none";
-        document.getElementById("nav").style.display = "block";
+
     }
 }
 
 //function to flip project card 
-function cardFlip(project,side) {
+function cardFlip(project, side) {
     var project = document.getElementById(project);
     if (side == 0) {
         project.classList.add("flip");
@@ -130,25 +153,42 @@ function cardFlip(project,side) {
 }
 
 //function to open card information
-var campusCount=0;
-function fade(card,elmnt) {
+function fade(card, elmnt) {
     var plus = elmnt.querySelector(".fa-plus");
     var textArea = document.getElementById(card);
-   var orgText = textArea.querySelector(".org-text");
-    switch(campusCount) {
-        case 0:
-            orgText.classList.remove("slow");
-            textArea.classList.add("toggle-area");
-            plus.style.transform = 'rotate(135deg)';
-            campusCount=1;
-            break;
-        case 1: 
-            orgText.classList.add("slow");
-            textArea.classList.remove("toggle-area");
-            plus.style.transform = 'rotate(0deg)';
-            campusCount=0;
-            break;
-        }
-    }
+    var orgText = textArea.querySelector(".org-text");
 
+    if (textArea.classList.contains("toggle-area")) {
+        orgText.classList.add("slow");
+        textArea.classList.remove("toggle-area");
+        plus.style.transform = 'rotate(0deg)';
+    } else {
+        orgText.classList.remove("slow");
+        textArea.classList.add("toggle-area");
+        plus.style.transform = 'rotate(135deg)';
+    }
+}
+
+
+
+//function to open card information
+function openMenu(card, elmnt) {
+    var sign = elmnt.querySelector(".fa-plus");
+    var logos = document.getElementById(card);
+    var orgText = textArea.querySelector(".org-text");
+
+    if (textArea.classList.contains("toggle-area")) {
+        orgText.classList.add("slow");
+        textArea.classList.remove("toggle-area");
+        plus.style.transform = 'rotate(0deg)';
+    } else {
+        orgText.classList.remove("slow");
+        textArea.classList.add("toggle-area");
+        plus.style.transform = 'rotate(135deg)';
+    }
+}
+function Change(page) {
+    var item =  document.querySelector(".card");
+    item.classList.add("color");
+}
 

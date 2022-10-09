@@ -1,3 +1,5 @@
+
+
 <!--html page for Mike Dawicki resume-->
 <!DOCTYPE html>
 <html lang="en">
@@ -6,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Michael Dawicki-Resume</title>
-    <!--Bootstrap CSS-->
+    <!--Bootstrap CSS--> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Style CSS-->
@@ -16,48 +18,90 @@
     <script type=text/javascript src="script.js"></script>
 </head>
 
-
 <body>
-    <a href="#home" id="floatButton" class="scroll"><i class="fas fa-chevron-circle-up"></i></a>
+
+    <style>
+        .movingLine, .movingObject {
+            height:99.5%;
+            width:3px;
+            left: 18%;
+            background-color:gray;
+            position:absolute;
+            z-index:1;
+        }
+        .movingObject {
+            height: 5%;
+            transition: all 1s ease-in-out;
+            background-color: lightgray;
+            border: 1px solid white;
+            box-shadow: 2px 2px 25px rgba(0,0,0,0.2);
+        }
+        .mo1 {
+            animation: slide 13s infinite;
+        }
+        @keyframes slide {
+                0%{top:0;}
+                50%{top:95%;}
+                100%{top:0;}
+        }
+        .mo2 {
+            animation: slide2 13s infinite;
+        }
+        @keyframes slide2 {
+            0%{top:95%;}
+            50%{top:0%;}
+            100%{top:95%;}
+        }
+        .ml2 {
+           left: 82%;
+        }
+    </style>
+    <a href="#top" id="floatButton" class="scroll"><i class="fas fa-chevron-circle-up"></i></a>
+    <div class="movingLine">
+        <div class="movingObject mo1"></div>
+    </div>
+    <div class="movingLine ml2">
+        <div class="movingObject mo2"></div>
+    </div>
     <!--Navigation-->
-    <nav id="nav" class="myNavbar">
-        <div class="my-nav">
-            <ul class="my-nav-list">
-                <div class="navicon cancel-btn" onclick="removeNav()">
-                    <i class="far fa-times-circle"></i>
-                </div>
-                <li>
-                    <a class="scroll" href="#aboutMe">About Me</a>
-                </li>
-                <li>
-                    <a class="scroll" href="#project">Projects</a>
-                </li>
-                <li>
-                    <a class="scroll" href="#skill">Skills</a>
-                </li>
-                <li>
-                    <a class="scroll" href="#campus">Campus Involvement</a>
-                </li>
-                <li>
-                    <a class="scroll" href="#contacted">Contact</a>
-                </li>
-            </ul>
-            <div class="navicon menu-btn" onclick="showNav()">
-                <i class="fas fa-bars"></i>
-            </div>
+    <div id="top">
+        <div>
+            <nav id="navbar" class="my-nav">
+                <ul id="testnav">
+                    <li>
+                        <a class="scroll" href="#aboutMe">About</a>
+                    </li>
+                    <li>
+                        <a class="scroll" href="#project">Projects</a>
+                    </li>
+                    <li>
+                        <a class="scroll" href="#skill">Skills</a>
+                    </li>
+                    <li>
+                        <a class="scroll" href="#campus">Involvement</a>
+                    </li>
+                    <li>
+                        <a class="scroll" href="#contacted">Contact</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-    </nav>
+        <div class="menu-btn" onclick="showNav()">
+            <div class="menu-Burger"></div>
+        </div>
+    </div>
     <!--Naviagtion End-->
+    <!--Head-->
     <div id="home" class="banner">
         <div id="landing-anim" class="landing-text">
-            <h1 class="display-3 color">Mike Dawicki</h1>
+            <!--<h1 class="display-3 color">Mike Dawicki</h1>
             <h3 class="display-5 color">ETL Engineer</h3>
-            <a href="Files/Resume.pdf" class="button" download="Files/Resume.pdf">Download Resume</a>
+            <a href="Files/Resume.pdf" class="button" download="Files/Resume.pdf">Download Resume</a>-->
         </div>
     </div>
     <!--Head End-->
-    <!--About Me section-->      
-   <section id="aboutMe">
+    <!--About Me section-->
+    <section id="aboutMe">
         <div class="padding">
             <div class="container shadow-lg">
                 <div class="flex-about">
@@ -75,7 +119,7 @@
     </section>
     <!--About Me End-->
     <!--Projects section-->
-      <section id="project">
+    <section id="project">
         <div class="padding">
             <h2 class="text-center">Pr<u class="underline">ojec</u>ts</h2>
             <div class="container shadow-lg">
@@ -98,8 +142,9 @@
                                         <button onclick="fade('desc',this)" class="toggle-button"><i class="fa fa-plus"></i></button>
                                     </div>
                                     <div id="desc" class="bottom-area">
-                                         <p class="org-text">The Computer Information System's Senior capstone was a semester long project in which we built an information system from the ground up for a client in the Harrisonburg community. This competition required my team and I to build a system that both best fit the client’s business needs and increased the efficiency of their business.
-                                        <a href="https://github.com/mikedawicki09/GreenValleyAuctionsSystems" target="_blank" class="project-btn">Source Code</a>
+                                        <p class="org-text">
+                                            The Computer Information System's Senior capstone was a semester long project in which we built an information system from the ground up for a client in the Harrisonburg community. This competition required my team and I to build a system that both best fit the client’s business needs and increased the efficiency of their business.
+                                            <a href="https://github.com/mikedawicki09/GreenValleyAuctionsSystems" target="_blank" class="project-btn"><span>Source Code</span></a>
                                         </p>
                                     </div>
                                 </div>
@@ -122,15 +167,16 @@
                                         <button onclick="fade('erd',this)" class="toggle-button"><i class="fa fa-plus"></i></button>
                                     </div>
                                     <div id="erd" class="bottom-area">
-                                        <p class="org-text">We coded our relational database with Microsoft SQL Server and developed our database to match our client's needs while also maintaining third normal form and removing any redundancies. From meetings with our client's, we realized that both types of services were very similar which allowed us to integrate generalization into our Entity Relationship Diagram.
-                                        <a href="Files/GVA_ERD.pdf" target="_blank" class="project-btn">View Diagram</a>
+                                        <p class="org-text">
+                                            We coded our relational database with Microsoft SQL Server and developed our database to match our client's needs while also maintaining third normal form and removing any redundancies. From meetings with our client's, we realized that both types of services were very similar which allowed us to integrate generalization into our Entity Relationship Diagram.
+                                            <a href="Files/GVA_ERD.pdf" target="_blank" class="project-btn"><span>View Diagram</span></a>
                                         </p>
                                     </div>
                                 </div>
-                            </div>  
-                             <button onclick="cardFlip('proj1','1')"><span>Back to Front</span></button>
+                            </div>
+                            <button onclick="cardFlip('proj1','1')">``<span>Back to Front</span></button>
                         </div>
-                           
+
                     </div>
                     <div id="proj2" class="project-card">
                         <div class="front-card">
@@ -150,9 +196,10 @@
                                         <button onclick="fade('about',this)" class="toggle-button"><i class="fa fa-plus"></i></button>
                                     </div>
                                     <div id="about" class="bottom-area">
-                                        <p class="org-text">For this project, we developed a relational database to replicate a company's data structure with real data. We utilized Oracle’s SQL Developer Environment to create, manipulate, and query data from the database.
-                                        <a href="Files/Final%20Report-2.pdf" target="_blank" class="project-btn">View Project</a>
-                                        </p>                                    
+                                        <p class="org-text">
+                                            For this project, we developed a relational database to replicate a company's data structure with real data. We utilized Oracle’s SQL Developer Environment to create, manipulate, and query data from the database.
+                                            <a href="Files/Final%20Report-2.pdf" target="_blank" class="project-btn"><span>View Project</span></a>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -188,10 +235,11 @@
                                         <button onclick="fade('readAbout',this)" class="toggle-button"><i class="fa fa-plus"></i></button>
                                     </div>
                                     <div id="readAbout" class="bottom-area">
-                                        <p class="org-text">This project focused on building a database with Amazon Web Services's non-relational database known as DynamoDB. The project involved manipulating the database using Python commands. From this project, I gained relevant experience using AWS services including Identity and Access Management (IAM) and DynamoDB.
-                                        <a href="https://github.com/mikedawicki09/AmazonDynamoDB" target="_blank" class="project-btn">Source Code</a>
+                                        <p class="org-text">
+                                            This project focused on building a database with Amazon Web Services's non-relational database known as DynamoDB. The project involved manipulating the database using Python commands. From this project, I gained relevant experience using AWS services including Identity and Access Management (IAM) and DynamoDB.
+                                            <a href="https://github.com/mikedawicki09/AmazonDynamoDB" target="_blank" class="project-btn"><span>Source Code</span></a>
                                         </p>
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -213,8 +261,11 @@
             </div>
         </div>
     </section>
-        
+
     <!--Projects End-->
+    <!--Image Section-->
+    <div class="imageSection"></div>
+    <!--Image Section End-->
     <!--Skills Section-->
     <section id="skill">
         <div class="padding">
@@ -227,12 +278,12 @@
                         </button>
                     </div>
                     <div class="grid-column">
-                        <button class="tabButton" onclick="openTab('tools', this, 'myToolCards')">
+                        <button class="tabButton" onclick="openTab('tools', this, 'toolSkill')">
                             <img src="Photos/tools.svg" alt="Tools logo">Software
                         </button>
                     </div>
                     <div class="grid-column">
-                        <button class="tabButton" onclick="openTab('frameworks',this, 'myFrameCards')">
+                        <button class="tabButton" onclick="openTab('frameworks',this, 'frameSkill')">
                             <img src="Photos/framework.svg" alt="frameworks">Frameworks
                         </button>
                     </div>
@@ -473,64 +524,64 @@
 
     <!--Skills end-->
     <!--Campus Involvement-->
-   <section id="campus">
-    <div class="padding">
-        <h2 class="text-center">Ca<u class="underline">mpus Involvem</u>ent</h2>
-        <div class="container shadow-lg">
-            <div class="campus-row">
-                <div class="campus-card">
-                    <div class="top-area">
-                        <img src="Photos/sga.jpeg"/>
+    <section id="campus">
+        <div class="padding">
+            <h2 class="text-center">Ca<u class="underline">mpus Involvem</u>ent</h2>
+            <div class="container shadow-lg">
+                <div class="campus-row">
+                    <div class="campus-card">
+                        <div class="top-area">
+                            <img src="Photos/sga.jpeg" />
+                        </div>
+                        <div class="button-area">
+                            <button onclick="fade('card1',this)" class="toggle-button"><i class="fa fa-plus"></i></button>
+                        </div>
+                        <div id="card1" class="bottom-area">
+                            <p class="org-text"> A College of Business Senator advocating for the needs of students across campus. I was a member of the finance committee that distributes over $130,000 to student run organizations throughout James Madison University.</p>
+                        </div>
+                        <div class="campus-title">Student Government Association</div>
                     </div>
-                    <div class="button-area">
-                        <button onclick="fade('card1',this)" class="toggle-button"><i class="fa fa-plus"></i></button>
+                    <div class="campus-card">
+                        <div class="top-area">
+                            <img id="ais-img" src="Photos/ais.jpeg" />
+                        </div>
+                        <div class="button-area">
+                            <button onclick="fade('card2',this)" class="toggle-button"><i class="fa fa-plus"></i></button>
+                        </div>
+                        <div id="card2" class="bottom-area">
+                            <p class="org-text"> Association of Information Systems provides professional opportunities in which we met and discussed with recruiters currently in the information systems industry. AIS provided education programs for advancing technology and business skills, leadership development opportunities, networking and peer mentoring.</p>
+                        </div>
+                        <div class="campus-title">Association for Information Systems </div>
                     </div>
-                    <div id="card1" class="bottom-area">
-                        <p class="org-text"> A College of Business Senator advocating for the needs of students across campus. I was a member of the finance committee that distributes over $130,000 to student run organizations throughout James Madison University.</p>
+                    <div class="campus-card">
+                        <div class="top-area">
+                            <img id="pad-img" src="Photos/pad.jpeg" />
+                        </div>
+                        <div class="button-area">
+                            <button onclick="fade('card3',this)" class="toggle-button"><i class="fa fa-plus"></i></button>
+                        </div>
+                        <div id="card3" class="bottom-area">
+                            <p class="org-text"> Being involved in Phi Alpha Delta, a professional Pre-Law Fraternity, has further enhanced my professional skills while participating in a group-oriented environment. I was a Member of the Philanthropy Committee that develops and implements fundraising plans and strategies for ALS.</p>
+                        </div>
+                        <div class="campus-title">Phi Alpha Delta</div>
                     </div>
-                    <div class="campus-title">Student Government Association</div>
+                    <div class="campus-card">
+                        <div class="top-area">
+                            <img id="sd-img" src="Photos/sd.jpeg" />
+                        </div>
+                        <div class="button-area">
+                            <button onclick="fade('card4',this)" class="toggle-button"><i class="fa fa-plus"></i></button>
+                        </div>
+                        <div id="card4" class="bottom-area">
+                            <p class="org-text">  Student Defenders provides guidance and counseling to students enduring the university judicial process. Our organization was founded to support due process, free speech and student's rights. As the communications chair, I maintained all social media platforms to spread awareness about how our organization can help JMU students.</p>
+                        </div>
+                        <div class="campus-title">Student Defenders</div>
+                    </div>
                 </div>
-                <div class="campus-card">
-                    <div class="top-area">
-                        <img id="ais-img" src="Photos/ais.jpeg"/>
-                    </div>
-                     <div class="button-area">
-                        <button onclick="fade('card2',this)" class="toggle-button"><i class="fa fa-plus"></i></button>
-                    </div>
-                    <div id="card2" class="bottom-area">
-                        <p class="org-text"> Association of Information Systems provides professional opportunities in which we met and discussed with recruiters currently in the information systems industry. AIS provided education programs for advancing technology and business skills, leadership development opportunities, networking and peer mentoring.</p>
-                    </div>
-                     <div class="campus-title">Association for Information Systems </div>
-                </div>
-                <div class="campus-card">
-                    <div class="top-area">
-                        <img id="pad-img" src="Photos/pad.jpeg"/>
-                    </div>
-                     <div class="button-area">
-                        <button onclick="fade('card3',this)" class="toggle-button"><i class="fa fa-plus"></i></button>
-                    </div>
-                    <div id="card3" class="bottom-area">
-                        <p class="org-text"> Being involved in Phi Alpha Delta, a professional Pre-Law Fraternity, has further enhanced my professional skills while participating in a group-oriented environment. I was a Member of the Philanthropy Committee that develops and implements fundraising plans and strategies for ALS.</p>
-                    </div>
-                     <div class="campus-title">Phi Alpha Delta</div>
-                </div>
-                <div class="campus-card">
-                    <div class="top-area">
-                        <img id="sd-img" src="Photos/sd.jpeg"/>
-                    </div>
-                     <div class="button-area">
-                        <button onclick="fade('card4',this)" class="toggle-button"><i class="fa fa-plus"></i></button>
-                    </div>
-                    <div id="card4" class="bottom-area">
-                        <p class="org-text">  Student Defenders provides guidance and counseling to students enduring the university judicial process. Our organization was founded to support due process, free speech and student's rights. As the communications chair, I maintained all social media platforms to spread awareness about how our organization can help JMU students.</p>
-                    </div>
-                     <div class="campus-title">Student Defenders</div>
-                </div>
-            </div>
 
+            </div>
         </div>
-    </div>
-</section>
+    </section>
     <!--Campus Involvement End-->
     <!--Footer Section-->
     <section id="contacted" class="sticky-bottom contact">
@@ -565,3 +616,10 @@
 
 </body>
 </html>
+
+
+
+
+
+
+
